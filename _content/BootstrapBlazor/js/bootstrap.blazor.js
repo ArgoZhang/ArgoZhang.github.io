@@ -1829,6 +1829,7 @@
                     var video = $el.find('video').attr('id');
                     codeReader.decodeFromVideoDevice(deviceId, video, (result, err) => {
                         if (result) {
+                            $.bb_vibrate();
                             console.log(result.text);
                             obj.invokeMethodAsync("GetResult", result.text);
 
@@ -1859,6 +1860,7 @@
                             $img.attr('src', e.target.result);
                             codeReader.decodeFromImage($img[0]).then((result) => {
                                 if (result) {
+                                    $.bb_vibrate();
                                     console.log(result.text);
                                     obj.invokeMethodAsync("GetResult", result.text);
                                 }
@@ -1937,13 +1939,37 @@
                 });
             });
         },
-        bb_timer: function () {
+        bb_vibrate: function () {
             if ('vibrate' in window.navigator) {
                 window.navigator.vibrate([200, 100, 200]);
                 var handler = window.setTimeout(function () {
                     window.clearTimeout(handler);
                     window.navigator.vibrate([]);
                 }, 1000);
+            }
+        },
+        bb_qrcode: function (el) {
+            var $el = $(el);
+            var $qr = $el.find('.qrcode-img');
+            $qr.html('');
+            var method = "";
+            var obj = null;
+            if (arguments.length === 2) method = arguments[1];
+            else {
+                method = arguments[2];
+                obj = arguments[1];
+            }
+            if (method === 'generate') {
+                var text = $el.find('.qrcode-text').val();
+                qrcode = new QRCode($qr[0], {
+                    text: text,
+                    width: 128,
+                    height: 128,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+                obj.invokeMethodAsync("Generated");
             }
         }
     });
