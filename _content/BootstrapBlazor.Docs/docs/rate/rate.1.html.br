@@ -1,0 +1,2 @@
+€ï»¿<Rate @bind-Value="@BindValue" />
+

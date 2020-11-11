@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BootstrapBlazor.WebAssembly.ClientHost</name>
+    </assembly>
+    <members>
+        <member name="T:BootstrapBlazor.WebAssembly.ClientHost.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.WebAssembly.ClientHost.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

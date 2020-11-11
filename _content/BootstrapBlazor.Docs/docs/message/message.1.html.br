@@ -1,0 +1,5 @@
+�.�﻿MessageService?.Show(new MessageOption()
+{
+    Content = "这是一条成功的消息"
+});
+
