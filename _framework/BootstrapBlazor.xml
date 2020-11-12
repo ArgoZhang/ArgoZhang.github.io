@@ -9611,12 +9611,6 @@
             <see cref="T:Microsoft.AspNetCore.Components.Forms.EditContext"/> is determined to be invalid.
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.ValidateForm.OnInitializedAsync">
-            <summary>
-            OnInitializedAsync 方法
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:BootstrapBlazor.Components.ValidateFormBase">
             <summary>
             ValidateFormBase 支持客户端验证组件基类
