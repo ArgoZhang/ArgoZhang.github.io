@@ -787,7 +787,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.Pre.OnAfterRender(System.Boolean)">
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Pre.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRender 方法
             </summary>

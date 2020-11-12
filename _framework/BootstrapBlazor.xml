@@ -8162,6 +8162,12 @@
             获得/设置 内容是否出现在时间线左侧 默认为 false
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.TimelineBase.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.TimelineBase.OnParametersSet">
             <summary>
             OnParametersSet 方法
@@ -9581,6 +9587,36 @@
             <param name="fieldIdentifier"></param>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.ValidateForm">
+            <summary>
+            ValidateForm 组件类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ValidateForm.OnSubmit">
+            <summary>
+            A callback that will be invoked when the form is submitted.
+            If using this parameter, you are responsible for triggering any validation
+            manually, e.g., by calling <see cref="M:Microsoft.AspNetCore.Components.Forms.EditContext.Validate"/>.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ValidateForm.OnValidSubmit">
+            <summary>
+            A callback that will be invoked when the form is submitted and the
+            <see cref="T:Microsoft.AspNetCore.Components.Forms.EditContext"/> is determined to be valid.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ValidateForm.OnInvalidSubmit">
+            <summary>
+            A callback that will be invoked when the form is submitted and the
+            <see cref="T:Microsoft.AspNetCore.Components.Forms.EditContext"/> is determined to be invalid.
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ValidateForm.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.ValidateFormBase">
             <summary>
             ValidateFormBase 支持客户端验证组件基类
@@ -9596,25 +9632,6 @@
         <member name="P:BootstrapBlazor.Components.ValidateFormBase.ChildContent">
             <summary>
             Specifies the content to be rendered inside this
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateFormBase.OnSubmit">
-            <summary>
-            A callback that will be invoked when the form is submitted.
-            If using this parameter, you are responsible for triggering any validation
-            manually, e.g., by calling <see cref="M:Microsoft.AspNetCore.Components.Forms.EditContext.Validate"/>.
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateFormBase.OnValidSubmit">
-            <summary>
-            A callback that will be invoked when the form is submitted and the
-            <see cref="T:Microsoft.AspNetCore.Components.Forms.EditContext"/> is determined to be valid.
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateFormBase.OnInvalidSubmit">
-            <summary>
-            A callback that will be invoked when the form is submitted and the
-            <see cref="T:Microsoft.AspNetCore.Components.Forms.EditContext"/> is determined to be invalid.
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateFormBase.ValidatorCache">
