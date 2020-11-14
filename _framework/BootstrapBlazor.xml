@@ -5082,6 +5082,12 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.MultiSelect`1.OnParametersSetAsync">
+            <summary>
+            OnParametersSetAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.MultiSelect`1.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRenderAsync 方法
