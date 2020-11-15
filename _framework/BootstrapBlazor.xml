@@ -967,19 +967,30 @@
             显示确认弹窗方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.CalendarBase">
+        <member name="T:BootstrapBlazor.Components.Calendar">
             <summary>
-            Calendar 组件基类
+            
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CalendarBase.Title">
+        <member name="M:BootstrapBlazor.Components.Calendar.GetTitle">
             <summary>
             获得 当前日历框年月
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CalendarBase.Week">
+        <member name="P:BootstrapBlazor.Components.Calendar.WeekNumberText">
             <summary>
             获得 当前日历周文字
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Calendar.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.CalendarBase">
+            <summary>
+            Calendar 组件基类
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.CalendarBase.StartDate">
@@ -1022,11 +1033,11 @@
             OnInitialized
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.CalendarBase.OnClickDay(System.DateTime)">
+        <member name="M:BootstrapBlazor.Components.CalendarBase.OnCellClickCallback(System.DateTime)">
             <summary>
             选中日期时回调此方法
             </summary>
-            <param name="d"></param>
+            <param name="value"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.CalendarBase.OnChangeMonth(System.Int32)">
             <summary>
@@ -1053,32 +1064,6 @@
             </summary>
             <param name="offset"></param>
             <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Components.CalendarCell">
-            <summary>
-            CalendarCell 组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CalendarCell.Text">
-            <summary>
-            获取 日视图下日单元格显示文字
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CalendarCell.Value">
-            <summary>
-            获得/设置 组件值
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CalendarCell.CurrentValue">
-            <summary>
-            获得/设置 组件值
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CalendarCell.OnClick">
-            <summary>
-            
-            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Camera">
             <summary>
@@ -4406,6 +4391,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.PaginationBase.GetPaginationItemClassName(System.Boolean)">
+            <summary>
+            获得 PaginationItem 样式
+            </summary>
+            <param name="active"></param>
+            <returns></returns>
+        </member>
         <member name="P:BootstrapBlazor.Components.PaginationBase.StarIndex">
             <summary>
             获得 起始记录索引
@@ -4483,31 +4475,6 @@
         <member name="M:BootstrapBlazor.Components.PaginationBase.OnPageItemsSelectItemChanged(BootstrapBlazor.Components.SelectedItem)">
             <summary>
             每页显示数据项数量选项更改时回调方法
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.PaginationItem">
-            <summary>
-            PaginationItem 组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.PaginationItem.Active">
-            <summary>
-            获得/设置 是否 Active 状态
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.PaginationItem.PageIndex">
-            <summary>
-            获得/设置 页码
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.PaginationItem.OnClick">
-            <summary>
-            获得/设置 点击页码时回调方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PaginationItem.OnInitialized">
-            <summary>
-            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Popover">
