@@ -3,7 +3,7 @@
   "config": [ ],
   "debugBuild": false,
   "entryAssembly": "BootstrapBlazor.WebAssembly.ClientHost",
-  "icuDataMode": 0,
+  "icuDataMode": 1,
   "linkerEnabled": true,
   "resources": {
     "assembly": {
@@ -37,10 +37,10 @@
       "System.IO.Pipelines.dll": "sha256-CETD5tkXtiKEgbXyN\/lp0Ejf6LcHIhgeQIEyow2mhmY=",
       "System.Security.Cryptography.Pkcs.dll": "sha256-GDprS2dCcCY+CdLntjfUAebpNHpnM8txQA\/CQBJnFg8=",
       "System.Xml.XPath.XmlDocument.dll": "sha256-tDqOyx5\/Bgsf6iVvi+V85x8gSqC0sTn\/6V5EcRFe4FM=",
-      "BootstrapBlazor.dll": "sha256-d50IrAY5KXZIyOPFtZsanffKUoDF7R6v2sPQynyp\/dE=",
+      "BootstrapBlazor.dll": "sha256-7BQCDIA9CbpXqe4NzVcSV3wCdqUBGvFW\/golwgscTG8=",
       "BootstrapBlazor.Docs.dll": "sha256-EsrzkkaQxF59BgtiR6dZlgXN3uV1Gata+mnZg1awkk8=",
-      "BootstrapBlazor.Shared.dll": "sha256-P9o83o2QhPSadTUZ3GXJ3M0FHlRVxdSAOwCnbx3F4Ag=",
-      "BootstrapBlazor.WebAssembly.ClientHost.dll": "sha256-5KppymmkAF8GGQCZQjtZRb2QeHMMnnWoU\/t\/7NUF+mA=",
+      "BootstrapBlazor.Shared.dll": "sha256-X7wOGpPqNEupt6DUOmi0d3I+7CTmJkDXztk\/sxpUg6o=",
+      "BootstrapBlazor.WebAssembly.ClientHost.dll": "sha256-+UC6sOy+FZ2bFxWCmeAWb0W8fpo9bvJlmQ\/Ucm0y1EM=",
       "System.Collections.Concurrent.dll": "sha256-tcD9tFp74I32LK\/2PTfVVGnIAImYaovjTF8P317ucDE=",
       "System.Collections.Immutable.dll": "sha256-e3Kjtk9ckDLjMmXHq6UjPKbj+3Edba6wb5VBYyaNlIY=",
       "System.Collections.NonGeneric.dll": "sha256-WLyywgYwChQ+fkZGygcunST3BelcVRMOU4u2zJh\/Eew=",
