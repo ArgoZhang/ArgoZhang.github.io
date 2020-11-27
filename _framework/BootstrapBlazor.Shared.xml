@@ -132,6 +132,31 @@
             <param name="startDate"></param>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Shared.WebsiteOptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.ServerUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.WasmUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.AdminUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.ImageLibUrl">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Alerts">
             <summary>
             
@@ -693,6 +718,11 @@
             
              </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.HostFile">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.ChildContent">
             <summary>
             
@@ -792,6 +822,26 @@
             OnAfterRender 方法
             </summary>
             <param name="firstRender"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.IsNew">
+            <summary>
+            获得/设置 是否为新组件 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.IsUpdate">
+            <summary>
+            获得/设置 是否为更新功能 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.Count">
+            <summary>
+            获得/设置 组件数量
+            </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.CustomerSelectDialog.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
             <summary>
@@ -919,6 +969,17 @@
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.DateTimePickers.GetAttributes">
+            <summary>
+            获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.DateTimeRanges">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.DateTimeRanges.GetAttributes">
             <summary>
             获得属性方法
             </summary>
@@ -2341,6 +2402,12 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.NavMenu.DemoMenuItem.AddItem(BootstrapBlazor.Components.MenuItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Shared.PageLayout">
             <summary>
