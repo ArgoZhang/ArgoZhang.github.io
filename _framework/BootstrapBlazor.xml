@@ -3189,6 +3189,11 @@
             获得/设置 是否显示前置标签 默认为 true 显示标签
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.EditorForm`1.AutoGenerateAllItem">
+            <summary>
+            获得/设置 是否自动生成模型的所有属性 默认为 true 生成所有属性
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.EditorForm`1.CascadedEditContext">
             <summary>
             获得/设置 级联上下文 EditContext 实例 内置于 EditForm 或者 ValidateForm 时有值
