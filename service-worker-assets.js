@@ -2213,7 +2213,7 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-ShlAYFB80I+19ILSZ1PzMb2F7oE6f+blyr+Rq2a\/Rvc=",
+      "hash": "sha256-IaMEowK2jeGelo8zUrMFhyUTrawQ4PQO17e+1F8oFuc=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
@@ -2221,11 +2221,11 @@
       "url": "_framework\/BootstrapBlazor.Docs.dll"
     },
     {
-      "hash": "sha256-Krv6RNQ0qznoIsS97ycwYmBUqg3++WrX6xzSsbPj3SA=",
+      "hash": "sha256-DSYlKaVPLGRWohe6xZPtl8IWOkYDCVwNkskztTGuS7I=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-QIRbuVnv+jn3e72Sl\/LjfSIlGGbSzjkneTrH4KgIZKQ=",
+      "hash": "sha256-xUDk7pUyFuUl4yhYsyNE5kFD1zNwsxvekL4qRtULIAw=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -2397,7 +2397,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-XY\/OsEHNW1yYgNWHGtrHLHslfg20sq8qQnBDc43CsFI=",
+      "hash": "sha256-k63J9cEcwAqgGcPjOLBAPLEBnfm0RUSiaeA0iW8WOyY=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2405,5 +2405,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "OfZP78+S"
+  "version": "6NLXE16k"
 };
