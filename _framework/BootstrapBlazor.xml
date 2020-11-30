@@ -9525,6 +9525,11 @@
             获得/设置 重置按钮显示文字
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Upload.ImageUrl">
+            <summary>
+            获得/设置 默认初始化图片地址
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Upload.Localizer">
             <summary>
             
