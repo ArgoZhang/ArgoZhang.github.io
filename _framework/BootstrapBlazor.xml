@@ -3135,7 +3135,7 @@
             获得/设置 富文本框工具栏工具，默认为空使用默认值
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Editor.CustomerPluginItems">
+        <member name="P:BootstrapBlazor.Components.Editor.CustomerToolbarButtons">
             <summary>
             获得/设置 自定义按钮
             </summary>
@@ -3150,7 +3150,12 @@
             获得/设置 组件值变化后的回调委托
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Editor.OnClickPluginItem">
+        <member name="P:BootstrapBlazor.Components.Editor.OnValueChanged">
+            <summary>
+            获得/设置 组件值变化后的回调委托
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Editor.OnClickButton">
             <summary>
             获取/设置 插件点击时的回调委托
             </summary>
@@ -3198,22 +3203,22 @@
             </summary>
             <param name="disposing"></param>
         </member>
-        <member name="T:BootstrapBlazor.Components.EditorPluginItem">
+        <member name="T:BootstrapBlazor.Components.EditorToolbarButton">
             <summary>
             富文本框插件信息
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.EditorPluginItem.PluginItemName">
+        <member name="P:BootstrapBlazor.Components.EditorToolbarButton.ButtonName">
             <summary>
             获取或设置 插件名称
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.EditorPluginItem.IconClass">
+        <member name="P:BootstrapBlazor.Components.EditorToolbarButton.IconClass">
             <summary>
             获取或设置 插件图标
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.EditorPluginItem.Tooltip">
+        <member name="P:BootstrapBlazor.Components.EditorToolbarButton.Tooltip">
             <summary>
             获取或设置 插件的提示信息
             </summary>
@@ -3317,7 +3322,7 @@
             获得/设置 绑定字段值变化回调委托
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.EditorItem`1.FieldType">
+        <member name="P:BootstrapBlazor.Components.EditorItem`1.PropertyType">
             <summary>
             获得/设置 绑定列类型
             </summary>
@@ -3394,7 +3399,7 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.IEditorItem.FieldType">
+        <member name="P:BootstrapBlazor.Components.IEditorItem.PropertyType">
             <summary>
             获得/设置 绑定列类型
             </summary>
@@ -3439,7 +3444,7 @@
             获得/设置 绑定数据模型
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.FieldType">
+        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.PropertyType">
             <summary>
             获得/设置 字段数据类型
             </summary>
@@ -6493,7 +6498,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ShownWithBreakPoint">
             <summary>
-            显示节点阈值 默认值 BreakPoint.None 未设置
+            获得/设置 显示节点阈值 默认值 BreakPoint.None 未设置
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FormatString">
@@ -6508,7 +6513,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ShowTips">
             <summary>
-            字段鼠标悬停提示
+            获得/设置 字段鼠标悬停提示
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Formatter">
@@ -6541,7 +6546,7 @@
             获得/设置 列过滤器
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FieldType">
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.PropertyType">
             <summary>
             
             </summary>
@@ -7030,7 +7035,7 @@
             <param name="fieldType">字段类型</param>
             <param name="fieldText">显示文字</param>
         </member>
-        <member name="M:BootstrapBlazor.Components.InternalTableColumn.CopyValue(BootstrapBlazor.Components.ITableColumn,BootstrapBlazor.Components.AutoGenerateColumnAttribute)">
+        <member name="M:BootstrapBlazor.Components.InternalTableColumn.CopyValue(BootstrapBlazor.Components.ITableColumn,BootstrapBlazor.Components.ITableColumn)">
             <summary>
             属性赋值方法
             </summary>
@@ -8284,7 +8289,7 @@
             获得/设置 相关过滤器
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TableColumn`1.FieldType">
+        <member name="P:BootstrapBlazor.Components.TableColumn`1.PropertyType">
             <summary>
             获得/设置 绑定列类型
             </summary>
