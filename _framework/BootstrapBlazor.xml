@@ -9911,12 +9911,17 @@
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.Id">
             <summary>
-            获得 当前组件 Id
+            获得/设置 当前组件 Id
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.ChildContent">
             <summary>
-            获得 子组件 RenderFragment 实例
+            获得/设置 子组件 RenderFragment 实例
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ValidateBase`1.SkipValidate">
+            <summary>
+            获得/设置 是否不进行验证 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.ShowLabel">
@@ -10606,6 +10611,11 @@
         <member name="F:BootstrapBlazor.Components.FilterAction.NotContains">
             <summary>
             不包含
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.FilterAction.CustomPredicate">
+            <summary>
+            自定义条件
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.FilterLogic">
