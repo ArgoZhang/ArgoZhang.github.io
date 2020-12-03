@@ -310,6 +310,12 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Cameras.GetAttributes">
+            <summary>
+            获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Captchas">
             <summary>
             
