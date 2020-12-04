@@ -61,7 +61,7 @@
       "url": "_framework\/BootstrapBlazor.Shared.xml"
     },
     {
-      "hash": "sha256-mTV7tVdB9FiiCk5Xbs3hMsdQsVJhXjsZzdlrKJFSFhg=",
+      "hash": "sha256-ytgDapqDWhrE1iG+6wINL+r+fdQTo6ABkcx0S\/cZdb0=",
       "url": "_framework\/BootstrapBlazor.xml"
     },
     {
@@ -529,7 +529,7 @@
       "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css"
     },
     {
-      "hash": "sha256-71N8C6gG45RtxOFftUjDXrv+5MHPGHdbd7btHPdsZQM=",
+      "hash": "sha256-DPTeHaizNOgmTn81yRJVzXYmdj0OTyzoaXOXJZFBQZw=",
       "url": "_content\/BootstrapBlazor\/js\/bootstrap.blazor.bundle.min.js"
     },
     {
@@ -639,6 +639,10 @@
     {
       "hash": "sha256-u+40mBxO6FZUxuh+b2vnKP4SfYRL6PoMYcpgKTkiROA=",
       "url": "_content\/BootstrapBlazor.Docs\/docs\/barcode\/barcode.2.html"
+    },
+    {
+      "hash": "sha256-bhB6shCthXIRtPqoHhRO6JzmwuomHrJ4iUoFFByepqs=",
+      "url": "_content\/BootstrapBlazor.Docs\/docs\/barcode\/barcode.3.html"
     },
     {
       "hash": "sha256-ensorgK3lCCr5OSxPttdh4rNK6bBqA+Uo0jEPwmuIGc=",
@@ -2225,7 +2229,7 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-r8Nhshj8uShGjYd8qwRPvt5M5ZMXlVcYOBM4w6TlaIo=",
+      "hash": "sha256-zfUzTmwV1LrsoLqcKnQ2jbiBEZgE4\/9lOzq4gGBHNdw=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
@@ -2233,11 +2237,11 @@
       "url": "_framework\/BootstrapBlazor.Docs.dll"
     },
     {
-      "hash": "sha256-EbqVca9Av2NDK+evSGjq1DBS9C7FgJHkAsacQpMDE1Y=",
+      "hash": "sha256-JEqQ6aDUHTBNYZwMTVeui+19TU7SM09lHkTCpv6BPnU=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-6omF8+aibK0l3\/A8UCA+9F4mlO1ro0VOIXOs2qoKYOY=",
+      "hash": "sha256-M\/Epn\/jJVXvT63xmBeOPbtHk2yjt\/2AECbLqhXBdAVQ=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -2409,7 +2413,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-sEoauwGnApjOruY7Nyq5J4tx9EK2rJjE2WrxiB8tZ+E=",
+      "hash": "sha256-K\/FFdsmZGwg2QeCxaTWC3F6P5ktTHlOfobl9YxdntXc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2417,5 +2421,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "hxS+s947"
+  "version": "4HMi9NX6"
 };

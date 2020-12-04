@@ -252,6 +252,11 @@
             获得/设置 初始化设备列表文字 默认为 正在识别摄像头
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.BarcodeReader.NotFoundDevicesString">
+            <summary>
+            获得/设置 未找到视频相关设备文字 默认为 未找到视频相关设备
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.BarcodeReader.ScanType">
             <summary>
             获得/设置 扫描方式 默认 Camera 从摄像头进行条码扫描
@@ -265,6 +270,11 @@
         <member name="P:BootstrapBlazor.Components.BarcodeReader.OnResult">
             <summary>
             获得/设置 扫码结果回调方法
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BarcodeReader.AutoStart">
+            <summary>
+            获得/设置 自动开启摄像头 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.BarcodeReader.AutoStop">
@@ -285,6 +295,11 @@
         <member name="P:BootstrapBlazor.Components.BarcodeReader.OnClose">
             <summary>
             获得/设置 关闭扫码回调方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BarcodeReader.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.BarcodeReader.OnAfterRenderAsync(System.Boolean)">
@@ -1163,6 +1178,11 @@
         <member name="P:BootstrapBlazor.Components.Camera.PhotoText">
             <summary>
             获得/设置 拍照按钮显示文本 默认为拍照
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Camera.NotFoundDevicesString">
+            <summary>
+            获得/设置 未找到视频相关设备文字 默认为 未找到视频相关设备
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Camera.OnInitialized">
