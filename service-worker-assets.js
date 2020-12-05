@@ -509,7 +509,7 @@
       "url": "_content\/BootstrapBlazor.Shared\/images\/Upload.svg"
     },
     {
-      "hash": "sha256-fr7SSl1LYJLwzSaJTG+Y5THMhF11+Eo22nstVob\/Wbk=",
+      "hash": "sha256-doTlVI5rqm0YJp9cSo9Q8MPtHxtSJm5x6C6MuPiFNBU=",
       "url": "_content\/BootstrapBlazor.Shared\/js\/common.js"
     },
     {
@@ -2429,5 +2429,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "Zuy8rEcR"
+  "version": "dmzIJIye"
 };
