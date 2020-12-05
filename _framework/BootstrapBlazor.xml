@@ -7584,9 +7584,15 @@
             </summary>
             <param name="disposing"></param>
         </member>
-        <member name="P:BootstrapBlazor.Components.Table`1.ButtonColumnClass">
+        <member name="P:BootstrapBlazor.Components.Table`1.ExtendButtonsColumnClass">
             <summary>
-            获得 Checkbox 样式表集合
+            获得 按钮列样式表集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.FixedExtendButtonsHeaderStyleString">
+            <summary>
+            获得 按钮列样式表集合
             </summary>
             <returns></returns>
         </member>
@@ -8112,6 +8118,18 @@
             <param name="col"></param>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.FixedExtendButtonsColumnClassString">
+            <summary>
+            获得扩展按钮列固定列样式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.GetFixedExtendButtonsColumnStyleString(System.Int32)">
+            <summary>
+            获得扩展按钮列固定列样式
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.Table`1.GetCellStyleString(BootstrapBlazor.Components.ITableColumn)">
             <summary>
             获得列单元格 Style 用于设置文本超长溢出
@@ -8198,6 +8216,11 @@
         <member name="P:BootstrapBlazor.Components.Table`1.ExtendButtonColumnWidth">
             <summary>
             获得/设置 行内操作列宽度 默认为 130
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.FixedExtendButtonsColumn">
+            <summary>
+            获得/设置 是否固定扩展按钮列 默认为 false 不固定
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ShowRefresh">
