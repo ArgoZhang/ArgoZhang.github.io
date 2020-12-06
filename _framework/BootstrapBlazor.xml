@@ -11259,10 +11259,182 @@
             
              </summary>
         </member>
-        <member name="T:BootstrapBlazor.Localization.Json.StringLocalizer">
+        <member name="T:BootstrapBlazor.Localization.Json.HtmlLocalizer">
             <summary>
-            IStringLocalizer 实现类
+            An <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" /> that uses the provided <see cref="T:Microsoft.Extensions.Localization.IStringLocalizer" /> to do HTML-aware
+            localization of content.
             </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Localization.Json.HtmlLocalizer._localizer">
+            <summary>
+            The <see cref="T:Microsoft.Extensions.Localization.IStringLocalizer" /> to read strings from.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.HtmlLocalizer.Item(System.String)">
+            <summary>
+            Gets the string resource with the given name.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <returns>The string resource as a <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" />.</returns>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.HtmlLocalizer.Item(System.String,System.Object[])">
+            <summary>
+            Gets the string resource with the given name and formatted with the supplied arguments. The arguments will
+            be HTML encoded.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <param name="arguments">The values to format the string with.</param>
+            <returns>The formatted string resource as a <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" />.</returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.HtmlLocalizer.#ctor(Microsoft.Extensions.Localization.IStringLocalizer)">
+            <summary>
+            Creates a new <see cref="T:BootstrapBlazor.Localization.Json.HtmlLocalizer" />.
+            </summary>
+            <param name="localizer">The <see cref="T:Microsoft.Extensions.Localization.IStringLocalizer" /> to read strings from.</param>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.HtmlLocalizer.GetAllStrings(System.Boolean)">
+            <summary>
+            Gets all string resources.
+            </summary>
+            <param name="includeParentCultures">
+            A <see cref="T:System.Boolean" /> indicating whether to include strings from parent cultures.
+            </param>
+            <returns>The strings.</returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.HtmlLocalizer.ToHtmlString(Microsoft.Extensions.Localization.LocalizedString)">
+            <summary>
+            Creates a new <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" /> for a <see cref="T:Microsoft.Extensions.Localization.LocalizedString" />.
+            </summary>
+            <param name="result">The <see cref="T:Microsoft.Extensions.Localization.LocalizedString" />.</param>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.HtmlLocalizer.ToHtmlString(Microsoft.Extensions.Localization.LocalizedString,System.Object[])">
+            <summary>
+            Creates a new <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" /> for a <see cref="T:Microsoft.Extensions.Localization.LocalizedString" />.
+            </summary>
+            <param name="result">The <see cref="T:Microsoft.Extensions.Localization.LocalizedString" />.</param>
+            <param name="arguments">The values to format the <paramref name="arguments" /> with.</param>
+        </member>
+        <member name="T:BootstrapBlazor.Localization.Json.HtmlLocalizer`1">
+            <summary>
+            An <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" /> implementation that provides localized HTML content for the specified type
+            <typeparamref name="TResource" />.
+            </summary>
+            <typeparam name="TResource">The <see cref="T:System.Type" /> to scope the resource names.</typeparam>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.HtmlLocalizer`1.Item(System.String)">
+            <summary>
+            Gets the string resource with the given name.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <returns>The string resource as a <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" />.</returns>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.HtmlLocalizer`1.Item(System.String,System.Object[])">
+            <summary>
+            Gets the string resource with the given name and formatted with the supplied arguments. The arguments will
+            be HTML encoded.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <param name="arguments">The values to format the string with.</param>
+            <returns>The formatted string resource as a <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" />.</returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.HtmlLocalizer`1.#ctor(BootstrapBlazor.Localization.Json.IHtmlLocalizerFactory)">
+            <summary>
+            Creates a new <see cref="T:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer`1" />.
+            </summary>
+            <param name="factory">The <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizerFactory" />.</param>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.HtmlLocalizer`1.GetAllStrings(System.Boolean)">
+            <summary>
+            Gets all string resources.
+            </summary>
+            <param name="includeParentCultures">
+            A <see cref="T:System.Boolean" /> indicating whether to include strings from parent cultures.
+            </param>
+            <returns>The strings.</returns>
+        </member>
+        <member name="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer">
+            <summary>
+            Represents a type that does HTML-aware localization of strings, by HTML encoding arguments that are formatted in the resource string.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.IHtmlLocalizer.Item(System.String)">
+            <summary>
+            Gets the string resource with the given name.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <returns>The string resource as a <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" />.</returns>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.IHtmlLocalizer.Item(System.String,System.Object[])">
+            <summary>
+            Gets the string resource with the given name and formatted with the supplied arguments. The arguments will
+            be HTML encoded.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <param name="arguments">The values to format the string with.</param>
+            <returns>The formatted string resource as a <see cref="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString" />.</returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.IHtmlLocalizer.GetAllStrings(System.Boolean)">
+            <summary>
+            Gets all string resources.
+            </summary>
+            <param name="includeParentCultures">
+            A <see cref="T:System.Boolean" /> indicating whether to include strings from parent cultures.
+            </param>
+            <returns>The strings.</returns>
+        </member>
+        <member name="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer`1">
+            <summary>
+            An <see cref="T:Microsoft.Extensions.Localization.IHtmlLocalizer" /> that provides localized HTML content.
+            </summary>
+            <typeparam name="TResource">The <see cref="T:System.Type" /> to scope the resource names.</typeparam>
+        </member>
+        <member name="T:BootstrapBlazor.Localization.Json.IHtmlLocalizerFactory">
+            <summary>
+            A factory that creates <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" /> instances.
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.IHtmlLocalizerFactory.Create(System.Type)">
+            <summary>
+            Creates an <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" /> using the <see cref="T:System.Reflection.Assembly" /> and
+            <see cref="P:System.Type.FullName" /> of the specified <see cref="T:System.Type" />.
+            </summary>
+            <param name="resourceSource">The <see cref="T:System.Type" />.</param>
+            <returns>The <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" />.</returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.IHtmlLocalizerFactory.Create(System.String,System.String)">
+            <summary>
+            Creates an <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" />.
+            </summary>
+            <param name="baseName">The base name of the resource to load strings from.</param>
+            <param name="location">The location to load resources from.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Localization.IHtmlLocalizer" />.</returns>
+        </member>
+        <member name="T:BootstrapBlazor.Localization.Json.JsonHtmlLocalizerFactory">
+            <summary>
+            An <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizerFactory" /> that creates instances of <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" /> using the
+            registered <see cref="T:BootstrapBlazor.Localization.Json.IStringLocalizerFactory" />.
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.JsonHtmlLocalizerFactory.#ctor(Microsoft.Extensions.Localization.IStringLocalizerFactory)">
+            <summary>
+            Creates a new <see cref="T:BootstrapBlazor.Localization.Json.JsonHtmlLocalizerFactory" />.
+            </summary>
+            <param name="stringLocalizerFactory"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.JsonHtmlLocalizerFactory.Create(System.Type)">
+            <summary>
+            Creates an <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" /> using the specified <see cref="T:System.Type" />.
+            </summary>
+            <param name="resourceSource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.JsonHtmlLocalizerFactory.Create(System.String,System.String)">
+            <summary>
+            Creates an <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" /> using the specified base name and location.
+            </summary>
+            <param name="baseName">The base name of the resource to load strings from.</param>
+            <param name="location">The location to load resources from.</param>
+            <returns>The <see cref="T:BootstrapBlazor.Localization.Json.IHtmlLocalizer" />.</returns>
         </member>
         <member name="T:BootstrapBlazor.Localization.Json.JsonLocalizationOptions">
             <summary>
@@ -11367,6 +11539,61 @@
             <param name="typeName"></param>
             <param name="resourceName"></param>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString">
+            <summary>
+            An <see cref="T:Microsoft.AspNetCore.Html.IHtmlContent" /> with localized content.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.LocalizedHtmlString.Name">
+            <summary>
+            The name of the string resource.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.LocalizedHtmlString.Value">
+            <summary>
+            The original resource string, prior to formatting with any constructor arguments.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.LocalizedHtmlString.IsResourceNotFound">
+            <summary>
+            Gets a flag that indicates if the resource is not found.
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.LocalizedHtmlString.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of <see cref="T:Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString" />.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <param name="value">The string resource.</param>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.LocalizedHtmlString.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Creates an instance of <see cref="T:Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString" />.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <param name="value">The string resource.</param>
+            <param name="isResourceNotFound">A flag that indicates if the resource is not found.</param>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.LocalizedHtmlString.#ctor(System.String,System.String,System.Boolean,System.Object[])">
+            <summary>
+            Creates an instance of <see cref="T:Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString" />.
+            </summary>
+            <param name="name">The name of the string resource.</param>
+            <param name="value">The string resource.</param>
+            <param name="isResourceNotFound">A flag that indicates if the resource is not found.</param>
+            <param name="arguments">The values to format the <paramref name="value" /> with.</param>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.LocalizedHtmlString.op_Implicit(BootstrapBlazor.Localization.Json.LocalizedHtmlString)~System.String">
+            <summary>
+            Implicitly converts the <see cref="T:Microsoft.Extensions.Localization.LocalizedString" /> to a <see cref="T:System.String" />.
+            </summary>
+            <param name="localizedString">The string to be implicitly converted.</param>
+        </member>
+        <member name="T:BootstrapBlazor.Localization.Json.StringLocalizer">
+            <summary>
+            IStringLocalizer 实现类
+            </summary>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions">
             <summary>

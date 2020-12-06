@@ -167,6 +167,11 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Alerts.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Alerts.DismissClick(Microsoft.AspNetCore.Components.Web.MouseEventArgs)">
             <summary>
             
@@ -595,6 +600,11 @@
         <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.CodeFile">
             <summary>
             获得/设置 组件示例代码文件名
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Block.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.Block.OnAfterRenderAsync(System.Boolean)">

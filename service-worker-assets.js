@@ -57,11 +57,11 @@
       "url": "_framework\/dotnet.5.0.0.js"
     },
     {
-      "hash": "sha256-cP8vIJsuVLk68XX7ZtzxgNmuRUhEg\/\/nxuEZA2cIXr4=",
+      "hash": "sha256-lsGqXFUsVJ7UFNMhr2vo2v7CzjFGMd43XoVywYx1CB0=",
       "url": "_framework\/BootstrapBlazor.Shared.xml"
     },
     {
-      "hash": "sha256-avnkJmNWCRVbWCyBM22fpQ9GkZGkmjD0O+asYL3Kh2U=",
+      "hash": "sha256-0Nb2v+8oOCWrTovz4TI2YUU9TJqEtVqW8+jQ4J+gpGc=",
       "url": "_framework\/BootstrapBlazor.xml"
     },
     {
@@ -2185,7 +2185,7 @@
       "url": "_framework\/Microsoft.Extensions.Localization.dll"
     },
     {
-      "hash": "sha256-RAr3m9PmhNNdLuxdhowuqwvEpHjMCuL0O52AU+zTWKQ=",
+      "hash": "sha256-nBaCzB7U2NC9sZErMhW\/5mqd5BFV0ySIFMsEqQf13PY=",
       "url": "_framework\/Microsoft.Extensions.Localization.Abstractions.dll"
     },
     {
@@ -2237,7 +2237,7 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-jF6i43WNDQ4kKCSps+4eBZY4GGnKT7e1kwedfW4bDfE=",
+      "hash": "sha256-FausQZPUOfLLNTEpfPjb1C99XOfrLG6K2eVa\/zCpTgE=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
@@ -2245,11 +2245,11 @@
       "url": "_framework\/BootstrapBlazor.Docs.dll"
     },
     {
-      "hash": "sha256-qYwzLvVfFfWw2qJB76JlzXTI2mLaTQpJUswT+49YmNI=",
+      "hash": "sha256-UYlfs90hHZ3TCvTUGDznTUbLxCLTl32tHvZeSfbuNkk=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-imNaMDpN2SI2tToStXdYXmgOSw\/TGi6\/dOqijeXgFUE=",
+      "hash": "sha256-4VrVobEgE0ndNUPy9C+n\/dBsWIa9E9UNg+NHJpQcJ8I=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -2421,7 +2421,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-+FGD6aJLPkA00MXxxMVaH1ib5CzVat3ZzOjDVYT+dTA=",
+      "hash": "sha256-MZJyueXF\/NbLavDb0QmYDcWIl3oh6kKbsJVMXwKSH2o=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2429,5 +2429,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "Hy6DBqoL"
+  "version": "\/MkJNZ8l"
 };
