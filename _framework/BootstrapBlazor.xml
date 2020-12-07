@@ -6628,6 +6628,39 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.DataServiceBase`1">
+            <summary>
+            IDataServie 实现类基类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.Config(`0@)">
+            <summary>
+            新建实体类配置方法
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            删除数据操作方法
+            </summary>
+            <param name="models"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.SaveAsync(`0)">
+            <summary>
+            保存数据操作方法
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.QueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
+            <summary>
+            查询数据操作方法
+            </summary>
+            <param name="option"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.DefaultExcelExport">
             <summary>
             
@@ -7082,6 +7115,38 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="T:BootstrapBlazor.Components.IDataService`1">
+            <summary>
+            IDataService 接口
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IDataService`1.Config(`0@)">
+            <summary>
+            创建新数据实体类回调方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IDataService`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            删除数据方法
+            </summary>
+            <param name="models">要删除的数据集合</param>
+            <returns>成功返回真，失败返回假</returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IDataService`1.SaveAsync(`0)">
+            <summary>
+            保存数据方法
+            </summary>
+            <param name="model">保存实体类实例</param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IDataService`1.QueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
+            <summary>
+            查询数据方法
+            </summary>
+            <param name="option">查询条件参数集合</param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.InternalTableColumn.#ctor(System.String,System.Type,System.String)">
             <summary>
             构造函数
@@ -7471,6 +7536,11 @@
             获得 表头集合
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.UseInjectDataService">
+            <summary>
+            获得/设置 是否使用注入的数据服务
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Table`1.DetailRowTemplate">
             <summary>
             获得/设置 明细行模板
@@ -7700,6 +7770,11 @@
         <member name="P:BootstrapBlazor.Components.Table`1.AutoGenerateColumns">
             <summary>
             获得/设置 是否自动生成列信息 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.DataService">
+            <summary>
+            获得/设置 注入数据服务
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Table`1.ClickRow(`0)">
@@ -8294,7 +8369,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.Save(Microsoft.AspNetCore.Components.Forms.EditContext)">
+        <member name="M:BootstrapBlazor.Components.Table`1.SaveAsync(Microsoft.AspNetCore.Components.Forms.EditContext)">
             <summary>
             保存数据
             </summary>
