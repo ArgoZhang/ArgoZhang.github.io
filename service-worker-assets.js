@@ -1,6 +1,10 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
+      "hash": "sha256-orts44aemTEIrc4S67xZ91le+pZDivfZcAOEzyCCqxg=",
+      "url": "_framework\/package.json"
+    },
+    {
       "hash": "sha256-PZtf4Mo\/hEi0VUIhbrSHOcQc0\/vK\/9FXHpIrngVkShE=",
       "url": "icon-512.png"
     },
@@ -481,12 +485,48 @@
       "url": "_content\/BootstrapBlazor.Shared\/lib\/summernote\/summernote-zh-CN.min.js"
     },
     {
-      "hash": "sha256-wZhfvUb6rwzp4kFaSBWkV7siB+ieYB\/D0rchuXZNFkM=",
+      "hash": "sha256-Wg7KZLcJtSvLnQze4PzM+6ymGc++Gk\/LFR7qSE3yCTU=",
+      "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.css"
+    },
+    {
+      "hash": "sha256-OxH4Uu8UllsmSbJXIyFrFlYA4QHixOGgJTTulpEiyBo=",
+      "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.css.map"
+    },
+    {
+      "hash": "sha256-ZVNjqwh3sst9PoQPq2QWw9y3eA26dflj1l1P9jtXRhc=",
       "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css"
+    },
+    {
+      "hash": "sha256-p3YXAw+JEBQ1UzSu10EwrSZ\/pqXNzLX0iyShIlJdY3M=",
+      "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css.map"
+    },
+    {
+      "hash": "sha256-9WuqwDFE5dVl9UGQ9+KzE3oritksRY7Hp566jM8U+qs=",
+      "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.css.map"
+    },
+    {
+      "hash": "sha256-7PK9amGPOisLSqtzIJrZ20GoAePLAs3jCwNP+Tv2ubs=",
+      "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.min.css.map"
     },
     {
       "hash": "sha256-QNGv0tkDnQlFmc\/KOX5t60vIFDQYs1wsjQLdQkfqQPk=",
       "url": "_content\/BootstrapBlazor\/js\/bootstrap.blazor.bundle.min.js"
+    },
+    {
+      "hash": "sha256-+bwkxFYueQERhDmWVI+cLVqVuQfj39s0CpGVPi76B9w=",
+      "url": "_content\/BootstrapBlazor\/scss\/bootstrap.blazor.bundle.scss"
+    },
+    {
+      "hash": "sha256-geyWrse7e9mfHw9hiAvOVyqBly+vj34urZhnhiijcxU=",
+      "url": "_content\/BootstrapBlazor\/scss\/bootstrap.blazor.scss"
+    },
+    {
+      "hash": "sha256-2iF7U9X\/0+Do6yDh6LKqiE1Jjv5TONoGuzkeb3C6Yk0=",
+      "url": "_content\/BootstrapBlazor\/scss\/_bootstrapblazor.scss"
+    },
+    {
+      "hash": "sha256-OZBSfs0UqUjRKOqHHuSOAUc63Xfo+COqe9kEYKbfMXw=",
+      "url": "_content\/BootstrapBlazor\/scss\/_variables.scss"
     },
     {
       "hash": "sha256-e\/yrbbmdXPvxcFygU23ceFhUMsxfpBu9etDwCQM7KXk=",
@@ -2401,5 +2441,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "9hnnmkeZ"
+  "version": "ii1xC1h7"
 };
