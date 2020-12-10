@@ -1,0 +1,9 @@
+/* Import Boostrap fuctions and variables */
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+/* Import Color overrides */
+@import "variables";
+
+/* Import Bootstrap Blazor */
+@import "bootstrapblazor";
