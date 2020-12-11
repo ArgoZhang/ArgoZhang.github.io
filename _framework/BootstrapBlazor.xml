@@ -398,6 +398,11 @@
             获得/设置 Swal 组件 Delay 默认值 默认为 0
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.DefaultUICultureInfoName">
+            <summary>
+            获得/设置 默认 UI 文化信息 默认为 null 未设置采用系统设置
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.BootstrapComponentBase">
             <summary>
             Bootstrap Blazor 组件基类
@@ -11675,11 +11680,12 @@
             BootstrapBlazor 服务扩展类
             </summary>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.AddBootstrapBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.AddBootstrapBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BootstrapBlazor.Components.BootstrapBlazorOptions})">
             <summary>
             增加 BootstrapBlazor 服务
             </summary>
             <param name="services"></param>
+            <param name="configureOptions"></param>
             <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1">
