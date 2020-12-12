@@ -190,6 +190,22 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Anchors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Anchors.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Anchors.GetAttributes">
+            <summary>
+            获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.AutoCompletes">
             <summary>
             

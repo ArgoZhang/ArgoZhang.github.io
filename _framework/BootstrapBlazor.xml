@@ -4,6 +4,195 @@
         <name>BootstrapBlazor</name>
     </assembly>
     <members>
+        <member name="T:BootstrapBlazor.Components.AutoGenerateColumnAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Order">
+            <summary>
+            获得/设置 显示顺序
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Ignore">
+            <summary>
+            获得/设置 是否忽略 默认为 false 不忽略
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Editable">
+            <summary>
+            获得/设置 当前列是否可编辑 默认为 true 当设置为 false 时自动生成编辑 UI 不生成此列
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Readonly">
+            <summary>
+            获得/设置 当前列编辑时是否只读 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Sortable">
+            <summary>
+            获得/设置 是否允许排序 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.DefaultSort">
+            <summary>
+            获得/设置 是否为默认排序列 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.DefaultSortOrder">
+            <summary>
+            获得/设置 是否为默认排序规则 默认为 SortOrder.Unset
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Filterable">
+            <summary>
+            获得/设置 是否允许过滤数据 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Searchable">
+            <summary>
+            获得/设置 是否参与搜索 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Width">
+            <summary>
+            获得/设置 列宽
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Fixed">
+            <summary>
+            获得/设置 是否固定本列 默认 false 不固定
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Visible">
+            <summary>
+            获得/设置 列是否显示 默认为 true 可见的
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.AllowTextWrap">
+            <summary>
+            获得/设置 本列是否允许换行 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.TextEllipsis">
+            <summary>
+            获得/设置 本列文本超出省略 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.CssClass">
+            <summary>
+            获得/设置 列 td 自定义样式 默认为 null 未设置
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ShownWithBreakPoint">
+            <summary>
+            获得/设置 显示节点阈值 默认值 BreakPoint.None 未设置
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FormatString">
+            <summary>
+            获得/设置 格式化字符串 如时间类型设置 yyyy-MM-dd
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Align">
+            <summary>
+            获得/设置 文字对齐方式 默认为 Alignment.None
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ShowTips">
+            <summary>
+            获得/设置 字段鼠标悬停提示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Formatter">
+            <summary>
+            获得/设置 列格式化回调委托
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.EditTemplate">
+            <summary>
+            获得/设置 编辑模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Template">
+            <summary>
+            获得/设置 显示模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.SearchTemplate">
+            <summary>
+            获得/设置 搜索模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FilterTemplate">
+            <summary>
+            获得/设置 过滤模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Filter">
+            <summary>
+            获得/设置 列过滤器
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.PropertyType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FieldName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.AutoGenerateColumnAttribute.GetDisplayName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.AutoGenerateColumnAttribute.GetFieldName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.EditorOrderAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorOrderAttribute.Order">
+            <summary>
+            获得 Order 属性
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.EditorOrderAttribute.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="order"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Components.PlaceHolderAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.PlaceHolderAttribute.Text">
+            <summary>
+            获得 Order 属性
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.PlaceHolderAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="placeholder"></param>
+        </member>
         <member name="T:BootstrapBlazor.Components.AlertBase">
             <summary>
             Alert 警告框组件
@@ -44,6 +233,38 @@
             <summary>
             关闭警告框回调方法
             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.Anchor">
+            <summary>
+            Anchor 组件部分类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Anchor.Target">
+            <summary>
+            获得/设置 目标组件 Id
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Anchor.Container">
+            <summary>
+            获得/设置 滚动组件 Id 默认为 null 使用 window 元素
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Anchor.Offset">
+            <summary>
+            获得/设置 距离顶端偏移量 默认为 0
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Anchor.ChildContent">
+            <summary>
+            获得/设置 子内容
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Anchor.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.AutoCompleteBase">
             <summary>
@@ -3438,22 +3659,6 @@
             获取绑定字段信息方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.EditorOrderAttribute">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorOrderAttribute.Order">
-            <summary>
-            获得 Order 属性
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EditorOrderAttribute.#ctor(System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="order"></param>
-        </member>
         <member name="T:BootstrapBlazor.Components.IEditorItem">
             <summary>
             
@@ -6475,163 +6680,6 @@
             设置是否被选中方法
             </summary>
             <param name="active"></param>
-        </member>
-        <member name="T:BootstrapBlazor.Components.AutoGenerateColumnAttribute">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Order">
-            <summary>
-            获得/设置 显示顺序
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Ignore">
-            <summary>
-            获得/设置 是否忽略 默认为 false 不忽略
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Editable">
-            <summary>
-            获得/设置 当前列是否可编辑 默认为 true 当设置为 false 时自动生成编辑 UI 不生成此列
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Readonly">
-            <summary>
-            获得/设置 当前列编辑时是否只读 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Sortable">
-            <summary>
-            获得/设置 是否允许排序 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.DefaultSort">
-            <summary>
-            获得/设置 是否为默认排序列 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.DefaultSortOrder">
-            <summary>
-            获得/设置 是否为默认排序规则 默认为 SortOrder.Unset
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Filterable">
-            <summary>
-            获得/设置 是否允许过滤数据 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Searchable">
-            <summary>
-            获得/设置 是否参与搜索 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Width">
-            <summary>
-            获得/设置 列宽
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Fixed">
-            <summary>
-            获得/设置 是否固定本列 默认 false 不固定
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Visible">
-            <summary>
-            获得/设置 列是否显示 默认为 true 可见的
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.AllowTextWrap">
-            <summary>
-            获得/设置 本列是否允许换行 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.TextEllipsis">
-            <summary>
-            获得/设置 本列文本超出省略 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.CssClass">
-            <summary>
-            获得/设置 列 td 自定义样式 默认为 null 未设置
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ShownWithBreakPoint">
-            <summary>
-            获得/设置 显示节点阈值 默认值 BreakPoint.None 未设置
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FormatString">
-            <summary>
-            获得/设置 格式化字符串 如时间类型设置 yyyy-MM-dd
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Align">
-            <summary>
-            获得/设置 文字对齐方式 默认为 Alignment.None
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ShowTips">
-            <summary>
-            获得/设置 字段鼠标悬停提示
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Formatter">
-            <summary>
-            获得/设置 列格式化回调委托
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.EditTemplate">
-            <summary>
-            获得/设置 编辑模板
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Template">
-            <summary>
-            获得/设置 显示模板
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.SearchTemplate">
-            <summary>
-            获得/设置 搜索模板
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FilterTemplate">
-            <summary>
-            获得/设置 过滤模板
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Filter">
-            <summary>
-            获得/设置 列过滤器
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.PropertyType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Text">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FieldName">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.AutoGenerateColumnAttribute.GetDisplayName">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.AutoGenerateColumnAttribute.GetFieldName">
-            <summary>
-            
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.DataServiceBase`1">
             <summary>
@@ -11680,24 +11728,14 @@
             BootstrapBlazor 服务扩展类
             </summary>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.AddBootstrapBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BootstrapBlazor.Components.BootstrapBlazorOptions})">
+        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.AddBootstrapBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BootstrapBlazor.Components.BootstrapBlazorOptions},System.Action{BootstrapBlazor.Localization.Json.JsonLocalizationOptions})">
             <summary>
             增加 BootstrapBlazor 服务
             </summary>
             <param name="services"></param>
             <param name="configureOptions"></param>
+            <param name="setupAction"></param>
             <returns></returns>
-        </member>
-        <member name="T:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            
-            </summary>
-            <param name="config"></param>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.JsonLocalizationServiceCollectionExtensions">
             <summary>
@@ -11711,6 +11749,17 @@
             <param name="services">IServiceCollection 实例</param>
             <param name="setupAction">JsonLocalizationOptions 配置回调方法</param>
             <returns></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
         </member>
         <member name="T:Microsoft.Extensions.Localization.StringLocalizerExtensions">
             <summary>
@@ -11749,6 +11798,29 @@
         <member name="M:Microsoft.AspNetCore.Components.Forms.FieldIdentifierExtensions.GetDisplayName(System.Type,System.String)">
             <summary>
             获取显示名称方法
+            </summary>
+            <param name="modelType">模型类型</param>
+            <param name="fieldName">字段名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.Forms.FieldIdentifierExtensions.GetPlaceHolder(Microsoft.AspNetCore.Components.Forms.FieldIdentifier)">
+            <summary>
+            获取 PlaceHolder 方法
+            </summary>
+            <param name="fieldIdentifier"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.Forms.FieldIdentifierExtensions.GetPlaceHolder(System.Object,System.String)">
+            <summary>
+            获取 PlaceHolder 方法
+            </summary>
+            <param name="model">模型实例</param>
+            <param name="fieldName">字段名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.Forms.FieldIdentifierExtensions.GetPlaceHolder(System.Type,System.String)">
+            <summary>
+            获取 PlaceHolder 方法
             </summary>
             <param name="modelType">模型类型</param>
             <param name="fieldName">字段名称</param>
