@@ -5511,6 +5511,21 @@
             Search 组件基类
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.SearchBase.ClearButtonColor">
+            <summary>
+            Clear button color
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchBase.ClearButtonIcon">
+            <summary>
+            Clear button icon
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchBase.ClearButtonText">
+            <summary>
+            Clear button text
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.SearchBase.SearchButtonColor">
             <summary>
             获得/设置 搜索按钮颜色
@@ -5531,7 +5546,18 @@
             获得/设置 点击搜索按钮时回调委托
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.SearchBase.OnClick">
+        <member name="P:BootstrapBlazor.Components.SearchBase.OnClear">
+            <summary>
+            获得/设置 点击搜索按钮时回调委托
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.SearchBase.OnSearchClick">
+            <summary>
+            点击搜索按钮时触发此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.SearchBase.OnClearClick">
             <summary>
             点击搜索按钮时触发此方法
             </summary>
