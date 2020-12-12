@@ -4724,6 +4724,18 @@
             弹窗状态切换方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.ModalBase.Show">
+            <summary>
+            显示弹窗方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ModalBase.Close">
+            <summary>
+            关闭弹窗方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.ModalBase.AddDialog(BootstrapBlazor.Components.ModalDialogBase)">
             <summary>
             添加对话窗方法

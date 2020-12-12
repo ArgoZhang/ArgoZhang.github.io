@@ -903,6 +903,21 @@
             获得/设置 用户自定义属性
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Title">
+            <summary>
+            获得/设置 颜色 默认为 Info
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Color">
+            <summary>
+            获得/设置 颜色 默认为 Info
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.ChildContent">
+            <summary>
+            获得/设置 子组件内容
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Coms">
             <summary>
             

@@ -57,11 +57,11 @@
       "url": "_framework\/dotnet.5.0.0.js"
     },
     {
-      "hash": "sha256-qP3\/yyNVK3\/+fSO0eLNn8kaKXwtq\/0D2ajCiVOeIz78=",
+      "hash": "sha256-DLcMzh\/lXnrfDIWu8FUiRUEbrwE1BlKgzvIa7rTw2Tw=",
       "url": "_framework\/BootstrapBlazor.Shared.xml"
     },
     {
-      "hash": "sha256-MkAgzFgdWoihiOZ3ZYldcq\/TDYnNPa0hV2xCPJqFejg=",
+      "hash": "sha256-fDBFyNkGB6grADe+mV77SbRtq3Wtk7f\/Ce87v1OIACs=",
       "url": "_framework\/BootstrapBlazor.xml"
     },
     {
@@ -875,6 +875,10 @@
     {
       "hash": "sha256-Fq6S7fLVBA7ttm9VB86SuzM2ha4rm0YmRBDq2ZY7J1Q=",
       "url": "_content\/BootstrapBlazor.Docs\/docs\/dialog\/dialog.4.html"
+    },
+    {
+      "hash": "sha256-xbKXlM4HQ8gQpciUT\/mklfJ7EpPd60p7E8TOXCRTPfE=",
+      "url": "_content\/BootstrapBlazor.Docs\/docs\/dialog\/dialog.5.html"
     },
     {
       "hash": "sha256-S2vSk5DrHMb\/kjqwCdIn7lKkEYt38T6RIM6bPn2kQ9o=",
@@ -2201,7 +2205,7 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-4BUsrac0vjVXIWdgSlK0sy50fQaG9LnlreD3IZBZyE4=",
+      "hash": "sha256-BymePGnDOhft+we3xA8AftE7m8wYFuf\/iiZH3vxEApo=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
@@ -2209,11 +2213,11 @@
       "url": "_framework\/BootstrapBlazor.Docs.dll"
     },
     {
-      "hash": "sha256-iDCC9z3BZFT4jtNoYRtDHW8\/mLBQ5JvlkRGfxKP81Ps=",
+      "hash": "sha256-TJximLHsNIP\/pAzsVVFBsvaHZyTdPzr9q32b155rBvk=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-IpJGbqIgu3yglFD+RveYIYFw2v6ICEBxyTXNSO0Bwo8=",
+      "hash": "sha256-s7aTR5rQUHsrfzQal\/URl09+cWba0Htv\/jZnGcfZF\/s=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -2385,7 +2389,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-nQi9I7b1tD0\/88dhB3LhVcmYELZiS\/xy5kMqk45x0FY=",
+      "hash": "sha256-Mj\/7vc\/JyvZhgX+tZwvUAYkkRmpRx6Xgc4tyRZlFfek=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2393,5 +2397,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "zdrXEh09"
+  "version": "T1jOshvq"
 };
