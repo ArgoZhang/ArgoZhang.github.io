@@ -624,6 +624,11 @@
             获得/设置 默认 UI 文化信息 默认为 null 未设置采用系统设置
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SupportedCultures">
+            <summary>
+            获得 组件内置本地化语言列表
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.BootstrapComponentBase">
             <summary>
             Bootstrap Blazor 组件基类
@@ -3079,6 +3084,11 @@
         <member name="P:BootstrapBlazor.Components.DialogOption.Component">
             <summary>
             获得/设置 自定义组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogOption.OnCloseAsync">
+            <summary>
+            获得/设置 关闭弹窗回调方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.DialogOption.ToAttributes">
@@ -6724,9 +6734,9 @@
             IDataServie 实现类基类
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.Config(`0@)">
+        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.AddAsync(`0)">
             <summary>
-            新建实体类配置方法
+            新建数据操作方法
             </summary>
             <param name="model"></param>
             <returns></returns>
@@ -6806,6 +6816,11 @@
         <member name="P:BootstrapBlazor.Components.TableEditorDialog`1.SaveButtonText">
             <summary>
             查询按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableEditorDialog`1.OnCloseAsync">
+            <summary>
+            关闭弹窗回调方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.TableEditorDialog`1.OnInitialized">
@@ -7211,10 +7226,18 @@
             IDataService 接口
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.IDataService`1.Config(`0@)">
+        <member name="M:BootstrapBlazor.Components.IDataService`1.AddAsync(`0)">
             <summary>
-            创建新数据实体类回调方法
+            新建数据方法
             </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IDataService`1.SaveAsync(`0)">
+            <summary>
+            保存数据方法
+            </summary>
+            <param name="model">保存实体类实例</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.IDataService`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0})">
@@ -7224,18 +7247,29 @@
             <param name="models">要删除的数据集合</param>
             <returns>成功返回真，失败返回假</returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.IDataService`1.SaveAsync(`0)">
-            <summary>
-            保存数据方法
-            </summary>
-            <param name="model">保存实体类实例</param>
-            <returns></returns>
-        </member>
         <member name="M:BootstrapBlazor.Components.IDataService`1.QueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
             <summary>
             查询数据方法
             </summary>
             <param name="option">查询条件参数集合</param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.IEntityFrameworkCoreDataService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IEntityFrameworkCoreDataService.CancelAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IEntityFrameworkCoreDataService.EditAsync(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.InternalTableColumn.#ctor(System.String,System.Type,System.String)">
