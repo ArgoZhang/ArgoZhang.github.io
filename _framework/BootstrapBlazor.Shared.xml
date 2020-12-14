@@ -908,6 +908,11 @@
             获得/设置 颜色 默认为 Info
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Icon">
+            <summary>
+            获得/设置 图标
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Color">
             <summary>
             获得/设置 颜色 默认为 Info

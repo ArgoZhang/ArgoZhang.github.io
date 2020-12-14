@@ -6552,132 +6552,157 @@
             获得/设置 是否显示内置文字
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.TabBase">
+        <member name="T:BootstrapBlazor.Components.Tab">
             <summary>
             Tab 组件基类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.FirstRender">
+        <member name="P:BootstrapBlazor.Components.Tab.FirstRender">
             <summary>
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.GetContentClassString(BootstrapBlazor.Components.TabItem)">
+        <member name="M:BootstrapBlazor.Components.Tab.GetContentClassString(BootstrapBlazor.Components.TabItem)">
             <summary>
             
             </summary>
             <param name="item"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.GetClassString(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.Tab.GetClassString(System.Boolean)">
             <summary>
             
             </summary>
             <param name="active"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.GetIconClassString(System.String)">
+        <member name="M:BootstrapBlazor.Components.Tab.GetIconClassString(System.String)">
             <summary>
             
             </summary>
             <param name="icon"></param>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.TabElement">
+        <member name="P:BootstrapBlazor.Components.Tab.TabElement">
             <summary>
             获得/设置 Tab 组件 DOM 实例
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.ClassString">
+        <member name="P:BootstrapBlazor.Components.Tab.ClassString">
             <summary>
             获得 Tab 组件样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.StyleString">
+        <member name="P:BootstrapBlazor.Components.Tab.StyleString">
             <summary>
             获得 Tab 组件 Style
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.Items">
+        <member name="P:BootstrapBlazor.Components.Tab.Items">
             <summary>
             获得/设置 TabItem 集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.IsCard">
+        <member name="P:BootstrapBlazor.Components.Tab.IsCard">
             <summary>
             获得/设置 是否为卡片样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.IsBorderCard">
+        <member name="P:BootstrapBlazor.Components.Tab.IsBorderCard">
             <summary>
             获得/设置 是否为带边框卡片样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.Height">
+        <member name="P:BootstrapBlazor.Components.Tab.Height">
             <summary>
             获得/设置 组件高度 默认值为 0 高度自动
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.Placement">
+        <member name="P:BootstrapBlazor.Components.Tab.Placement">
             <summary>
             获得/设置 组件标签显示位置 默认显示在 Top 位置
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.ShowClose">
+        <member name="P:BootstrapBlazor.Components.Tab.ShowClose">
             <summary>
             获得/设置 是否显示关闭按钮 默认为 false 不显示
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.ChildContent">
+        <member name="P:BootstrapBlazor.Components.Tab.ShowExtendButtons">
+            <summary>
+            获得/设置 是否显示扩展功能按钮 默认为 false 不显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tab.ChildContent">
             <summary>
             获得/设置 TabItems 模板
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabBase.OnClickTab">
+        <member name="P:BootstrapBlazor.Components.Tab.OnClickTab">
             <summary>
             获得/设置 点击 TabItem 时回调方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.OnAfterRenderAsync(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.Tab.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRender 方法
             </summary>
             <param name="firstRender"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.OnClickTabItem(BootstrapBlazor.Components.TabItem)">
+        <member name="M:BootstrapBlazor.Components.Tab.OnClickTabItem(BootstrapBlazor.Components.TabItem)">
             <summary>
             点击 TabItem 时回调此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.ClickPrevTab">
+        <member name="M:BootstrapBlazor.Components.Tab.ClickPrevTab">
             <summary>
             点击上一个标签页时回调此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.ClickNextTab">
+        <member name="M:BootstrapBlazor.Components.Tab.ClickNextTab">
             <summary>
             点击下一个标签页时回调此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.AddItem(BootstrapBlazor.Components.TabItem)">
+        <member name="M:BootstrapBlazor.Components.Tab.CloseAllTab">
+            <summary>
+            关闭所有标签页方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.CloseCurrentTab">
+            <summary>
+            关闭当前标签页方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.CloseOtherTab">
+            <summary>
+            关闭其他标签页方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.AddItem(BootstrapBlazor.Components.TabItem)">
             <summary>
             添加 TabItem 方法 由 TabItem 方法加载时调用
             </summary>
             <param name="item">TabItemBase 实例</param>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.Add(BootstrapBlazor.Components.TabItem)">
+        <member name="M:BootstrapBlazor.Components.Tab.Add(BootstrapBlazor.Components.TabItem)">
             <summary>
             添加 TabItem 方法
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.Remove(BootstrapBlazor.Components.TabItem)">
+        <member name="M:BootstrapBlazor.Components.Tab.Remove(BootstrapBlazor.Components.TabItem)">
             <summary>
             移除 TabItem 方法
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.TabBase.ActiveTab(BootstrapBlazor.Components.TabItem)">
+        <member name="M:BootstrapBlazor.Components.Tab.ActiveTab(BootstrapBlazor.Components.TabItem)">
             <summary>
             设置指定 TabItem 为激活状态
             </summary>
