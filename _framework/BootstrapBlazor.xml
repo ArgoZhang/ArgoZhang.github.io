@@ -9635,109 +9635,114 @@
             清空搜索条件方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.TreeBase">
+        <member name="T:BootstrapBlazor.Components.Tree">
             <summary>
-            Tree 组件基类
+            Tree 组件
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.TreeElement">
+        <member name="P:BootstrapBlazor.Components.Tree.TreeElement">
             <summary>
             获得/设置 Tree 组件实例引用
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.ClassString">
+        <member name="P:BootstrapBlazor.Components.Tree.ClassString">
             <summary>
             获得 按钮样式集合
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.GetIconClassString(BootstrapBlazor.Components.TreeItem)">
+        <member name="M:BootstrapBlazor.Components.Tree.GetIconClassString(BootstrapBlazor.Components.TreeItem)">
             <summary>
             获得/设置 TreeItem 图标
             </summary>
             <param name="item"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.GetCaretClassString(BootstrapBlazor.Components.TreeItem)">
+        <member name="M:BootstrapBlazor.Components.Tree.GetCaretClassString(BootstrapBlazor.Components.TreeItem)">
             <summary>
             获得/设置 TreeItem 小箭头样式
             </summary>
             <param name="item"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.GetItemClassString(BootstrapBlazor.Components.TreeItem)">
+        <member name="M:BootstrapBlazor.Components.Tree.GetItemClassString(BootstrapBlazor.Components.TreeItem)">
             <summary>
             获得/设置 当前行样式
             </summary>
             <param name="item"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.GetTreeNodeClassString(BootstrapBlazor.Components.TreeItem)">
+        <member name="M:BootstrapBlazor.Components.Tree.GetTreeNodeClassString(BootstrapBlazor.Components.TreeItem)">
             <summary>
             获得/设置 TreeNode 样式
             </summary>
             <param name="item"></param>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.ActiveItem">
+        <member name="P:BootstrapBlazor.Components.Tree.ActiveItem">
             <summary>
             获得/设置 当前激活的节点实例
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.IsAccordion">
+        <member name="P:BootstrapBlazor.Components.Tree.IsAccordion">
             <summary>
             获得/设置 是否为手风琴效果 默认为 false
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.ClickToggleNode">
+        <member name="P:BootstrapBlazor.Components.Tree.ClickToggleNode">
             <summary>
             获得/设置 是否点击节点时展开或者收缩子项 默认 false
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.Items">
+        <member name="P:BootstrapBlazor.Components.Tree.ShowSkeleton">
+            <summary>
+            获得/设置 是否显示加载骨架屏 默认 false 不显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tree.Items">
             <summary>
             获得/设置 菜单数据集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.ShowCheckbox">
+        <member name="P:BootstrapBlazor.Components.Tree.ShowCheckbox">
             <summary>
             获得/设置 是否显示 CheckBox 默认 false 不显示
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.ShowIcon">
+        <member name="P:BootstrapBlazor.Components.Tree.ShowIcon">
             <summary>
             获得/设置 是否显示 Icon 图标
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.OnTreeItemClick">
+        <member name="P:BootstrapBlazor.Components.Tree.OnTreeItemClick">
             <summary>
             获得/设置 树形控件节点点击时回调委托
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TreeBase.OnTreeItemChecked">
+        <member name="P:BootstrapBlazor.Components.Tree.OnTreeItemChecked">
             <summary>
             获得/设置 树形控件节点选中时回调委托
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.OnAfterRenderAsync(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.Tree.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRenderAsync 方法
             </summary>
             <param name="firstRender"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.OnClick(BootstrapBlazor.Components.TreeItem)">
+        <member name="M:BootstrapBlazor.Components.Tree.OnClick(BootstrapBlazor.Components.TreeItem)">
             <summary>
             选中节点时触发此方法
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.OnExpandRow(BootstrapBlazor.Components.TreeItem)">
+        <member name="M:BootstrapBlazor.Components.Tree.OnExpandRow(BootstrapBlazor.Components.TreeItem)">
             <summary>
             更改节点是否展开方法
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.TreeBase.OnStateChanged(BootstrapBlazor.Components.CheckboxState,BootstrapBlazor.Components.TreeItem)">
+        <member name="M:BootstrapBlazor.Components.Tree.OnStateChanged(BootstrapBlazor.Components.CheckboxState,BootstrapBlazor.Components.TreeItem)">
             <summary>
             节点 Checkbox 状态改变时触发此方法
             </summary>
