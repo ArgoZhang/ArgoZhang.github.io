@@ -6730,6 +6730,11 @@
             获得/设置 当前状态是否激活
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.TabItem.Closable">
+            <summary>
+            获得/设置 当前 TabItem 是否可关闭 默认为 true 可关闭
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.TabItem.Icon">
             <summary>
             获得/设置 图标字符串 如 "fa fa"
