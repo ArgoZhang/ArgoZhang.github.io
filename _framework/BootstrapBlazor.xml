@@ -599,36 +599,6 @@
             从图片扫描
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.BootstrapBlazorOptions">
-            <summary>
-            Delay 配置类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.ToastDelay">
-            <summary>
-            获得/设置 Toast 组件 Delay 默认值 默认为 0
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.MessageDelay">
-            <summary>
-            获得/设置 Message 组件 Delay 默认值 默认为 0
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SwalDelay">
-            <summary>
-            获得/设置 Swal 组件 Delay 默认值 默认为 0
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.DefaultUICultureInfoName">
-            <summary>
-            获得/设置 默认 UI 文化信息 默认为 null 未设置采用系统设置
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SupportedCultures">
-            <summary>
-            获得 组件内置本地化语言列表
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Components.BootstrapComponentBase">
             <summary>
             Bootstrap Blazor 组件基类
@@ -4096,6 +4066,11 @@
             获得/设置 侧边栏菜单集合
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.LayoutBase.UseTabSet">
+            <summary>
+            获得/设置 是否右侧使用 Tab 组件 默认为 false 不使用
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.LayoutBase.IsFixedFooter">
             <summary>
             获得/设置 是否固定 Footer 组件
@@ -6618,6 +6593,11 @@
             获得/设置 组件高度 默认值为 0 高度自动
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Tab.DefaultIndexText">
+            <summary>
+            获得/设置 默认首页 Tab 显示文本 默认为 Index
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Tab.Placement">
             <summary>
             获得/设置 组件标签显示位置 默认显示在 Top 位置
@@ -6633,9 +6613,19 @@
             获得/设置 是否显示扩展功能按钮 默认为 false 不显示
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Tab.ClickTabToNavigator">
+            <summary>
+            获得/设置 点击 TabItem 时是否自动导航 默认为 false 不导航
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Tab.ChildContent">
             <summary>
             获得/设置 TabItems 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tab.AdditionalAssemblies">
+            <summary>
+            获得/设置 Gets or sets a collection of additional assemblies that should be searched for components that can match URIs.
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Tab.OnClickTab">
@@ -6643,9 +6633,9 @@
             获得/设置 点击 TabItem 时回调方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.Tab.OnInitializedAsync">
             <summary>
-            OnInitialized 方法
+            OnInitializedAsync 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnAfterRenderAsync(System.Boolean)">
@@ -6696,6 +6686,12 @@
             </summary>
             <param name="item"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            添加 TabItem 方法
+            </summary>
+            <param name="parameters"></param>
+        </member>
         <member name="M:BootstrapBlazor.Components.Tab.Remove(BootstrapBlazor.Components.TabItem)">
             <summary>
             移除 TabItem 方法
@@ -6708,6 +6704,12 @@
             </summary>
             <param name="item"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.Tab.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
+        </member>
         <member name="T:BootstrapBlazor.Components.TabItem">
             <summary>
             TabItem 组件基类
@@ -6716,6 +6718,11 @@
         <member name="P:BootstrapBlazor.Components.TabItem.Text">
             <summary>
             获得/设置 文本文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabItem.Url">
+            <summary>
+            获得/设置 请求地址
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TabItem.IsActive">
@@ -6753,6 +6760,13 @@
             设置是否被选中方法
             </summary>
             <param name="active"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TabItem.Create(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            通过指定参数集合获取 TabItem 实例
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.DataServiceBase`1">
             <summary>
@@ -11324,6 +11338,46 @@
             <typeparam name="TValue"></typeparam>
             <param name="source"></param>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.BootstrapBlazorOptions">
+            <summary>
+            Delay 配置类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.ToastDelay">
+            <summary>
+            获得/设置 Toast 组件 Delay 默认值 默认为 0
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.MessageDelay">
+            <summary>
+            获得/设置 Message 组件 Delay 默认值 默认为 0
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SwalDelay">
+            <summary>
+            获得/设置 Swal 组件 Delay 默认值 默认为 0
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.DefaultUICultureInfoName">
+            <summary>
+            获得/设置 默认 UI 文化信息 默认为 null 未设置采用系统设置
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SupportedCultures">
+            <summary>
+            获得 组件内置本地化语言列表
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.MenuTabBoundleOptions">
+            <summary>
+            菜单与标签捆绑配置类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MenuTabBoundleOptions.TabItemText">
+            <summary>
+            获得/设置 Tab 标签文本
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.CssBuilder">
             <summary>
