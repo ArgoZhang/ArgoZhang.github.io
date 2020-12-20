@@ -4071,6 +4071,11 @@
             获得/设置 是否右侧使用 Tab 组件 默认为 false 不使用
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.LayoutBase.AdditionalAssemblies">
+            <summary>
+            获得/设置 Gets or sets a collection of additional assemblies that should be searched for components that can match URIs.
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.LayoutBase.IsFixedFooter">
             <summary>
             获得/设置 是否固定 Footer 组件
@@ -4119,7 +4124,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.LayoutBase.ClickMenu(BootstrapBlazor.Components.MenuItem)">
+        <member name="M:BootstrapBlazor.Components.LayoutBase.ClickMenu">
             <summary>
             点击菜单时回调此方法
             </summary>
