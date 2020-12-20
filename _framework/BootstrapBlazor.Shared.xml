@@ -2105,6 +2105,11 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Tabs.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Tabs.GetAttributes">
             <summary>
             获得属性方法

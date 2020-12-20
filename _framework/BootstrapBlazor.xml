@@ -6598,11 +6598,6 @@
             获得/设置 组件高度 默认值为 0 高度自动
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Tab.DefaultIndexText">
-            <summary>
-            获得/设置 默认首页 Tab 显示文本 默认为 Index
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.Tab.Placement">
             <summary>
             获得/设置 组件标签显示位置 默认显示在 Top 位置
@@ -6618,7 +6613,7 @@
             获得/设置 是否显示扩展功能按钮 默认为 false 不显示
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Tab.ClickTabToNavigator">
+        <member name="P:BootstrapBlazor.Components.Tab.ClickTabToNavigation">
             <summary>
             获得/设置 点击 TabItem 时是否自动导航 默认为 false 不导航
             </summary>
@@ -6636,6 +6631,21 @@
         <member name="P:BootstrapBlazor.Components.Tab.OnClickTab">
             <summary>
             获得/设置 点击 TabItem 时回调方法
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tab.CloseCurrentTabText">
+            <summary>
+            获得/设置 关闭当前 TabItem 菜单文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tab.CloseAllTabsText">
+            <summary>
+            获得/设置 关闭所有 TabItem 菜单文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tab.CloseOtherTabsText">
+            <summary>
+            获得/设置 关闭其他 TabItem 菜单文本
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnInitializedAsync">
@@ -6664,7 +6674,7 @@
             点击下一个标签页时回调此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.CloseAllTab">
+        <member name="M:BootstrapBlazor.Components.Tab.CloseAllTabs">
             <summary>
             关闭所有标签页方法
             </summary>
@@ -6674,7 +6684,7 @@
             关闭当前标签页方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.CloseOtherTab">
+        <member name="M:BootstrapBlazor.Components.Tab.CloseOtherTabs">
             <summary>
             关闭其他标签页方法
             </summary>
@@ -6691,7 +6701,7 @@
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.Collections.Generic.Dictionary{System.String,System.Object})">
+        <member name="M:BootstrapBlazor.Components.Tab.Add(System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
             添加 TabItem 方法
             </summary>
