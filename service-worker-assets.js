@@ -61,7 +61,7 @@
       "url": "_framework\/BootstrapBlazor.Shared.xml"
     },
     {
-      "hash": "sha256-R2JhEarWDmNZAltD7LIcsdL\/bGG9fBHdfrGtwMseJYo=",
+      "hash": "sha256-dkCz2kqFKmFzJPU7J86gYx7OsS5XjndcGkhrNrOJkwI=",
       "url": "_framework\/BootstrapBlazor.xml"
     },
     {
@@ -481,11 +481,11 @@
       "url": "_content\/BootstrapBlazor.Shared\/lib\/summernote\/summernote-zh-CN.min.js"
     },
     {
-      "hash": "sha256-+gig8Jxmj+02XwF3lcMOID+3xyHnVAI4scF4v\/Df48U=",
+      "hash": "sha256-Pz3GRFPHB\/ks3\/hlnBQwdKwhVPdm5shLNX+74XE+FSc=",
       "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css"
     },
     {
-      "hash": "sha256-mVXUIfF9yLyF4Hx7btDkR8huGwUSkxlgMQq70EYPdDM=",
+      "hash": "sha256-LhOjMPmTwYHHUhHU78a2fJzxGwYjKh+1a0nIGXhw8rQ=",
       "url": "_content\/BootstrapBlazor\/js\/bootstrap.blazor.bundle.min.js"
     },
     {
@@ -2209,7 +2209,7 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-TPr0IjoQ9Kes9VqJWYRAaP6mGAu2f29+oqgBjBaJ05o=",
+      "hash": "sha256-\/v7kQwj9HXm5Ra2ZR6NfCXX4Fy8NUYCkHbswpjglfLQ=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
@@ -2217,11 +2217,11 @@
       "url": "_framework\/BootstrapBlazor.Docs.dll"
     },
     {
-      "hash": "sha256-rjZVswmBHDAr3\/MlyQn7v+ZxhrvKLKTyPhE1CuxmmA4=",
+      "hash": "sha256-GR18M2ytbWEMJumNNgOjAq97leAeUid5W9abHrtfqw8=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-k3DlJDh7pHO7vr8rGOv1V65xjkRRbrOU0\/r+s5sQQmg=",
+      "hash": "sha256-wTzszW9rTCBfhRUCrqLTo5e\/s8EUg1UnUgUtz\/SVaRE=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -2393,7 +2393,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-Vv46EviJCqeR60D2gsvqn5T3L4C+fKVAgSpfagwRVd0=",
+      "hash": "sha256-daz+8Pvgemps\/Ts0m0HIbquh2bgpyV8Vzbx48SaoKrg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2401,5 +2401,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "FuhWukCv"
+  "version": "QQoQKzox"
 };
