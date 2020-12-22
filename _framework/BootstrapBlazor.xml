@@ -161,6 +161,32 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.ColumnNameAttribute">
+            <summary>
+            ColumnName 属性标签用于标示列头显示信息支持多语言
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ColumnNameAttribute.Name">
+            <summary>
+            获得/设置 列名称
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ColumnNameAttribute.ResourceName">
+            <summary>
+            获得/设置 资源文件键值名称 为空时使用当前属性名
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ColumnNameAttribute.ResourceType">
+            <summary>
+            获得/设置 资源文件所在程序集 为空时扫描当前程序集
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ColumnNameAttribute.GetName">
+            <summary>
+            获得显示名称方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.EditorOrderAttribute">
             <summary>
             
@@ -9357,6 +9383,11 @@
             获得/设置 组件颜色 默认为 Success 颜色
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.ToggleBase.OnValueChanged">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.ToggleBase.OnClick">
             <summary>
             点击控件时触发此方法
@@ -11365,6 +11396,22 @@
             <typeparam name="TValue"></typeparam>
             <param name="source"></param>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ServiceProviderHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ServiceProviderHelper.ServiceProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ServiceProviderHelper.RegisterService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.BootstrapBlazorOptions">
             <summary>

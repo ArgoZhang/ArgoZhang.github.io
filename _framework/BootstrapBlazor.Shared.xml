@@ -766,46 +766,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.LayoutPage">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.LayoutPage.Height">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.LayoutPage.ShowFooter">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.LayoutPage.IsFixedHeader">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.LayoutPage.IsFixedFooter">
-            <summary>
-            获得/设置 是否固定页脚
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.LayoutPage.IsFullSide">
-            <summary>
-            获得/设置 侧边栏是否外置
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.LayoutPage.OnLayoutChanged">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.LayoutPage.OnInitialized">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.Pre">
             <summary>
             Pre 组件
@@ -1223,12 +1183,42 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.ShowFooter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.IsFixedHeader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.IsFixedFooter">
+            <summary>
+            获得/设置 是否固定页脚
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.IsFullSide">
+            <summary>
+            获得/设置 侧边栏是否外置
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.UseTabSet">
+            <summary>
+            获得/设置 是否开启多标签模式
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.LayoutPages.OnInitializedAsync">
             <summary>
             OnInitialized 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.LayoutPages.OnLayoutChanged(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+        <member name="M:BootstrapBlazor.Shared.Pages.LayoutPages.UpdateAsync">
             <summary>
             
             </summary>
@@ -2490,6 +2480,18 @@
             <summary>
             获得/设置 是否显示页脚
             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Shared.PageLayout.UseTabSet">
+            <summary>
+            获得/设置 是否开启多标签模式
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.PageLayout.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.PageLayout.Update">
             <summary>
