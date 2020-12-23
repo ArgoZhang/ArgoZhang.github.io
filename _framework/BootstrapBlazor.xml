@@ -3365,7 +3365,7 @@
             OnInitialized 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.OnParametersSet">
+        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.OnParametersSetAsync">
             <summary>
             OnInitialized 方法
             </summary>
@@ -5528,7 +5528,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.ScrollBase.IsAutoHide">
             <summary>
-            获得/设置 是否自动隐藏
+            获得/设置 是否自动隐藏 默认为 true
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Search">
