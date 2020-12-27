@@ -1608,17 +1608,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Searchs.Trace">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Searchs.OnSearch(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="searchText"></param>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Searchs.GetAttributes">
             <summary>
             获得属性方法
