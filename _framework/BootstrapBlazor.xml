@@ -3419,6 +3419,82 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.DropdownWidget">
+            <summary>
+            DropdownWidget 组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidget.ChildContent">
+            <summary>
+            获得/设置 选项模板支持静态数据
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidget.Items">
+            <summary>
+            获得/设置 挂件数据集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DropdownWidget.Add(BootstrapBlazor.Components.DropdownWidgetItem)">
+            <summary>
+            添加 DropdownWidgetItem 方法
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Components.DropdownWidgetItem">
+            <summary>
+            DropdownWidgetItem 组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.Icon">
+            <summary>
+            获得/设置 挂件图标 默认为 fa fa-bell-o
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.BadgeColor">
+            <summary>
+            获得/设置 徽章颜色 默认为 Color.Success
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.HeaderColor">
+            <summary>
+            获得/设置 Header 颜色 默认为 Color.Primary
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.BadgeNumber">
+            <summary>
+            获得/设置 徽章显示数量
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.ShowArrow">
+            <summary>
+            获得/设置 是否显示小箭头 默认为 true 显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.HeaderTemplate">
+            <summary>
+            获得/设置 Header 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.BodyTemplate">
+            <summary>
+            获得/设置 Body 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.FooterTemplate">
+            <summary>
+            获得/设置 Footer 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DropdownWidgetItem.Container">
+            <summary>
+            获得/设置 父组件通过级联参数获得
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DropdownWidgetItem.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.Editor">
             <summary>
             Editor 组件基类

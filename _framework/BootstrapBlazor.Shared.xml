@@ -1080,6 +1080,11 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.DropdownWidgets">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.EditorForms">
             <summary>
             
