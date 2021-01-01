@@ -3047,6 +3047,36 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="T:BootstrapBlazor.Components.DialogBase`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogBase`1.Model">
+            <summary>
+            获得/设置 EditModel 实例
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogBase`1.BodyTemplate">
+            <summary>
+            获得/设置 BodyTemplate 实例
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogBase`1.Items">
+            <summary>
+            获得 数据项集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogBase`1.ShowLabel">
+            <summary>
+            获得/设置 是否显示标签
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DialogBase`1.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.DialogOption">
             <summary>
             Dialog 组件配置类
@@ -3117,6 +3147,11 @@
             获得/设置 关闭弹窗回调方法
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.DialogOption.ResetBodyTemplate">
+            <summary>
+            获得/设置 重置 Dialog BodyTemplate 回调委托
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.DialogOption.ToAttributes">
             <summary>
             将参数转换为组件属性方法
@@ -3127,6 +3162,184 @@
             <summary>
             Dialog 组件服务
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DialogService.#ctor(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Components.EditDialog{BootstrapBlazor.Components.DialogOption}},Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Components.SearchDialog{BootstrapBlazor.Components.DialogOption}})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="editLocalizer"></param>
+            <param name="seachLocalizer"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DialogService.ShowSearchDialog``1(BootstrapBlazor.Components.SearchDialogOption{``0})">
+            <summary>
+            弹出搜索对话框
+            </summary>
+            <param name="option">SearchDialogOption 配置类实例</param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DialogService.ShowEditDialog``1(BootstrapBlazor.Components.EditDialogOption{``0})">
+            <summary>
+            弹出编辑对话框
+            </summary>
+            <param name="option">EditDialogOption 配置类实例</param>
+        </member>
+        <member name="T:BootstrapBlazor.Components.EditDialog`1">
+            <summary>
+            编辑弹窗组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialog`1.OnSaveAsync">
+            <summary>
+            获得/设置 保存回调委托
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialog`1.CloseButtonText">
+            <summary>
+            获得/设置 获得/设置 重置按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialog`1.SaveButtonText">
+            <summary>
+            获得/设置 查询按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialog`1.OnCloseAsync">
+            <summary>
+            获得/设置 关闭弹窗回调方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.EditDialog`1.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.EditDialogOption`1">
+            <summary>
+            编辑弹窗配置类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.EditDialogOption`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.ShowLabel">
+            <summary>
+            获得/设置 是否显示标签 默认为 true 显示标签
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.Model">
+            <summary>
+            获得/设置 编辑框模型
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.Items">
+            <summary>
+            获得 编辑项集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.DialogBodyTemplate">
+            <summary>
+            获得/设置 EditDialog Body 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.OnSaveAsync">
+            <summary>
+            获得/设置 保存回调委托
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.CloseButtonText">
+            <summary>
+            获得/设置 关闭按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.SaveButtonText">
+            <summary>
+            获得/设置 查询按钮文本
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.SearchDialog`1">
+            <summary>
+            查询弹窗组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialog`1.OnResetSearchClick">
+            <summary>
+            获得/设置 重置回调委托
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialog`1.OnSearchClick">
+            <summary>
+            获得/设置 搜索回调委托
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialog`1.ResetButtonText">
+            <summary>
+            获得/设置 重置按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialog`1.QueryButtonText">
+            <summary>
+            获得/设置 查询按钮文本
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.SearchDialog`1.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.SearchDialogOption`1">
+            <summary>
+            查询弹窗配置类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.SearchDialogOption`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.ShowLabel">
+            <summary>
+            获得/设置 是否显示标签 默认为 true 显示标签
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.Model">
+            <summary>
+            获得/设置 编辑框模型
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.Items">
+            <summary>
+            获得 搜索条件集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.DialogBodyTemplate">
+            <summary>
+            获得/设置 SearchDialog Body 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.ResetButtonText">
+            <summary>
+            获得/设置 重置按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.QueryButtonText">
+            <summary>
+            获得/设置 查询按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.OnResetSearchClick">
+            <summary>
+            获得/设置 重置回调委托
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.SearchDialogOption`1.OnSearchClick">
+            <summary>
+            获得/设置 搜索回调委托
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.DividerBase">
             <summary>
@@ -3493,6 +3706,11 @@
         <member name="M:BootstrapBlazor.Components.DropdownWidgetItem.OnInitialized">
             <summary>
             OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.EditDialog">
+            <summary>
+            
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Editor">
@@ -6981,93 +7199,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.TableDialog`1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableDialog`1.Model">
-            <summary>
-            获得/设置 EditModel 实例
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableDialog`1.BodyTemplate">
-            <summary>
-            获得/设置 BodyTemplate 实例
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableDialog`1.Columns">
-            <summary>
-            获得 表头集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableDialog`1.ShowLabel">
-            <summary>
-            获得/设置 是否显示标签
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.TableEditorDialog`1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableEditorDialog`1.OnSaveAsync">
-            <summary>
-            获得/设置 保存回调委托
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableEditorDialog`1.CloseButtonText">
-            <summary>
-            重置按钮文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableEditorDialog`1.SaveButtonText">
-            <summary>
-            查询按钮文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableEditorDialog`1.OnCloseAsync">
-            <summary>
-            关闭弹窗回调方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.TableEditorDialog`1.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.TableSearchDialog`1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableSearchDialog`1.OnResetSearchClick">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableSearchDialog`1.OnSearchClick">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableSearchDialog`1.ResetButtonText">
-            <summary>
-            重置按钮文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableSearchDialog`1.QueryButtonText">
-            <summary>
-            查询按钮文本
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.TableSearchDialog`1.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Components.EditMode">
             <summary>
             Table 组件编辑模式枚举类型
@@ -8702,13 +8833,20 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.SaveModelAsync(Microsoft.AspNetCore.Components.Forms.EditContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.Table`1.SaveAsync(Microsoft.AspNetCore.Components.Forms.EditContext)">
             <summary>
             保存数据
             </summary>
             <param name="context"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.ShowEditorDialog">
+        <member name="M:BootstrapBlazor.Components.Table`1.ShowEditDialog">
             <summary>
             
             </summary>
@@ -11511,6 +11649,14 @@
             <typeparam name="TKey"></typeparam>
             <typeparam name="TValue"></typeparam>
             <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ObjectExtensions.GenerateColumns``1(``0,System.Func{System.Reflection.PropertyInfo,System.Boolean})">
+            <summary>
+            通过指定 Model 获得 IEditorItem 集合方法
+            </summary>
+            <param name="source"></param>
+            <param name="predicate"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.ServiceProviderHelper">

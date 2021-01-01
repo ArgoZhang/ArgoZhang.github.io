@@ -1085,6 +1085,17 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.EditDialogs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.EditDialogs.GetAttributes">
+            <summary>
+            获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.EditorForms">
             <summary>
             
@@ -1603,6 +1614,17 @@
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Scrolls.GetAttributes">
+            <summary>
+            获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.SearchDialogs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.SearchDialogs.GetAttributes">
             <summary>
             获得属性方法
             </summary>
