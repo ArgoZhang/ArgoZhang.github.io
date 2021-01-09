@@ -10410,6 +10410,11 @@
             获得/设置 预览框 Style 属性
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Upload.OnGetFileFormat">
+            <summary>
+            获得/设置 设置文件格式图标回调委托
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Upload.Style">
             <summary>
             获得/设置 上传组件模式 默认为 Normal 正常模式多用于表单中
@@ -10423,6 +10428,11 @@
         <member name="P:BootstrapBlazor.Components.Upload.PlaceHolder">
             <summary>
             获得/设置 PlaceHolder 占位符文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.Accept">
+            <summary>
+            获得/设置 上传接收的文件格式 默认为 null 接收任意格式
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Upload.DeleteButtonClass">

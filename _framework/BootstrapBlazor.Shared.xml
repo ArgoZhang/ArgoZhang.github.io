@@ -168,6 +168,11 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.VideoLibUrl">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Shared.WebsiteOptions.WebRootPath">
             <summary>
             获得/设置 系统 wwwroot 文件夹路径 Server Side 模式下 Upload 使用
