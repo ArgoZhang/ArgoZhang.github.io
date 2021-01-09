@@ -203,6 +203,25 @@
             </summary>
             <param name="order"></param>
         </member>
+        <member name="T:BootstrapBlazor.Components.FileValidationAttribute">
+            <summary>
+            上传文件验证标签类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.FileValidationAttribute.#ctor(System.String[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="allowedExtensions"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.FileValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            是否合规判断方法
+            </summary>
+            <param name="value"></param>
+            <param name="validationContext"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.PlaceHolderAttribute">
             <summary>
             
@@ -699,26 +718,34 @@
             获得/设置 组件类型
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.DynamicComponent.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+        <member name="P:BootstrapBlazor.Components.DynamicComponent.KeepChildrenState">
+            <summary>
+            获得/设置 是否保持弹窗内组件状态 默认为 false 不保持
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DynamicComponent.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Boolean)">
             <summary>
             构造函数
             </summary>
             <param name="componentType"></param>
             <param name="parameters">TCom 组件所需要的参数集合</param>
+            <param name="keepState">连续两次弹出相同弹窗时是否保持弹窗内组件内容 默认 false 不保持</param>
         </member>
-        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Boolean)">
             <summary>
             创建自定义组件方法
             </summary>
             <typeparam name="TCom"></typeparam>
             <param name="parameters">TCom 组件所需要的参数集合</param>
+            <param name="keepState">连续两次弹出相同弹窗时是否保持弹窗内组件内容 默认 false 不保持</param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1">
+        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1(System.Boolean)">
             <summary>
             创建自定义组件方法
             </summary>
             <typeparam name="TCom"></typeparam>
+            <param name="keepState">连续两次弹出相同弹窗时是否保持弹窗内组件内容 默认 false 不保持</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.DynamicComponent.Render">
@@ -2136,6 +2163,21 @@
             </summary>
             <param name="collapsed"></param>
         </member>
+        <member name="T:BootstrapBlazor.Components.DialogEventArgs">
+            <summary>
+            对话框事件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogEventArgs.DialogResult">
+            <summary>
+            关闭方式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogEventArgs.Cancel">
+            <summary>
+            是否取消，只有Closing事件有用
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.Console">
             <summary>
             
@@ -3132,11 +3174,6 @@
             获得/设置 ModalFooter 组件
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.DialogOption.KeepChildrenState">
-            <summary>
-            获得/设置 是否保持弹窗内组件状态 默认为 false 不保持
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.DialogOption.Component">
             <summary>
             获得/设置 自定义组件
@@ -3147,28 +3184,44 @@
             获得/设置 关闭弹窗回调方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.DialogOption.ResetBodyTemplate">
-            <summary>
-            获得/设置 重置 Dialog BodyTemplate 回调委托
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Components.DialogOption.ToAttributes">
             <summary>
             将参数转换为组件属性方法
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.DialogResult">
+            <summary>
+            对话框返回类型
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.DialogResult.Yes">
+            <summary>
+            是
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.DialogResult.No">
+            <summary>
+            否
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.DialogResult.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.DialogService">
             <summary>
             Dialog 组件服务
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.DialogService.#ctor(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Components.EditDialog{BootstrapBlazor.Components.DialogOption}},Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Components.SearchDialog{BootstrapBlazor.Components.DialogOption}})">
+        <member name="M:BootstrapBlazor.Components.DialogService.#ctor(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Components.EditDialog{BootstrapBlazor.Components.DialogOption}},Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Components.SearchDialog{BootstrapBlazor.Components.DialogOption}},Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Components.ResultDialogOption})">
             <summary>
             构造函数
             </summary>
             <param name="editLocalizer"></param>
             <param name="seachLocalizer"></param>
+            <param name="resultDialogLocalizer"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.DialogService.ShowSearchDialog``1(BootstrapBlazor.Components.SearchDialogOption{``0})">
             <summary>
@@ -3181,6 +3234,13 @@
             弹出编辑对话框
             </summary>
             <param name="option">EditDialogOption 配置类实例</param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DialogService.ShowModal``1(BootstrapBlazor.Components.ResultDialogOption)">
+            <summary>
+            弹出带结果的对话框
+            </summary>
+            <param name="option">对话框参数</param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.EditDialog`1">
             <summary>
@@ -3255,6 +3315,192 @@
         <member name="P:BootstrapBlazor.Components.EditDialogOption`1.SaveButtonText">
             <summary>
             获得/设置 查询按钮文本
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.IResultDialog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IResultDialog.OnClosing(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IResultDialog.OnClose(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ResultDialogFooter">
+            <summary>
+            ResultDialog 对话框类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ShowYesButton">
+            <summary>
+            显示确认按钮
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonYesText">
+            <summary>
+            确认按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonYesIcon">
+            <summary>
+            确认按钮图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonYesColor">
+            <summary>
+            确认按钮颜色
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ShowNoButton">
+            <summary>
+            显示取消按钮
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonNoText">
+            <summary>
+            取消按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonNoIcon">
+            <summary>
+            取消按钮图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonNoColor">
+            <summary>
+            取消按钮颜色
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ShowCloseButton">
+            <summary>
+            显示关闭按钮
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonCloseText">
+            <summary>
+            关闭按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonCloseIcon">
+            <summary>
+            关闭按钮图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.ButtonCloseColor">
+            <summary>
+            关闭按钮颜色
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.OnClickClose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.OnClickYes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogFooter.OnClickNo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ResultDialogOption">
+            <summary>
+            复杂对话框配置类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ResultDialogOption.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ShowYesButton">
+            <summary>
+            显示确认按钮
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonYesText">
+            <summary>
+            确认按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonYesIcon">
+            <summary>
+            确认按钮图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonYesColor">
+            <summary>
+            确认按钮颜色
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ShowNoButton">
+            <summary>
+            显示取消按钮
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonNoText">
+            <summary>
+            取消按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonNoIcon">
+            <summary>
+            取消按钮图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonNoColor">
+            <summary>
+            取消按钮颜色
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonCloseText">
+            <summary>
+            关闭按钮文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonCloseIcon">
+            <summary>
+            关闭按钮图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ShowCloseButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ButtonCloseColor">
+            <summary>
+            关闭按钮颜色
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.BodyTemplate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.Component">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ComponentParamters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ResultDialogOption.ReturnTask">
+            <summary>
+            获得/设置 模态弹窗返回值任务实例
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.SearchDialog`1">
@@ -10154,24 +10400,119 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.Text">
+        <member name="P:BootstrapBlazor.Components.Upload.ClassString">
             <summary>
-            获得/设置 上传按钮显示文字
+            获得 组件样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.ResetText">
+        <member name="P:BootstrapBlazor.Components.Upload.PrevStyleString">
+            <summary>
+            获得/设置 预览框 Style 属性
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.Style">
+            <summary>
+            获得/设置 上传组件模式 默认为 Normal 正常模式多用于表单中
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.ShowDeleteButton">
+            <summary>
+            获得/设置 是否显示删除按钮 默认为 false 不显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.PlaceHolder">
+            <summary>
+            获得/设置 PlaceHolder 占位符文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.DeleteButtonClass">
+            <summary>
+            获得/设置 删除按钮样式 默认 btn-danger
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.BrowserButtonClass">
+            <summary>
+            获得/设置 上传按钮样式 默认 btn-primary
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.DeleteButtonIcon">
+            <summary>
+            获得/设置 删除按钮图标 默认 fa fa-trash-o
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.BrowserButtonIcon">
+            <summary>
+            获得/设置 浏览按钮图标 默认 fa fa-folder-open-o
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.DefaultFileList">
+            <summary>
+            获得/设置 已上传文件集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.MaxFileCount">
+            <summary>
+            获得/设置 最大上传文件数量 默认为 10
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.Width">
+            <summary>
+            获得/设置 文件预览框宽度
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.Height">
+            <summary>
+            获得/设置 文件预览框高度
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.IsMultiple">
+            <summary>
+            获得/设置 是否允许多文件上传 默认 false 不允许
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.IsSingle">
+            <summary>
+            获得/设置 是否仅上传一次 默认 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.IsCircle">
+            <summary>
+            获得/设置 是否圆形图片框 Avatar 模式时生效 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.IsDirectory">
+            <summary>
+            获得/设置 是否上传整个目录 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.IsDisabled">
+            <summary>
+            获得/设置 是否禁用 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.ShowProgress">
+            <summary>
+            获得/设置 是否显示上传进度 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.OnChange">
+            <summary>
+            获得/设置 上传失败后回调委托
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.OnDelete">
+            <summary>
+            获得/设置 点击删除按钮时回调此方法
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Upload.DeleteButtonText">
             <summary>
             获得/设置 重置按钮显示文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.ImageUrl">
+        <member name="P:BootstrapBlazor.Components.Upload.BrowserButtonText">
             <summary>
-            获得/设置 默认初始化图片地址
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.Localizer">
-            <summary>
-            
+            获得/设置 浏览按钮显示文字
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Upload.OnInitialized">
@@ -10184,178 +10525,6 @@
             OnAfterRender 方法
             </summary>
             <param name="firstRender"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Upload.Reset">
-            <summary>
-            组件复位方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Upload.CheckFiles(System.String,System.String,System.Int64)">
-            <summary>
-            文件上传前检查文件扩展名时回调此方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Upload.Dispose(System.Boolean)">
-            <summary>
-            Dispose 方法
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.UploadBase">
-            <summary>
-            文件上传组件基类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.ClassString">
-            <summary>
-            获得 组件样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.PrevStyleString">
-            <summary>
-            获得/设置 预览框 Style 属性
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.CircleDiameter">
-            <summary>
-            获得/设置 圆形进度半径
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.CircleR">
-            <summary>
-            获得/设置 半径
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.CircleLength">
-            <summary>
-            获得 圆形周长
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.MultipleString">
-            <summary>
-            获得 是否允许多文件上传 默认不允许 IsStack 模式下允许多文件上传
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.DisabledString">
-            <summary>
-            获得 组件是否被禁用属性值
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.Icon">
-            <summary>
-            获得/设置 上传按钮图标
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.ShowPreview">
-            <summary>
-            获得/设置 是否显示预览 默认不预览
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.IsStack">
-            <summary>
-            获得/设置 是否为堆砌效果 默认不预览
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.ShowProgress">
-            <summary>
-            获得/设置 是否显示上传进度 默认不显示
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.ShowReset">
-            <summary>
-            获得/设置 是否显示重置按钮
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.UploadUrl">
-            <summary>
-            获得/设置 上传接口地址 默认值为 "api/Upload"
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.Width">
-            <summary>
-            获得/设置 文件预览框宽度
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.Height">
-            <summary>
-            获得/设置 文件预览框高度
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.IsMultiple">
-            <summary>
-            获得/设置 是否允许多文件上传 默认不允许
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.IsCircle">
-            <summary>
-            获得/设置 是否圆形图片框 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.IsCard">
-            <summary>
-            获得/设置 是否卡片式预览 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.IsPhotoWall">
-            <summary>
-            获得/设置 是否为照片墙效果 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.IsDisabled">
-            <summary>
-            获得/设置 是否禁用 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.AllowFileType">
-            <summary>
-            获得/设置 允许上传文件扩展名集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.MaxFileLength">
-            <summary>
-            获得/设置 允许上传文件最大值 默认为 0 不限制
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.OnUploaded">
-            <summary>
-            获得/设置 成功上传后回调委托
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.OnRemoved">
-            <summary>
-            获得/设置 成功删除后回调委托
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.OnFailed">
-            <summary>
-            获得/设置 上传失败后回调委托
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UploadBase.OnSetHeaders">
-            <summary>
-            获得/设置 设置请求头回调委托
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.UploadBase.Completed(System.String,System.String)">
-            <summary>
-            文件上传成功后回调此方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.UploadBase.Removed(System.String)">
-            <summary>
-            文件删除成功后回调此方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.UploadBase.Failed(System.String)">
-            <summary>
-            文件上传失败后回调此方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.UploadBase.SetHeaders">
-            <summary>
-            设置 请求头方法
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.UploadFile">
             <summary>
@@ -10392,27 +10561,45 @@
             获得/设置 错误信息
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.UploadHeader">
+        <member name="P:BootstrapBlazor.Components.UploadFile.File">
             <summary>
-            Upload 组件 Http 请求头类
+            获得/设置 上传文件实例
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.UploadHeader.Name">
+        <member name="P:BootstrapBlazor.Components.UploadFile.UpdateCallback">
             <summary>
-            获得 请求头名称
+            获得/设置 更新进度回调委托
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.UploadHeader.Value">
+        <member name="P:BootstrapBlazor.Components.UploadFile.ProgressPercent">
             <summary>
-            获得 请求头值
+            获得/设置 更新进度回调委托
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.UploadHeader.#ctor(System.String,System.String)">
+        <member name="P:BootstrapBlazor.Components.UploadFile.Uploaded">
             <summary>
-            构造函数
+            获得/设置 文件是否上传完毕
             </summary>
-            <param name="name"></param>
-            <param name="value"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadFile.RequestBase64ImageFileAsync(System.String,System.Int32,System.Int32,System.Int64,System.Threading.CancellationToken)">
+            <summary>
+            获取 base64 格式图片字符串
+            </summary>
+            <param name="format"></param>
+            <param name="maxWidth"></param>
+            <param name="maxHeight"></param>
+            <param name="maxAllowedSize"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadFile.SaveToFile(System.String,System.Int64,System.Threading.CancellationToken)">
+            <summary>
+            保存到文件
+            </summary>
+            <param name="fileName"></param>
+            <param name="maxAllowedSize"></param>
+            <param name="token"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.IValidateComponent">
             <summary>
@@ -11535,6 +11722,31 @@
         <member name="F:BootstrapBlazor.Components.ToastCategory.Error">
             <summary>
             错误信息
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.UploadStyle">
+            <summary>
+            上传组件模式枚举类型
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.UploadStyle.Normal">
+            <summary>
+            正常模式
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.UploadStyle.ClickToUpload">
+            <summary>
+            点击上传
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.UploadStyle.Avatar">
+            <summary>
+            上传头像模式
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.UploadStyle.Card">
+            <summary>
+            预览卡片模式
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.EnumExtensions">

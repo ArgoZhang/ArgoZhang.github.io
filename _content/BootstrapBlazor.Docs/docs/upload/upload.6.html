@@ -1,1 +1,65 @@
-﻿<Upload IsPhotoWall="true" IsCircle="true"></Upload>
+﻿    <div class="row">
+        <div class="col-12">
+            <p>本例中使用 <code>IWebHostEnviroment</code> 注入服务获取到 <code>wwwwroot</code> 目录，保存文件到 <code>images\uploader</code> 中，此功能无需 <b>MVC</b> 的控制器辅助进行文件的保存，直接调用 <code>SaveToFile</code> 方法即可</p>
+            <Upload Style="UploadStyle.Card" ShowProgress="true" OnChange="@OnCardUpload" OnDelete="@(fileName => Task.FromResult(true))"></Upload>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <p>设置 <code>IsSingle</code> 时，仅可以上传一张图片或者文件，本例中未设置 <code>ShowProgress</code> 使用其默认值，不显示上传进度条</p>
+            <Upload Style="UploadStyle.Card" IsSingle="true" OnChange="@OnCardUpload" OnDelete="@(fileName => Task.FromResult(true))"></Upload>
+        </div>
+    </div>
+
+@code {
+    [Inject]
+    [NotNull]
+    private ToastService? ToastService { get; set; }
+
+    [Inject]
+    [NotNull]
+    private WebsiteOptions? SiteOptions { get; set; }
+
+    private CancellationTokenSource? ReadToken { get; set; }
+    private async Task OnCardUpload(IEnumerable<UploadFile> files)
+    {
+        // 示例代码，使用 IWebHostEnviroment 注入获取硬盘文件夹 示例
+        var file = files.FirstOrDefault();
+        if (file != null && file.File != null)
+        {
+            await SaveToFile(file);
+        }
+    }
+
+    private async Task<bool> SaveToFile(UploadFile file)
+    {
+        // Server Side 使用
+        // Web Assembly 模式下必须使用 webapi 方式去保存文件到服务器或者数据库中
+        // 生成写入文件名称
+        var ret = false;
+        if (!string.IsNullOrEmpty(SiteOptions.WebRootPath))
+        {
+            var uploaderFolder = Path.Combine(SiteOptions.WebRootPath, $"images{Path.DirectorySeparatorChar}uploader");
+            file.FileName = $"{Path.GetFileNameWithoutExtension(file.OriginFileName)}-{DateTimeOffset.Now:yyyyMMddHHmmss}{Path.GetExtension(file.OriginFileName)}";
+            var fileName = Path.Combine(uploaderFolder, file.FileName);
+
+            ReadToken ??= new CancellationTokenSource();
+            ret = await file.SaveToFile(fileName, 20 * 1024 * 1024, ReadToken.Token);
+
+            if (ret)
+            {
+                // 保存成功
+                file.PrevUrl = $"images/uploader/{file.FileName}";
+            }
+            else
+            {
+                await ToastService.Error("上传文件", $"保存文件失败 {file.OriginFileName}");
+            }
+        }
+        else
+        {
+            await ToastService.Information("保存文件", "当前模式为 WebAssembly 模式，请调用 Webapi 模式保存文件到服务器端或数据库中");
+        }
+        return ret;
+    }
+}

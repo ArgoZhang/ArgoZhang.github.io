@@ -25,6 +25,17 @@
             属性说明类
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Common.AttributeItem.#ctor">
+            <summary>
+            默认构造，什么都不做
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Common.AttributeItem.#ctor(System.Object)">
+            <summary>
+            根据默认值自动生成部分内容
+            </summary>
+            <param name="defaultValue"></param>
+        </member>
         <member name="P:BootstrapBlazor.Shared.Common.AttributeItem.Name">
             <summary>
             获得/设置 参数
@@ -155,6 +166,11 @@
         <member name="P:BootstrapBlazor.Shared.WebsiteOptions.ImageLibUrl">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.WebRootPath">
+            <summary>
+            获得/设置 系统 wwwroot 文件夹路径 Server Side 模式下 Upload 使用
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Alerts">
@@ -814,6 +830,83 @@
             OnAfterRender 方法
             </summary>
             <param name="firstRender"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.ValueChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.OnClose(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Emails">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.EmailsChanged">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnClosing(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnClose(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.GenerateItems(System.Int32)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Id">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Name">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Email">
+             <summary>
+            
+             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.State">
             <summary>
@@ -2402,6 +2495,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Uploads.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.FetchData.OnInitializedAsync">
             <summary>
             
@@ -2457,20 +2555,20 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Shared.NavMenu">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.NavMenu.OnInitialized">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.NavMenu.DemoMenuItem.AddItem(BootstrapBlazor.Components.MenuItem)">
-            <summary>
+             <summary>
             
-            </summary>
-            <param name="item"></param>
+             </summary>
+             <param name="item"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Shared.PageLayout">
             <summary>
