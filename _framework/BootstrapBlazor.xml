@@ -718,34 +718,26 @@
             获得/设置 组件类型
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.DynamicComponent.KeepChildrenState">
-            <summary>
-            获得/设置 是否保持弹窗内组件状态 默认为 false 不保持
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DynamicComponent.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.DynamicComponent.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
             <summary>
             构造函数
             </summary>
             <param name="componentType"></param>
             <param name="parameters">TCom 组件所需要的参数集合</param>
-            <param name="keepState">连续两次弹出相同弹窗时是否保持弹窗内组件内容 默认 false 不保持</param>
         </member>
-        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
             <summary>
             创建自定义组件方法
             </summary>
             <typeparam name="TCom"></typeparam>
             <param name="parameters">TCom 组件所需要的参数集合</param>
-            <param name="keepState">连续两次弹出相同弹窗时是否保持弹窗内组件内容 默认 false 不保持</param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.DynamicComponent.CreateComponent``1">
             <summary>
             创建自定义组件方法
             </summary>
             <typeparam name="TCom"></typeparam>
-            <param name="keepState">连续两次弹出相同弹窗时是否保持弹窗内组件内容 默认 false 不保持</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.DynamicComponent.Render">
@@ -3156,6 +3148,11 @@
         <member name="P:BootstrapBlazor.Components.DialogOption.ShowFooter">
             <summary>
             获得/设置 是否显示 Footer 默认为 true
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DialogOption.KeepChildrenState">
+            <summary>
+            获得/设置 是否保持弹窗内组件状态 默认为 false 不保持
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.DialogOption.BodyContext">
