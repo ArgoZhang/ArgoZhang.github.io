@@ -6072,6 +6072,16 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Scroll.ClassString">
+            <summary>
+            获得 组件样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Scroll.AutoHideString">
+            <summary>
+            获得 是否自动隐藏
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Scroll.ScrollElement">
             <summary>
             Scroll 组件 DOM 实例
@@ -6092,16 +6102,6 @@
         <member name="T:BootstrapBlazor.Components.ScrollBase">
             <summary>
             Scroll 组件基类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ScrollBase.ClassString">
-            <summary>
-            获得 组件样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ScrollBase.AutoHideString">
-            <summary>
-            获得 是否自动隐藏
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ScrollBase.ChildContent">
