@@ -193,11 +193,10 @@
             OnInitialized 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Alerts.DismissClick(Microsoft.AspNetCore.Components.Web.MouseEventArgs)">
+        <member name="M:BootstrapBlazor.Shared.Pages.Alerts.DismissClick">
             <summary>
             
             </summary>
-            <param name="e"></param>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Alerts.GetEvents">
             <summary>
@@ -2236,11 +2235,10 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Tags.DismissClick(Microsoft.AspNetCore.Components.Web.MouseEventArgs)">
+        <member name="M:BootstrapBlazor.Shared.Pages.Tags.DismissClick">
             <summary>
             
             </summary>
-            <param name="e"></param>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Tags.GetEvents">
             <summary>
