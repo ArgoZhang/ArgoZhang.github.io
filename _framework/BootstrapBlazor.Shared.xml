@@ -2486,15 +2486,9 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Uploads.GetAttributes">
+        <member name="M:BootstrapBlazor.Shared.Pages.Uploads.GetInputAttributes">
             <summary>
             获得属性方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Uploads.GetEvents">
-            <summary>
-            获得事件方法
             </summary>
             <returns></returns>
         </member>

@@ -10472,74 +10472,244 @@
             级联设置展开状态方法
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Components.AvatarUpload">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AvatarUpload.ItemClassString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AvatarUpload.PrevStyleString">
+            <summary>
+            获得/设置 预览框 Style 属性
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AvatarUpload.Width">
+            <summary>
+            获得/设置 文件预览框宽度
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AvatarUpload.Height">
+            <summary>
+            获得/设置 文件预览框高度
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AvatarUpload.IsCircle">
+            <summary>
+            获得/设置 是否圆形图片框 Avatar 模式时生效 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AvatarUpload.IsSingle">
+            <summary>
+            获得/设置 是否仅上传一次 默认 false
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.AvatarUpload.OnFileChange(Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ButtonUpload">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonUpload.BrowserButtonIcon">
+            <summary>
+            获得/设置 浏览按钮图标 默认 fa fa-folder-open-o
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonUpload.BrowserButtonClass">
+            <summary>
+            获得/设置 上传按钮样式 默认 btn-primary
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonUpload.BrowserButtonText">
+            <summary>
+            获得/设置 浏览按钮显示文字
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ButtonUpload.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ButtonUploadBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonUploadBase.IsSingle">
+            <summary>
+            获得/设置 是否仅上传一次 默认 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonUploadBase.IsDirectory">
+            <summary>
+            获得/设置 是否上传整个目录 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonUploadBase.IsMultiple">
+            <summary>
+            获得/设置 是否允许多文件上传 默认 false 不允许
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonUploadBase.OnGetFileFormat">
+            <summary>
+            获得/设置 设置文件格式图标回调委托
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ButtonUploadBase.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ButtonUploadBase.OnFileChange(Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ButtonUploadBase.GetFileFormatClassString(BootstrapBlazor.Components.UploadFile)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ButtonUploadBase.GetUploadAdditionalAttributes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.CardUpload">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.InputUpload">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.BrowserButtonIcon">
+            <summary>
+            获得/设置 浏览按钮图标 默认 fa fa-folder-open-o
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.BrowserButtonClass">
+            <summary>
+            获得/设置 上传按钮样式 默认 btn-primary
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.BrowserButtonText">
+            <summary>
+            获得/设置 浏览按钮显示文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.DeleteButtonClass">
+            <summary>
+            获得/设置 删除按钮样式 默认 btn-danger
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.DeleteButtonIcon">
+            <summary>
+            获得/设置 删除按钮图标 默认 fa fa-trash-o
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.DeleteButtonText">
+            <summary>
+            获得/设置 重置按钮显示文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.ShowDeleteButton">
+            <summary>
+            获得/设置 是否显示删除按钮 默认为 false 不显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InputUpload.PlaceHolder">
+            <summary>
+            获得/设置 PlaceHolder 占位符文本
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.InputUpload.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.InputUpload.OnFileChange(Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.MultipleUploadBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MultipleUploadBase.GetItemClassString(BootstrapBlazor.Components.UploadFile)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MultipleUploadBase.ItemClassString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MultipleUploadBase.UploadFiles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MultipleUploadBase.DefaultFileList">
+            <summary>
+            获得/设置 已上传文件集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MultipleUploadBase.ShowProgress">
+            <summary>
+            获得/设置 是否显示上传进度 默认为 false
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MultipleUploadBase.OnInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MultipleUploadBase.OnFileDelete(BootstrapBlazor.Components.UploadFile)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MultipleUploadBase.GetShowProgress(BootstrapBlazor.Components.UploadFile)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.Upload">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.ClassString">
-            <summary>
-            获得 组件样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.PrevStyleString">
-            <summary>
-            获得/设置 预览框 Style 属性
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.OnGetFileFormat">
-            <summary>
-            获得/设置 设置文件格式图标回调委托
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.Upload.Style">
             <summary>
             获得/设置 上传组件模式 默认为 Normal 正常模式多用于表单中
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.ShowDeleteButton">
-            <summary>
-            获得/设置 是否显示删除按钮 默认为 false 不显示
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.PlaceHolder">
-            <summary>
-            获得/设置 PlaceHolder 占位符文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.Accept">
-            <summary>
-            获得/设置 上传接收的文件格式 默认为 null 接收任意格式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.DeleteButtonClass">
-            <summary>
-            获得/设置 删除按钮样式 默认 btn-danger
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.BrowserButtonClass">
-            <summary>
-            获得/设置 上传按钮样式 默认 btn-primary
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.DeleteButtonIcon">
-            <summary>
-            获得/设置 删除按钮图标 默认 fa fa-trash-o
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.BrowserButtonIcon">
-            <summary>
-            获得/设置 浏览按钮图标 默认 fa fa-folder-open-o
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.DefaultFileList">
-            <summary>
-            获得/设置 已上传文件集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.MaxFileCount">
-            <summary>
-            获得/设置 最大上传文件数量 默认为 10
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Upload.Width">
@@ -10552,61 +10722,79 @@
             获得/设置 文件预览框高度
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.IsMultiple">
-            <summary>
-            获得/设置 是否允许多文件上传 默认 false 不允许
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Upload.IsSingle">
-            <summary>
-            获得/设置 是否仅上传一次 默认 false
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.Upload.IsCircle">
             <summary>
             获得/设置 是否圆形图片框 Avatar 模式时生效 默认为 false
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.IsDirectory">
+        <member name="T:BootstrapBlazor.Components.UploadBase">
             <summary>
-            获得/设置 是否上传整个目录 默认为 false
+            Upload 组件基类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.ShowProgress">
+        <member name="P:BootstrapBlazor.Components.UploadBase.ClassString">
             <summary>
-            获得/设置 是否显示上传进度 默认为 false
+            获得 组件样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.OnChange">
+        <member name="P:BootstrapBlazor.Components.UploadBase.UploaderElement">
             <summary>
-            获得/设置 上传失败后回调委托
+            获得/设置 Upload 组件实例
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.OnDelete">
+        <member name="P:BootstrapBlazor.Components.UploadBase.Accept">
+            <summary>
+            获得/设置 上传接收的文件格式 默认为 null 接收任意格式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.UploadBase.OnDelete">
             <summary>
             获得/设置 点击删除按钮时回调此方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.DeleteButtonText">
+        <member name="P:BootstrapBlazor.Components.UploadBase.OnChange">
             <summary>
-            获得/设置 重置按钮显示文字
+            获得/设置 点击浏览按钮时回调此方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Upload.BrowserButtonText">
-            <summary>
-            获得/设置 浏览按钮显示文字
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Upload.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Upload.OnAfterRenderAsync(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.UploadBase.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRender 方法
             </summary>
             <param name="firstRender"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadBase.GetFileName(BootstrapBlazor.Components.UploadFile)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadBase.OnFileDelete(BootstrapBlazor.Components.UploadFile)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadBase.OnFileChange(Microsoft.AspNetCore.Components.Forms.InputFileChangeEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadBase.OnFileBrowser">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadBase.GetUploadAdditionalAttributes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.UploadFile">
             <summary>
