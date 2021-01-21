@@ -780,6 +780,11 @@
             获得/设置 是否触发 Click 事件 默认 true
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.DynamicElement.PreventDefault">
+            <summary>
+            获得/设置 是否阻止默认行为 默认 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.DynamicElement.OnClick">
             <summary>
             获得/设置 Click 回调委托
@@ -4296,65 +4301,6 @@
             获取绑定字段信息方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1">
-            <summary>
-            IEditorItem 内部实现类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.Model">
-            <summary>
-            获得/设置 绑定数据模型
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.PropertyType">
-            <summary>
-            获得/设置 字段数据类型
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.FieldName">
-            <summary>
-            获得/设置 绑定字段名称
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.Editable">
-            <summary>
-            获得/设置 是否可以编辑 默认为 true 可编辑
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.Readonly">
-            <summary>
-            获得/设置 是否只读
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.Text">
-            <summary>
-            获得/设置 表头显示文字
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.EditTemplate">
-            <summary>
-            获得/设置 编辑模板
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.#ctor(`0,System.Reflection.PropertyInfo)">
-            <summary>
-            
-            </summary>
-            <param name="model"></param>
-            <param name="propertyInfo"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.GetDisplayName">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EditorForm.InternalEditorItem`1.GetFieldName">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:BootstrapBlazor.Components.FooterBase">
             <summary>
             Footer 组件
@@ -4374,6 +4320,21 @@
         <member name="P:BootstrapBlazor.Components.FooterBase.Target">
             <summary>
             获得/设置 Footer 组件中返回顶端按钮控制的滚动条所在组件
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.GroupBox">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.GroupBox.ChildContent">
+            <summary>
+            获得/设置 子组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.GroupBox.Title">
+            <summary>
+            获得/设置 Title 属性 默认为 null
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.BootstrapInputBase`1">
@@ -4578,14 +4539,72 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Layout.ClassString">
+            <summary>
+            获得 组件样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Layout.FooterClassString">
+            <summary>
+            获得 页脚样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Layout.HeaderClassString">
+            <summary>
+            获得 页头样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Layout.SideClassString">
+            <summary>
+            获得 侧边栏样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Layout.SideStyleString">
+            <summary>
+            获得 侧边栏 Style 字符串
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Layout.MainClassString">
+            <summary>
+            获得 Main 样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Layout.CollapseBarClassString">
+            <summary>
+            获得 展开收缩 Bar 样式
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Layout.TooltipText">
             <summary>
             获得/设置 鼠标悬停提示文字信息
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Layout.TabSet">
+            <summary>
+            获得 Tab 组件实例
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Layout.OnInitialized">
             <summary>
             OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Layout.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Layout.SetCollapsed(System.Int32)">
+            <summary>
+            设置 请求头方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Layout.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.LayoutBase">
@@ -4596,41 +4615,6 @@
         <member name="P:BootstrapBlazor.Components.LayoutBase.IsSmallScreen">
             <summary>
             
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.ClassString">
-            <summary>
-            获得 组件样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.FooterClassString">
-            <summary>
-            获得 页脚样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.HeaderClassString">
-            <summary>
-            获得 页头样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.SideClassString">
-            <summary>
-            获得 侧边栏样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.SideStyleString">
-            <summary>
-            获得 侧边栏 Style 字符串
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.MainClassString">
-            <summary>
-            获得 Main 样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.CollapseBarClassString">
-            <summary>
-            获得 展开收缩 Bar 样式
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.LayoutBase.IsCollapsed">
@@ -4661,11 +4645,6 @@
         <member name="P:BootstrapBlazor.Components.LayoutBase.Main">
             <summary>
             获得/设置 Main 模板
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.LayoutBase.IsDark">
-            <summary>
-            获得/设置 是否为暗黑模式
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.LayoutBase.IsFullSide">
@@ -4728,13 +4707,6 @@
             获得/设置 收缩展开回调委托
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.LayoutBase.OnAfterRenderAsync(System.Boolean)">
-            <summary>
-            OnAfterRenderAsync 方法
-            </summary>
-            <param name="firstRender"></param>
-            <returns></returns>
-        </member>
         <member name="M:BootstrapBlazor.Components.LayoutBase.CollapseMenu">
             <summary>
             点击 收缩展开按钮时回调此方法
@@ -4746,17 +4718,6 @@
             点击菜单时回调此方法
             </summary>
             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.LayoutBase.SetCollapsed(System.Int32)">
-            <summary>
-            设置 请求头方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.LayoutBase.Dispose(System.Boolean)">
-            <summary>
-            Dispose 方法
-            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.LightBase">
             <summary>
@@ -7327,14 +7288,14 @@
             获得/设置 关闭其他 TabItem 菜单文本
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Tab.OnSetTabText">
-            <summary>
-            获得/设置 设置 Tab 标签显示文本回调委托方法
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnInitializedAsync">
             <summary>
             OnInitializedAsync 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.OnParametersSet">
+            <summary>
+            OnParametersSet 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnAfterRenderAsync(System.Boolean)">
@@ -7350,22 +7311,22 @@
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.ClickPrevTab">
             <summary>
-            点击上一个标签页时回调此方法
+            切换到上一个标签方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.ClickNextTab">
             <summary>
-            点击下一个标签页时回调此方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Tab.CloseAllTabs">
-            <summary>
-            关闭所有标签页方法
+            切换到下一个标签方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.CloseCurrentTab">
             <summary>
             关闭当前标签页方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.CloseAllTabs">
+            <summary>
+            关闭所有标签页方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.CloseOtherTabs">
@@ -7379,19 +7340,20 @@
             </summary>
             <param name="item">TabItemBase 实例</param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.Add(BootstrapBlazor.Components.TabItem)">
-            <summary>
-            添加 TabItem 方法
-            </summary>
-            <param name="item"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Tab.Add(System.Collections.Generic.Dictionary{System.String,System.Object})">
+        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
             添加 TabItem 方法
             </summary>
             <param name="parameters"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.Remove(BootstrapBlazor.Components.TabItem)">
+        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.String,System.String)">
+            <summary>
+            通过 Url 添加 TabItem 标签方法
+            </summary>
+            <param name="url"></param>
+            <param name="text"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.RemoveTab(BootstrapBlazor.Components.TabItem)">
             <summary>
             移除 TabItem 方法
             </summary>
@@ -7402,12 +7364,6 @@
             设置指定 TabItem 为激活状态
             </summary>
             <param name="item"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Tab.Dispose(System.Boolean)">
-            <summary>
-            Dispose 方法
-            </summary>
-            <param name="disposing"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.TabItem">
             <summary>
@@ -7928,6 +7884,32 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.InternalSearchAction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InternalSearchAction.Value">
+            <summary>
+            获得/设置 搜索值
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InternalSearchAction.FieldKey">
+            <summary>
+            获得/设置 搜索属性名称
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InternalSearchAction.FilterAction">
+            <summary>
+            获得/设置 逻辑关系 默认为 FilterAction.Contains
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.InternalSearchAction.GetFilterConditions">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.InternalTableColumn.#ctor(System.String,System.Type,System.String)">
             <summary>
             构造函数
@@ -8139,6 +8121,11 @@
         <member name="P:BootstrapBlazor.Components.QueryPageOptions.SearchText">
             <summary>
             获得/设置 查询关键字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.QueryPageOptions.Searchs">
+            <summary>
+            获得/设置 过滤条件集合
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.QueryPageOptions.SortName">
@@ -8891,7 +8878,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.SearchText">
             <summary>
-            获得/设置 搜索关键字
+            获得/设置 搜索关键字 通过列设置的 Searchable 自动生成搜索拉姆达表达式
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.OnResetSearchAsync">
@@ -8914,16 +8901,28 @@
             高级查询按钮点击时调用此方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.GetSearchs">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.Table`1.ClearSearchClick">
             <summary>
             重置搜索按钮调用此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.OnKeyUp(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs)">
+        <member name="M:BootstrapBlazor.Components.Table`1.OnSearch">
             <summary>
-            搜索文本框按键回调方法
+            客户端 SearchTextbox 文本框内按回车时调用此方法
             </summary>
-            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.OnClearSearch">
+            <summary>
+            客户端 SearchTextbox 文本框内按 ESC 时调用此方法
+            </summary>
+            <returns></returns>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.SortName">
             <summary>
@@ -12133,7 +12132,7 @@
             <param name="source"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.ObjectExtensions.GenerateColumns``1(``0,System.Func{System.Reflection.PropertyInfo,System.Boolean})">
+        <member name="M:BootstrapBlazor.Components.ObjectExtensions.GenerateColumns``1(``0,System.Func{BootstrapBlazor.Components.IEditorItem,System.Boolean})">
             <summary>
             通过指定 Model 获得 IEditorItem 集合方法
             </summary>
@@ -12194,12 +12193,12 @@
             获得 组件内置本地化语言列表
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.MenuTabBoundleOptions">
+        <member name="T:BootstrapBlazor.Components.TabItemTextOptions">
             <summary>
             菜单与标签捆绑配置类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.MenuTabBoundleOptions.TabItemText">
+        <member name="P:BootstrapBlazor.Components.TabItemTextOptions.TabItemText">
             <summary>
             获得/设置 Tab 标签文本
             </summary>
@@ -12838,28 +12837,31 @@
             <param name="filters"></param>
             <returns></returns>
         </member>
-        <member name="M:System.Linq.LambdaExtensions.ExpressionAndLambda``1(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}})">
+        <member name="M:System.Linq.LambdaExtensions.ExpressionAndLambda``1(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}},BootstrapBlazor.Components.FilterLogic)">
             <summary>
             表达式取 and 逻辑操作方法
             </summary>
             <typeparam name="TItem"></typeparam>
             <param name="expressions"></param>
+            <param name="logic"></param>
             <returns></returns>
         </member>
-        <member name="M:System.Linq.LambdaExtensions.GetFilterFunc``1(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IFilterAction})">
+        <member name="M:System.Linq.LambdaExtensions.GetFilterFunc``1(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IFilterAction},BootstrapBlazor.Components.FilterLogic)">
             <summary>
             指定 IFilter 集合获取委托
             </summary>
             <typeparam name="TItem"></typeparam>
             <param name="filters"></param>
+            <param name="logic"></param>
             <returns></returns>
         </member>
-        <member name="M:System.Linq.LambdaExtensions.GetFilterLambda``1(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IFilterAction})">
+        <member name="M:System.Linq.LambdaExtensions.GetFilterLambda``1(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IFilterAction},BootstrapBlazor.Components.FilterLogic)">
             <summary>
             指定 IFilter 集合获取 Lambda 表达式
             </summary>
             <typeparam name="TItem"></typeparam>
             <param name="filters"></param>
+            <param name="logic"></param>
             <returns></returns>
         </member>
         <member name="M:System.Linq.LambdaExtensions.GetFilterLambda``1(BootstrapBlazor.Components.FilterKeyValueAction)">

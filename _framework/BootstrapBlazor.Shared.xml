@@ -173,10 +173,398 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.RepositoryUrl">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Shared.WebsiteOptions.WebRootPath">
             <summary>
             获得/设置 系统 wwwroot 文件夹路径 Server Side 模式下 Upload 使用
             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.AttributeTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.AttributeTable.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.Block">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.Title">
+            <summary>
+            获得/设置 组件 Title 属性
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.Introduction">
+            <summary>
+            获得/设置 组件说明信息
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.ChildContent">
+            <summary>
+            获得/设置 组件内容
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Block.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ComponentCard">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.HeaderText">
+            <summary>
+            获得/设置 Header 文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.ImageName">
+            <summary>
+            获得/设置 组件图片
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.Url">
+            <summary>
+            获得/设置 链接地址
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.ComponentNames">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.SearchText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ComponentCard.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ComponentCategory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.ChildContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Desc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.Dummy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Age">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.BirthDay">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Hobby">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Education">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.EditorDemo1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.EditorDemo2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.EditorDemo2.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.InstallContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.Version">
+            <summary>
+            获得/设置 版本号字符串
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.Title">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.HostFile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.ChildContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.InstallContent.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.Pre">
+            <summary>
+            Pre 组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.ClassName">
+            <summary>
+            获得 样式集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.JSRuntime">
+            <summary>
+            获得/设置 IJSRuntime 实例
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.ChildContent">
+            <summary>
+            获得/设置 子组件 CodeFile 为空时生效
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.AdditionalAttributes">
+            <summary>
+            获得/设置 用户自定义属性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.CodeFile">
+            <summary>
+            获得/设置 示例文档名称
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Pre.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Pre.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRender 方法
+            </summary>
+            <param name="firstRender"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.ValueChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.OnClose(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Emails">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.EmailsChanged">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnClosing(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnClose(BootstrapBlazor.Components.DialogResult)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.GenerateItems(System.Int32)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Id">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Name">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Email">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.IsNew">
+            <summary>
+            获得/设置 是否为新组件 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.IsUpdate">
+            <summary>
+            获得/设置 是否为更新功能 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.Count">
+            <summary>
+            获得/设置 组件数量
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.CustomerSelectDialog.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
+            <summary>
+            级联绑定菜单
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.GenerateItems">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.OnInitialized">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.FetchData.OnInitializedAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Logger.ClassName">
+            <summary>
+            获得 按钮样式集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Logger.AdditionalAttributes">
+            <summary>
+            获得/设置 用户自定义属性
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Title">
+            <summary>
+            获得/设置 颜色 默认为 Info
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Icon">
+            <summary>
+            获得/设置 图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Color">
+            <summary>
+            获得/设置 颜色 默认为 Info
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.ChildContent">
+            <summary>
+            获得/设置 子组件内容
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Coms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Index">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Index.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Alerts">
             <summary>
@@ -603,388 +991,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.AttributeTable">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.AttributeTable.Title">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.Block">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.Title">
-            <summary>
-            获得/设置 组件 Title 属性
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.Introduction">
-            <summary>
-            获得/设置 组件说明信息
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.ChildContent">
-            <summary>
-            获得/设置 组件内容
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.CodeFile">
-            <summary>
-            获得/设置 组件示例代码文件名
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.Block.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.Block.OnAfterRenderAsync(System.Boolean)">
-            <summary>
-            OnAfterRenderAsync
-            </summary>
-            <param name="firstRender"></param>
-            <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.ComponentCard">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.HeaderText">
-            <summary>
-            获得/设置 Header 文字
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.ImageName">
-            <summary>
-            获得/设置 组件图片
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.Url">
-            <summary>
-            获得/设置 链接地址
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.ComponentNames">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.SearchText">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.ComponentCard.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.ComponentCategory">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.ChildContent">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Text">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Desc">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Count">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.Dummy">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Name">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Age">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.BirthDay">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Hobby">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Education">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.EditorDemo1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.EditorDemo2">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.EditorDemo2.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.InstallContent">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.Version">
-            <summary>
-            获得/设置 版本号字符串
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.Title">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.HostFile">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.InstallContent.ChildContent">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.InstallContent.OnInitializedAsync">
-            <summary>
-            OnInitializedAsync 方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.Pre">
-            <summary>
-            Pre 组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.ClassName">
-            <summary>
-            获得 样式集合
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.JSRuntime">
-            <summary>
-            获得/设置 IJSRuntime 实例
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.ChildContent">
-            <summary>
-            获得/设置 子组件 CodeFile 为空时生效
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.AdditionalAttributes">
-            <summary>
-            获得/设置 用户自定义属性
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.CodeFile">
-            <summary>
-            获得/设置 示例文档名称
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Pre.OnAfterLoadCode">
-            <summary>
-            获得/设置 代码加载后回调委托
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.Pre.OnInitializedAsync">
-            <summary>
-            OnInitializedAsync 方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.Pre.OnAfterRenderAsync(System.Boolean)">
-            <summary>
-            OnAfterRender 方法
-            </summary>
-            <param name="firstRender"></param>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.Value">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.ValueChanged">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo.OnClose(BootstrapBlazor.Components.DialogResult)">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Emails">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.EmailsChanged">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnInitialized">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnClosing(BootstrapBlazor.Components.DialogResult)">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.OnClose(BootstrapBlazor.Components.DialogResult)">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.GenerateItems(System.Int32)">
-             <summary>
-            
-             </summary>
-             <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Id">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Name">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo.Email">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.State">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.IsNew">
-            <summary>
-            获得/设置 是否为新组件 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.IsUpdate">
-            <summary>
-            获得/设置 是否为更新功能 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.State.Count">
-            <summary>
-            获得/设置 组件数量
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.CustomerSelectDialog.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
-            <summary>
-            级联绑定菜单
-            </summary>
-            <param name="item"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.GenerateItems">
-             <summary>
-            
-             </summary>
-             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.OnInitialized">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Logger.ClassName">
-            <summary>
-            获得 按钮样式集合
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Logger.AdditionalAttributes">
-            <summary>
-            获得/设置 用户自定义属性
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Title">
-            <summary>
-            获得/设置 颜色 默认为 Info
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Icon">
-            <summary>
-            获得/设置 图标
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Color">
-            <summary>
-            获得/设置 颜色 默认为 Info
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.ChildContent">
-            <summary>
-            获得/设置 子组件内容
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Coms">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Consoles">
             <summary>
             
@@ -1224,17 +1230,10 @@
             
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Index">
+        <member name="T:BootstrapBlazor.Shared.Pages.GroupBoxs">
             <summary>
             
             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Index.OnAfterRenderAsync(System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="firstRender"></param>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.InputNumbers">
             <summary>
@@ -1952,6 +1951,22 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.CustomerFilter.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.CustomerFilter.Reset">
+            <summary>
+            重置过滤条件方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.CustomerFilter.GetFilterConditions">
+            <summary>
+            生成过滤条件方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Table.TablesExport.Version">
             <summary>
             获得/设置 版本号字符串
@@ -2252,22 +2267,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Template">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Template.Version">
-            <summary>
-            获得/设置 版本号字符串
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Template.OnInitializedAsync">
-            <summary>
-            OnInitializedAsync 方法
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Textareas">
             <summary>
             
@@ -2497,9 +2496,30 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.FetchData.OnInitializedAsync">
+        <member name="T:BootstrapBlazor.Shared.Pages.Template">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Template.Version">
+            <summary>
+            获得/设置 版本号字符串
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Template.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Install.Version">
+            <summary>
+            获得/设置 版本号字符串
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Install.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
             </summary>
             <returns></returns>
         </member>
@@ -2513,16 +2533,10 @@
             签名Base64
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Install.Version">
-            <summary>
-            获得/设置 版本号字符串
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Install.OnInitializedAsync">
-            <summary>
-            OnInitializedAsync 方法
-            </summary>
-            <returns></returns>
+        <member name="M:BootstrapBlazor.Shared.Pages.LayoutDemo.OnInitialized">
+             <summary>
+            
+             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Markdowns.Version">
             <summary>
@@ -2532,22 +2546,6 @@
         <member name="M:BootstrapBlazor.Shared.Pages.Markdowns.OnInitializedAsync">
             <summary>
             OnInitializedAsync 方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.CustomerFilter.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.CustomerFilter.Reset">
-            <summary>
-            重置过滤条件方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.CustomerFilter.GetFilterConditions">
-            <summary>
-            生成过滤条件方法
             </summary>
             <returns></returns>
         </member>
@@ -2674,12 +2672,12 @@
             
             </summary>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.#ctor(System.Net.Http.HttpClient,Microsoft.AspNetCore.Components.NavigationManager)">
+        <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Shared.WebsiteOptions})">
             <summary>
             构造方法
             </summary>
             <param name="client"></param>
-            <param name="navigator"></param>
+            <param name="options"></param>
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.GetCodeAsync(System.String)">
             <summary>
