@@ -7340,18 +7340,21 @@
             </summary>
             <param name="item">TabItemBase 实例</param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.Collections.Generic.Dictionary{System.String,System.Object})">
-            <summary>
-            添加 TabItem 方法
-            </summary>
-            <param name="parameters"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.String,System.String)">
+        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.String,System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             通过 Url 添加 TabItem 标签方法
             </summary>
             <param name="url"></param>
             <param name="text"></param>
+            <param name="icon"></param>
+            <param name="active"></param>
+            <param name="closable"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.AddTab(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            添加 TabItem 方法
+            </summary>
+            <param name="parameters"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.RemoveTab(BootstrapBlazor.Components.TabItem)">
             <summary>
@@ -7427,6 +7430,41 @@
             </summary>
             <param name="parameters"></param>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.TabLink">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabLink.Text">
+            <summary>
+            获得/设置 文本文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabLink.Url">
+            <summary>
+            获得/设置 请求地址
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabLink.Icon">
+            <summary>
+            获得/设置 图标字符串 如 "fa fa"
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabLink.Closable">
+            <summary>
+            获得/设置 当前 TabItem 是否可关闭 默认为 true 可关闭
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabLink.OnClick">
+            <summary>
+            点击组件时回调此委托方法 默认为空 返回真时进行跳转 返回假时终止跳转
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabLink.ChildContent">
+            <summary>
+            获得/设置 组件内容
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.DataServiceBase`1">
             <summary>
@@ -12076,6 +12114,20 @@
             <param name="func">Javascript 方法</param>
             <param name="args">Javascript 参数</param>
         </member>
+        <member name="T:BootstrapBlazor.Components.NavigationManagerExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.NavigationManagerExtensions.NavigateTo(Microsoft.AspNetCore.Components.NavigationManager,System.String,System.String,System.String)">
+            <summary>
+            导航并添加 TabItem 方法
+            </summary>
+            <param name="navigation"></param>
+            <param name="url"></param>
+            <param name="text"></param>
+            <param name="icon"></param>
+        </member>
         <member name="T:BootstrapBlazor.Components.ObjectExtensions">
             <summary>
             Object 扩展方法
@@ -12121,15 +12173,6 @@
             通过类型获取类型描述文字
             </summary>
             <param name="t"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ObjectExtensions.ToDictionary``2(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{``0,``1}})">
-            <summary>
-            增加扩展方法 List 转化为 字典集合
-            </summary>
-            <typeparam name="TKey"></typeparam>
-            <typeparam name="TValue"></typeparam>
-            <param name="source"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.ObjectExtensions.GenerateColumns``1(``0,System.Func{BootstrapBlazor.Components.IEditorItem,System.Boolean})">
@@ -12198,9 +12241,25 @@
             菜单与标签捆绑配置类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TabItemTextOptions.TabItemText">
+        <member name="P:BootstrapBlazor.Components.TabItemTextOptions.Text">
             <summary>
             获得/设置 Tab 标签文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabItemTextOptions.Icon">
+            <summary>
+            获得/设置 图标字符串
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabItemTextOptions.IsActive">
+            <summary>
+            获得/设置 是否激活
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabItemTextOptions.Closable">
+            <summary>
+            获得/设置 当前 TabItem 是否可关闭 默认为 true 可关闭
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.CssBuilder">

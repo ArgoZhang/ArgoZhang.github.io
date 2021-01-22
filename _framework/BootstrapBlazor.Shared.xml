@@ -183,6 +183,26 @@
             获得/设置 系统 wwwroot 文件夹路径 Server Side 模式下 Upload 使用
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.VideoUrl">
+            <summary>
+            获得/设置 视频地址
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.SourceCodes">
+            <summary>
+            获得/设置 资源配置集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.Videos">
+            <summary>
+            获得/设置 资源配置集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.WebsiteOptions.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.AttributeTable">
             <summary>
             
@@ -548,6 +568,11 @@
             <summary>
             获得/设置 子组件内容
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Video.OnInitialized">
+             <summary>
+            
+             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Coms">
             <summary>
@@ -2548,6 +2573,16 @@
             OnInitializedAsync 方法
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Shared.ComponentLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnParametersSet">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Shared.NavMenu">
              <summary>
