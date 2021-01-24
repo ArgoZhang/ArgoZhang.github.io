@@ -7293,11 +7293,6 @@
             OnInitializedAsync 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.OnParametersSet">
-            <summary>
-            OnParametersSet 方法
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRender 方法
@@ -7367,6 +7362,12 @@
             设置指定 TabItem 为激活状态
             </summary>
             <param name="item"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.TabItem">
             <summary>
