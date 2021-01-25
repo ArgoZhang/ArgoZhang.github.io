@@ -2707,12 +2707,13 @@
             
             </summary>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Shared.WebsiteOptions})">
+        <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Shared.WebsiteOptions},Microsoft.Extensions.DependencyInjection.ICultureStorage)">
             <summary>
             构造方法
             </summary>
             <param name="client"></param>
             <param name="options"></param>
+            <param name="storage"></param>
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.GetCodeAsync(System.String)">
             <summary>
