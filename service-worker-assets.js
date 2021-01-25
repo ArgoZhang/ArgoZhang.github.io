@@ -61,7 +61,7 @@
       "url": "_framework\/BootstrapBlazor.Shared.xml"
     },
     {
-      "hash": "sha256-A5kQqBlXYgjMq5qkQlfLwxRjUdUBFoNt5FH+VNat0kk=",
+      "hash": "sha256-Y+gSnLOzyL3b2N1zadgpg2Qi0cVbxMFP3QvxypZZTWY=",
       "url": "_framework\/BootstrapBlazor.xml"
     },
     {
@@ -489,7 +489,7 @@
       "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css"
     },
     {
-      "hash": "sha256-5oLKL1ucRFg8S5W+v1G0Gb6Prm5PlnEWoGfqkYrHSGA=",
+      "hash": "sha256-+by3FvOMKuWt6nqlTsvouhh3GAGBf17EkSCpZOQbex8=",
       "url": "_content\/BootstrapBlazor\/js\/bootstrap.blazor.bundle.min.js"
     },
     {
@@ -621,7 +621,7 @@
       "url": "_framework\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "hash": "sha256-0ceIi\/iLdiKoxaztvCC\/4thA\/DazgsgrTETQXY30M3c=",
+      "hash": "sha256-3sf8r+ogYkuFJnm7UAOLSjp66oVaNIECC\/N\/L8xaDkM=",
       "url": "_framework\/Microsoft.Extensions.Options.dll"
     },
     {
@@ -661,15 +661,15 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-KiNEgFZg8Rvpk8MMyMyGamwln8rNkf1iy43tZyj6YLE=",
+      "hash": "sha256-HiYudSUJUWzDhSyAYpiC1H5okl9jMZR1mY6BOwv2b58=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
-      "hash": "sha256-HvoVJ072oEYn41Y3O5cUwEC1OS6Lo9sNbhMwCu2uQNg=",
+      "hash": "sha256-t39YCszeWYmnCt7cVQ98B31Uc+PwPMuC3aCVngFpIUE=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-GmdCEpGL07T8WSYuv6HENn6i0SxbXIyZ9MeXweWYu8c=",
+      "hash": "sha256-xvQG5CDM9OH23YjdNj2qqBS30H8LJEn\/Xz91FbYTb6o=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -841,7 +841,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-yMDktOP\/zTmARpQ3cI26AjOrurTiBMM1kKZMz9hrJAM=",
+      "hash": "sha256-sqA7jHPN7Jt02zmK\/6jSDMrzCFRGWVnm1K0WNci36gQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -849,5 +849,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "o5k9jDCh"
+  "version": "nLC+k7KY"
 };

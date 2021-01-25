@@ -12609,24 +12609,46 @@
             LocalizationOptions 配置类
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.JsonLocalizationStreams">
+            <summary>
+            获得/设置 本地化资源文件流集合 默认为空
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.StringLocalizer">
+            <summary>
+            获得/设置 自定义 IStringLocalizer 接口 默认为空
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.LoggerFactory">
+            <summary>
+            获得/设置 LoggerFactory 实例
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.#ctor">
             <summary>
             构造方法
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.CreateOptions(System.String)">
+            <summary>
+            创建 IOptions 示例方法
+            </summary>
+            <param name="resourcesPath"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Localization.Json.JsonStringLocalizer">
             <summary>
             JsonStringLocalizer 实现类
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.#ctor(System.Reflection.Assembly,System.String,System.String,Microsoft.Extensions.Logging.ILogger)">
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.#ctor(System.Reflection.Assembly,System.String,Microsoft.Extensions.Logging.ILogger,BootstrapBlazor.Localization.Json.JsonLocalizationOptions)">
             <summary>
             构造函数
             </summary>
             <param name="assembly"></param>
-            <param name="resourceName"></param>
             <param name="typeName"></param>
             <param name="logger"></param>
+            <param name="options"></param>
         </member>
         <member name="P:BootstrapBlazor.Localization.Json.JsonStringLocalizer.Item(System.String)">
             <summary>
@@ -12648,13 +12670,6 @@
             获取当前语言的所有资源信息
             </summary>
             <param name="includeParentCultures"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.WithCulture(System.Globalization.CultureInfo)">
-            <summary>
-            
-            </summary>
-            <param name="culture"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.GetAllStrings(System.Boolean,System.Globalization.CultureInfo)">
@@ -12699,13 +12714,12 @@
             <param name="location"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.CreateJsonStringLocalizer(System.Reflection.Assembly,System.String,System.String)">
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.CreateJsonStringLocalizer(System.Reflection.Assembly,System.String)">
             <summary>
             创建 IStringLocalizer 实例方法
             </summary>
             <param name="assembly"></param>
             <param name="typeName"></param>
-            <param name="resourceName"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString">
