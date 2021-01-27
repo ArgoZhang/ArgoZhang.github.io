@@ -12639,6 +12639,11 @@
             获得/设置 自定义 IStringLocalizer 接口 默认为空
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.LocalizerConfigurationFactory">
+            <summary>
+            获得/设置 自定义 Json 格式资源流集合
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.LoggerFactory">
             <summary>
             获得/设置 LoggerFactory 实例
