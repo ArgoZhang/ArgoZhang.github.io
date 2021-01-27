@@ -4667,6 +4667,11 @@
             获得/设置 是否右侧使用 Tab 组件 默认为 false 不使用
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.LayoutBase.ExcludeUrls">
+            <summary>
+            获得/设置 排除地址支持通配符
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.LayoutBase.AdditionalAssemblies">
             <summary>
             获得/设置 Gets or sets a collection of additional assemblies that should be searched for components that can match URIs.
@@ -7223,6 +7228,11 @@
             获得/设置 TabItem 集合
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Tab.Excluded">
+            <summary>
+            获得/设置 是否为排除地址 默认为 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Tab.IsCard">
             <summary>
             获得/设置 是否为卡片样式
@@ -7263,9 +7273,19 @@
             获得/设置 TabItems 模板
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Tab.Body">
+            <summary>
+            获得/设置 TabItems 模板
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Tab.AdditionalAssemblies">
             <summary>
             获得/设置 Gets or sets a collection of additional assemblies that should be searched for components that can match URIs.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tab.ExcludeUrls">
+            <summary>
+            获得/设置 排除地址支持通配符
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Tab.OnClickTab">

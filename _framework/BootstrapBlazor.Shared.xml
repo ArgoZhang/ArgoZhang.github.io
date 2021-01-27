@@ -2581,8 +2581,14 @@
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnParametersSet">
             <summary>
-            
+            OnParametersSet 方法
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnAfterRender(System.Boolean)">
+            <summary>
+            OnAfterRender 方法
+            </summary>
+            <param name="firstRender"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Shared.NavMenu">
              <summary>
