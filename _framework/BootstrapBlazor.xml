@@ -3724,37 +3724,49 @@
             点击背景遮罩方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.DropdownBase`1">
+        <member name="T:BootstrapBlazor.Components.Dropdown`1">
             <summary>
-            下拉框组件基类
+            
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.DropdownBase`1.DirectionClassName">
+        <member name="P:BootstrapBlazor.Components.Dropdown`1.DirectionClassName">
             <summary>
             获得 按钮弹出方向集合
             </summary>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Components.DropdownBase`1.ButtonClassName">
+        <member name="P:BootstrapBlazor.Components.Dropdown`1.ButtonClassName">
             <summary>
             获得 按钮样式集合
             </summary>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Components.DropdownBase`1.ClassName">
+        <member name="P:BootstrapBlazor.Components.Dropdown`1.ClassName">
             <summary>
             获得 按钮样式集合
             </summary>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Components.DropdownBase`1.DropdownToggle">
+        <member name="P:BootstrapBlazor.Components.Dropdown`1.DropdownToggle">
             <summary>
             获得 是否分裂式按钮
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.DropdownBase`1.MenuAlignmentClass">
+        <member name="P:BootstrapBlazor.Components.Dropdown`1.MenuAlignmentClass">
             <summary>
             菜单对齐方式样式
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Dropdown`1.ActiveItem(BootstrapBlazor.Components.SelectedItem)">
+            <summary>
+            设置当前项是否 Active 方法
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.DropdownBase`1">
+            <summary>
+            下拉框组件基类
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.DropdownBase`1.ShowSplit">
@@ -6319,37 +6331,55 @@
             </summary>
             <typeparam name="TValue"></typeparam>
         </member>
-        <member name="M:BootstrapBlazor.Components.Select`1.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.SelectBase`1">
-            <summary>
-            Select 组件基类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.ClassName">
+        <member name="P:BootstrapBlazor.Components.Select`1.ClassName">
             <summary>
             获得 样式集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.InputClassName">
+        <member name="P:BootstrapBlazor.Components.Select`1.InputClassName">
             <summary>
             获得 样式集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.AppendClassName">
+        <member name="P:BootstrapBlazor.Components.Select`1.AppendClassName">
             <summary>
             获得 样式集合
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.ActiveItem(BootstrapBlazor.Components.SelectedItem)">
+        <member name="M:BootstrapBlazor.Components.Select`1.ActiveItem(BootstrapBlazor.Components.SelectedItem)">
             <summary>
             设置当前项是否 Active 方法
             </summary>
             <param name="item"></param>
             <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Select`1.OnSearchTextChanged">
+            <summary>
+            获得/设置 搜索文本发生变化时回调此方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.GetShownItems">
+            <summary>
+            获取显示的候选项集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.SelectBase`1">
+            <summary>
+            Select 组件基类
+            </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.SelectBase`1.SelectedItem">
             <summary>
@@ -6401,11 +6431,6 @@
             获得/设置 选项模板
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.OnSearchTextChanged">
-            <summary>
-            获得/设置 搜索文本发生变化时回调此方法
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.SelectBase`1.OnSelectedItemChanged">
             <summary>
             SelectedItemChanged 方法
@@ -6422,18 +6447,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.OnAfterRenderAsync(System.Boolean)">
-            <summary>
-            OnAfterRenderAsync 方法
-            </summary>
-            <param name="firstRender"></param>
-            <returns></returns>
-        </member>
         <member name="M:BootstrapBlazor.Components.SelectBase`1.OnItemClick(BootstrapBlazor.Components.SelectedItem)">
             <summary>
             下拉框选项点击时调用此方法
@@ -6448,12 +6461,6 @@
         <member name="M:BootstrapBlazor.Components.SelectBase`1.GetItems">
             <summary>
             获得 数据源
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.GetShownItems">
-            <summary>
-            获取显示的候选项集合
             </summary>
             <returns></returns>
         </member>
