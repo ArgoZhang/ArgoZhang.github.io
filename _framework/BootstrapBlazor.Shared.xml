@@ -213,6 +213,16 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.AttributeTable.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.AttributeTable.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.Block">
             <summary>
             
@@ -373,6 +383,26 @@
             OnInitializedAsync 方法
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.MethodTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.MethodTable.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.MethodTable.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.MethodTable.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.Pre">
             <summary>
@@ -1119,6 +1149,12 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.DateTimeRanges.GetEvents">
+            <summary>
+            获得事件方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.DateTimeRanges.GetAttributes">
             <summary>
             获得属性方法
@@ -1653,6 +1689,11 @@
         <member name="T:BootstrapBlazor.Shared.Pages.QRCodes">
             <summary>
             
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.QRCodes.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.QRCodes.GetAttributes">
@@ -2584,6 +2625,26 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Shared.ComponentLayout.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Shared.ComponentLayout.Example">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Shared.ComponentLayout.Video">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnParametersSet">
             <summary>
             OnParametersSet 方法
@@ -2663,18 +2724,6 @@
             
              </summary>
              <returns></returns>
-        </member>
-        <member name="T:Microsoft.Extensions.DependencyInjection.CultureExtensions">
-            <summary>
-            Culture 扩展操作类
-            </summary>
-        </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.CultureExtensions.GetSupportCultures(Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            获得配置文件中配置的 Culture 信息
-            </summary>
-            <param name="configuration"></param>
-            <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.ICultureStorage">
             <summary>

@@ -16,13 +16,5 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.WebAssembly.ClientHost.Program.CorsMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
-            <summary>
-            
-            </summary>
-            <param name="request"></param>
-            <param name="cancellationToken"></param>
-            <returns></returns>
-        </member>
     </members>
 </doc>

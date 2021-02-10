@@ -11,7 +11,13 @@
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Order">
             <summary>
-            获得/设置 显示顺序
+            获得/设置 显示顺序 ，规则如下：
+            <para></para>
+            &gt;0时排前面，1,2,3...
+            <para></para>
+            =0时排中间(默认)
+            <para></para>
+            &lt;0时排后面，...-3,-2,-1
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Ignore">
@@ -129,6 +135,11 @@
             获得/设置 过滤模板
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Step">
+            <summary>
+            获得/设置 步长 默认为 1
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Filter">
             <summary>
             获得/设置 列过滤器
@@ -158,32 +169,6 @@
         <member name="M:BootstrapBlazor.Components.AutoGenerateColumnAttribute.GetFieldName">
             <summary>
             
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Components.ColumnNameAttribute">
-            <summary>
-            ColumnName 属性标签用于标示列头显示信息支持多语言
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ColumnNameAttribute.Name">
-            <summary>
-            获得/设置 列名称
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ColumnNameAttribute.ResourceName">
-            <summary>
-            获得/设置 资源文件键值名称 为空时使用当前属性名
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ColumnNameAttribute.ResourceType">
-            <summary>
-            获得/设置 资源文件所在程序集 为空时扫描当前程序集
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ColumnNameAttribute.GetName">
-            <summary>
-            获得显示名称方法
             </summary>
             <returns></returns>
         </member>
@@ -2945,6 +2930,11 @@
             获得/设置 清空按钮文字
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.DateTimeRange.TodayButtonText">
+            <summary>
+            获得/设置 今天按钮文字
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.DateTimeRange.ConfirmButtonText">
             <summary>
             获得/设置 确定按钮文字
@@ -2965,6 +2955,11 @@
             获得/设置 是否允许为空 默认为 true
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.DateTimeRange.ShowToday">
+            <summary>
+            获得/设置 是否显示今天按钮 默认为 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.DateTimeRange.ShowSidebar">
             <summary>
             获得/设置 是否显示快捷侧边栏 默认不显示
@@ -2982,7 +2977,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.DateTimeRange.OnClearValue">
             <summary>
-            点击情况按钮回调委托方法
+            点击清空按钮回调委托方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.DateTimeRange.OnInitialized">
@@ -3001,6 +2996,11 @@
             点击 清除按钮调用此方法
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DateTimeRange.ClickTodayButton">
+            <summary>
+            点击 确认时调用此方法
+            </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.DateTimeRange.ClickConfirmButton">
             <summary>
@@ -3980,11 +3980,6 @@
             OnInitialized 方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.EditDialog">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Components.Editor">
             <summary>
             Editor 组件基类
@@ -4184,7 +4179,7 @@
             <summary>
             
             </summary>
-            <param name="col"></param>
+            <param name="item"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.EditorForm`1.CreateCallback``1(`0,System.String)">
@@ -4235,6 +4230,11 @@
         <member name="P:BootstrapBlazor.Components.EditorItem`1.Text">
             <summary>
             获得/设置 表头显示文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorItem`1.Step">
+            <summary>
+            获得/设置 步长
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.EditorItem`1.EditTemplate">
@@ -4291,6 +4291,11 @@
         <member name="P:BootstrapBlazor.Components.IEditorItem.Text">
             <summary>
             获得/设置 表头显示文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IEditorItem.Step">
+            <summary>
+            获得/设置 步长 默认为 null
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.EditTemplate">
@@ -6004,6 +6009,11 @@
             获得/设置 绑定数据源
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.RadioBase`1.IsVertical">
+            <summary>
+            获得/设置 是否为竖向排列 默认为 false
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.RadioBase`1.OnToggleClick">
             <summary>
             点击选择框方法
@@ -6077,6 +6087,14 @@
             <summary>
             Dispose 方法
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.RouteTableFactory.Create(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="assemblies"></param>
+            <param name="url"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.Scroll">
             <summary>
@@ -6250,9 +6268,19 @@
             获得/设置 是否显示关闭按钮 默认为 true 显示
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.MultiSelect`1.ShowSelectAllButton">
+        <member name="P:BootstrapBlazor.Components.MultiSelect`1.ShowToolbar">
             <summary>
-            获得/设置 是否显示全选功能按钮 默认为 false 不显示
+            获得/设置 是否显示功能按钮 默认为 false 不显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MultiSelect`1.ShowDefaultButtons">
+            <summary>
+            获得/设置 是否显示默认功能按钮 默认为 true 显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MultiSelect`1.ButtonTemplate">
+            <summary>
+            获得/设置 扩展按钮模板
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.MultiSelect`1.Color">
@@ -6388,6 +6416,13 @@
             OnAfterRenderAsync 方法
             </summary>
             <param name="firstRender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.ConfirmSelectedItem(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Select`1.GetShownItems">
@@ -7198,6 +7233,63 @@
             获得/设置 是否显示内置文字
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Components.Routing.IRouteTable">
+            <summary>
+            Provides an abstraction over <see cref="T:BootstrapBlazor.Components.Routing.RouteTable"/>.
+            the legacy route matching logic is removed.
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Routing.RouteConstraint.CreateRouteConstraint(System.String)">
+            <summary>
+            Creates a structured RouteConstraint object given a string that contains
+            the route constraint. A constraint is the place after the colon in a
+            parameter definition, for example `{age:int?}`.
+            </summary>
+            <param name="constraint">String representation of the constraint</param>
+            <returns>Type-specific RouteConstraint object</returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.Routing.RouteTableFactory">
+            <summary>
+            Resolves components for an application.
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Routing.RouteTableFactory.RouteComparison(BootstrapBlazor.Components.Routing.RouteEntry,BootstrapBlazor.Components.Routing.RouteEntry)">
+             <summary>
+             Route precedence algorithm.
+             We collect all the routes and sort them from most specific to
+             less specific. The specificity of a route is given by the specificity
+             of its segments and the position of those segments in the route.
+             * A literal segment is more specific than a parameter segment.
+             * A parameter segment with more constraints is more specific than one with fewer constraints
+             * Segment earlier in the route are evaluated before segments later in the route.
+             For example:
+             /Literal is more specific than /Parameter
+             /Route/With/{parameter} is more specific than /{multiple}/With/{parameters}
+             /Product/{id:int} is more specific than /Product/{id}
+            
+             Routes can be ambiguous if:
+             They are composed of literals and those literals have the same values (case insensitive)
+             They are composed of a mix of literals and parameters, in the same relative order and the
+             literals have the same values.
+             For example:
+             * /literal and /Literal
+             /{parameter}/literal and /{something}/literal
+             /{parameter:constraint}/literal and /{something:constraint}/literal
+            
+             To calculate the precedence we sort the list of routes as follows:
+             * Shorter routes go first.
+             * A literal wins over a parameter in precedence.
+             * For literals with different values (case insensitive) we choose the lexical order
+             * For parameters with different numbers of constraints, the one with more wins
+             If we get to the end of the comparison routing we've detected an ambiguous pair of routes.
+             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.Routing.TypeRouteConstraint`1">
+            <summary>
+            A route constraint that requires the value to be parseable as a specified type.
+            </summary>
+            <typeparam name="T">The type to which the value must be parseable.</typeparam>
+        </member>
         <member name="T:BootstrapBlazor.Components.Tab">
             <summary>
             Tab 组件基类
@@ -7317,6 +7409,11 @@
         <member name="P:BootstrapBlazor.Components.Tab.CloseCurrentTabText">
             <summary>
             获得/设置 关闭当前 TabItem 菜单文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Tab.NullTabText">
+            <summary>
+            获得/设置 空白 Tab 显示文字
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Tab.CloseAllTabsText">
@@ -8238,6 +8335,11 @@
             获得/设置 每页条目数量
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.QueryPageOptions.IsPage">
+            <summary>
+            获得/设置 是否是分页查询 默认为 false
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.Table`1">
             <summary>
             Table 组件基类
@@ -8469,11 +8571,6 @@
             获得/设置 是否为第一次 Render
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Table`1.IsLoading">
-            <summary>
-            获得/设置 是否正在加载数据 默认为 false
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Components.Table`1.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRenderAsync 方法
@@ -8529,6 +8626,11 @@
             获得/设置 被选中数据集合
             </summary>
             <value></value>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.IsLoading">
+            <summary>
+            获得/设置 是否正在查询数据
+            </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ActiveRenderModel">
             <summary>
@@ -8872,6 +8974,11 @@
         <member name="P:BootstrapBlazor.Components.Table`1.IsPagination">
             <summary>
             获得/设置 是否分页 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.ShowTopPagination">
+            <summary>
+            获得/设置 是否在顶端显示分页 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ShowLineNo">
@@ -9347,6 +9454,11 @@
         <member name="P:BootstrapBlazor.Components.TableColumn`1.TextEllipsis">
             <summary>
             获得/设置 本列文本超出省略 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableColumn`1.Step">
+            <summary>
+            获得/设置 步长 默认为 null
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TableColumn`1.DefaultSortOrder">
@@ -12273,15 +12385,21 @@
             获得/设置 Swal 组件 Delay 默认值 默认为 0
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.DefaultUICultureInfoName">
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.FallbackCultureName">
             <summary>
-            获得/设置 默认 UI 文化信息 默认为 null 未设置采用系统设置
+            获得/设置 回落默认语言文化 默认为 en 英文
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SupportedCultures">
             <summary>
             获得 组件内置本地化语言列表
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BootstrapBlazorOptions.GetSupportedCultures">
+            <summary>
+            获得支持多语言集合
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.TabItemTextOptions">
             <summary>
@@ -12655,12 +12773,12 @@
             LocalizationOptions 配置类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.StringLocalizer">
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.ResourceManagerStringLocalizerType">
             <summary>
-            获得/设置 自定义 IStringLocalizer 接口 默认为空
+            获得/设置 微软 resx 格式指定类型
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.AdditionalAssemblies">
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.AdditionalJsonAssemblies">
             <summary>
             获得/设置 外置资源文件程序集集合
             </summary>
@@ -12670,30 +12788,29 @@
             获得/设置 外置资源文件路径集合
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.FallbackCulture">
+            <summary>
+            获得/设置 回落默认文化
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.#ctor">
             <summary>
             构造方法
             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.CreateStringLocalizer``1(System.String)">
-            <summary>
-            创建 IStringLocalizer 实例方法
-            </summary>
-            <param name="resourcesPath">resx 资源文件路径 默认为 Resources</param>
-            <typeparam name="TType"></typeparam>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Localization.Json.JsonStringLocalizer">
             <summary>
             JsonStringLocalizer 实现类
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.#ctor(System.Reflection.Assembly,System.String,Microsoft.Extensions.Logging.ILogger,BootstrapBlazor.Localization.Json.JsonLocalizationOptions)">
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.#ctor(BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory,System.Reflection.Assembly,System.String,System.String,Microsoft.Extensions.Logging.ILogger,BootstrapBlazor.Localization.Json.JsonLocalizationOptions)">
             <summary>
             构造函数
             </summary>
+            <param name="factory"></param>
             <param name="assembly"></param>
             <param name="typeName"></param>
+            <param name="baseName"></param>
             <param name="logger"></param>
             <param name="options"></param>
         </member>
@@ -12719,7 +12836,7 @@
             <param name="includeParentCultures"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.GetAllStrings(System.Boolean,System.Globalization.CultureInfo)">
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.GetAllJsonStrings(System.Boolean,System.Globalization.CultureInfo)">
             <summary>
             
             </summary>
@@ -12727,7 +12844,7 @@
             <param name="culture"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.GetStringSafely(System.String)">
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizer.GetJsonStringSafely(System.String)">
             <summary>
             
             </summary>
@@ -12739,34 +12856,27 @@
             IStringLocalizerFactory 实现类
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.#ctor(Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Localization.Json.JsonLocalizationOptions},Microsoft.Extensions.Logging.ILoggerFactory)">
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.#ctor(Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Localization.Json.JsonLocalizationOptions},Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Localization.LocalizationOptions},Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Components.BootstrapBlazorOptions},Microsoft.Extensions.Logging.ILoggerFactory)">
             <summary>
             构造函数
             </summary>
-            <param name="localizationOptions"></param>
+            <param name="jsonOptions"></param>
+            <param name="resxOptions"></param>
+            <param name="options"></param>
             <param name="loggerFactory"></param>
         </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.Create(System.Type)">
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.CreateResourceManagerStringLocalizer(System.Reflection.Assembly,System.String)">
             <summary>
-            通过资源类型创建 IStringLocalizer 方法
-            </summary>
-            <param name="resourceSource"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.Create(System.String,System.String)">
-            <summary>
-            通过 baseName 与 location 创建 IStringLocalizer 方法
-            </summary>
-            <param name="baseName"></param>
-            <param name="location"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.CreateJsonStringLocalizer(System.Reflection.Assembly,System.String)">
-            <summary>
-            创建 IStringLocalizer 实例方法
+            
             </summary>
             <param name="assembly"></param>
-            <param name="typeName"></param>
+            <param name="baseName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.GetCache">
+            <summary>
+            获得 IResourceNamesCache 实例
+            </summary>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.CreateLocalizer``1">
@@ -12780,6 +12890,7 @@
             <summary>
             通过指定类型创建 IStringLocalizer 实例
             </summary>
+            <param name="resourceSource"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString">
@@ -13023,6 +13134,16 @@
             <returns></returns>
         </member>
         <member name="M:System.Linq.LambdaExtensions.Sort``1(System.Collections.Generic.IEnumerable{``0},System.String,BootstrapBlazor.Components.SortOrder)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TItem"></typeparam>
+            <param name="items"></param>
+            <param name="sortName"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.LambdaExtensions.Sort``1(System.Linq.IQueryable{``0},System.String,BootstrapBlazor.Components.SortOrder)">
             <summary>
             
             </summary>
