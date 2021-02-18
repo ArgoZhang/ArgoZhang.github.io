@@ -25,17 +25,6 @@
             属性说明类
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Common.AttributeItem.#ctor">
-            <summary>
-            默认构造，什么都不做
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Common.AttributeItem.#ctor(System.Object)">
-            <summary>
-            根据默认值自动生成部分内容
-            </summary>
-            <param name="defaultValue"></param>
-        </member>
         <member name="P:BootstrapBlazor.Shared.Common.AttributeItem.Name">
             <summary>
             获得/设置 参数
@@ -79,16 +68,6 @@
         <member name="P:BootstrapBlazor.Shared.Common.EventItem.Type">
             <summary>
             获得/设置 类型
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Common.Foo">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Common.Foo.Name">
-            <summary>
-            
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Common.MethodItem">
@@ -253,12 +232,12 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.HeaderText">
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.Text">
             <summary>
             获得/设置 Header 文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.ImageName">
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.Image">
             <summary>
             获得/设置 组件图片
             </summary>
@@ -266,16 +245,6 @@
         <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.Url">
             <summary>
             获得/设置 链接地址
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.ComponentNames">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.SearchText">
-            <summary>
-            
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.ComponentCard.OnInitialized">
@@ -303,41 +272,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Count">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.Dummy">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Name">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Age">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.BirthDay">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Hobby">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Dummy.Education">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.EditorDemo1">
             <summary>
             
@@ -352,6 +286,66 @@
             <summary>
             OnInitialized 方法
             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.Foo">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.Id">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.Name">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.DateTime">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.Address">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.Count">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.Complete">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.Education">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Foo.Hobby">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.EnumEducation">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Shared.Pages.Components.EnumEducation.Primary">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Shared.Pages.Components.EnumEducation.Middel">
+             <summary>
+            
+             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.InstallContent">
             <summary>
@@ -670,14 +664,9 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.AutoCompletes">
-            <summary>
+             <summary>
             
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.AutoCompletes.Model">
-            <summary>
-            
-            </summary>
+             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.AutoCompletes.GetAttributes">
             <summary>
@@ -945,7 +934,7 @@
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.CheckboxLists.OnInitialized">
             <summary>
-            
+            OnInitialized 方法
             </summary>
             <returns></returns>
         </member>
@@ -1222,27 +1211,10 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.DropdownLists">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.DropdownLists.GetEvents">
-            <summary>
-            获得事件方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.DropdownLists.GetAttributes">
-            <summary>
-            获得属性方法
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Dropdowns">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.DropdownWidgets">
             <summary>
@@ -1261,9 +1233,9 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.EditorForms">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Editors">
             <summary>
@@ -1568,9 +1540,9 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.MultiSelects">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.MultiSelects.Trace">
             <summary>
@@ -1814,14 +1786,14 @@
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Selects.Model">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Selects.BindModel">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Selects.Trace">
             <summary>
@@ -2098,61 +2070,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.BindItem">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.BindItem.Id">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.BindItem.Name">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.BindItem.DateTime">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.BindItem.Address">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.BindItem.Count">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.BindItem.Complete">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.BindItem.Education">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.EnumEducation">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:BootstrapBlazor.Shared.Pages.EnumEducation.Primary">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:BootstrapBlazor.Shared.Pages.EnumEducation.Middel">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.TablesBaseColumn">
             <summary>
             
@@ -2165,32 +2082,32 @@
             <param name="d"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseColumn.CustomerButton(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.BindItem})">
+        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseColumn.CustomerButton(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.Components.Foo})">
             <summary>
             
             </summary>
             <param name="items"></param>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseColumn.OnRowButtonClick(BootstrapBlazor.Shared.Pages.BindItem)">
+        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseColumn.OnRowButtonClick(BootstrapBlazor.Shared.Pages.Components.Foo)">
             <summary>
             
             </summary>
             <param name="item"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.TablesBaseEdit">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseEdit.EditItems">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseEdit.Educations">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnInitialized">
             <summary>
@@ -2198,68 +2115,68 @@
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnEditQueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
-            <summary>
+             <summary>
             
-            </summary>
-            <param name="options"></param>
-            <returns></returns>
+             </summary>
+             <param name="options"></param>
+             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnAddAsync">
-            <summary>
+             <summary>
             
-            </summary>
-            <returns></returns>
+             </summary>
+             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnSaveAsync(BootstrapBlazor.Shared.Pages.BindItem)">
-            <summary>
+        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnSaveAsync(BootstrapBlazor.Shared.Pages.Components.Foo)">
+             <summary>
             
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
+             </summary>
+             <param name="item"></param>
+             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnDeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.BindItem})">
-            <summary>
+        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnDeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.Components.Foo})">
+             <summary>
             
-            </summary>
-            <param name="items"></param>
-            <returns></returns>
+             </summary>
+             <param name="items"></param>
+             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.TablesBaseQuery">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseQuery.SearchModel">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.OnResetSearchAsync(BootstrapBlazor.Shared.Pages.BindItem)">
-            <summary>
+        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.OnResetSearchAsync(BootstrapBlazor.Shared.Pages.Components.Foo)">
+             <summary>
             
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
+             </summary>
+             <param name="item"></param>
+             <returns></returns>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseQuery.PageItemsSource">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.OnQueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
-            <summary>
+             <summary>
             
-            </summary>
-            <param name="options"></param>
-            <returns></returns>
+             </summary>
+             <param name="options"></param>
+             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.BindItemQueryAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.BindItem},BootstrapBlazor.Components.QueryPageOptions)">
-            <summary>
+        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.FooQueryAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.Components.Foo},BootstrapBlazor.Components.QueryPageOptions)">
+             <summary>
             
-            </summary>
-            <param name="items"></param>
-            <param name="options"></param>
-            <returns></returns>
+             </summary>
+             <param name="items"></param>
+             <param name="options"></param>
+             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.TablesNameDrop">
             <summary>

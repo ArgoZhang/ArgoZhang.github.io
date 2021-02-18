@@ -4,6 +4,61 @@
         <name>BootstrapBlazor</name>
     </assembly>
     <members>
+        <member name="T:BootstrapBlazor.Components.AutoGenerateBaseAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.Editable">
+            <summary>
+            获得/设置 当前列是否可编辑 默认为 true 当设置为 false 时自动生成编辑 UI 不生成此列
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.Readonly">
+            <summary>
+            获得/设置 当前列编辑时是否只读 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.Sortable">
+            <summary>
+            获得/设置 是否允许排序 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.Filterable">
+            <summary>
+            获得/设置 是否允许过滤数据 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.Searchable">
+            <summary>
+            获得/设置 是否参与搜索 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.AllowTextWrap">
+            <summary>
+            获得/设置 本列是否允许换行 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.TextEllipsis">
+            <summary>
+            获得/设置 本列文本超出省略 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.Align">
+            <summary>
+            获得/设置 文字对齐方式 默认为 Alignment.None
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateBaseAttribute.ShowTips">
+            <summary>
+            获得/设置 字段鼠标悬停提示
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.AutoGenerateClassAttribute">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.AutoGenerateColumnAttribute">
             <summary>
             
@@ -25,21 +80,6 @@
             获得/设置 是否忽略 默认为 false 不忽略
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Editable">
-            <summary>
-            获得/设置 当前列是否可编辑 默认为 true 当设置为 false 时自动生成编辑 UI 不生成此列
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Readonly">
-            <summary>
-            获得/设置 当前列编辑时是否只读 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Sortable">
-            <summary>
-            获得/设置 是否允许排序 默认为 false
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.DefaultSort">
             <summary>
             获得/设置 是否为默认排序列 默认为 false
@@ -48,16 +88,6 @@
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.DefaultSortOrder">
             <summary>
             获得/设置 是否为默认排序规则 默认为 SortOrder.Unset
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Filterable">
-            <summary>
-            获得/设置 是否允许过滤数据 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Searchable">
-            <summary>
-            获得/设置 是否参与搜索 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Width">
@@ -75,16 +105,6 @@
             获得/设置 列是否显示 默认为 true 可见的
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.AllowTextWrap">
-            <summary>
-            获得/设置 本列是否允许换行 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.TextEllipsis">
-            <summary>
-            获得/设置 本列文本超出省略 默认为 false
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.CssClass">
             <summary>
             获得/设置 列 td 自定义样式 默认为 null 未设置
@@ -98,16 +118,6 @@
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.FormatString">
             <summary>
             获得/设置 格式化字符串 如时间类型设置 yyyy-MM-dd
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Align">
-            <summary>
-            获得/设置 文字对齐方式 默认为 Alignment.None
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ShowTips">
-            <summary>
-            获得/设置 字段鼠标悬停提示
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Formatter">
@@ -1861,93 +1871,47 @@
             </summary>
             <param name="state"></param>
         </member>
-        <member name="T:BootstrapBlazor.Components.CheckboxListBase`2">
+        <member name="T:BootstrapBlazor.Components.CheckboxList`1">
             <summary>
             CheckboxList 组件基类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.ClassString">
+        <member name="P:BootstrapBlazor.Components.CheckboxList`1.ClassString">
             <summary>
             获得 组件样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.CheckboxItemClassString">
+        <member name="P:BootstrapBlazor.Components.CheckboxList`1.CheckboxItemClassString">
             <summary>
             获得 组件内部 Checkbox 项目样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.Items">
+        <member name="P:BootstrapBlazor.Components.CheckboxList`1.Items">
             <summary>
             获得/设置 数据源
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.CheckboxItemClass">
+        <member name="P:BootstrapBlazor.Components.CheckboxList`1.CheckboxItemClass">
             <summary>
             获得/设置 Checkbox 组件布局样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.TextField">
-            <summary>
-            获得/设置 显示列字段名称
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.ValueField">
-            <summary>
-            获得/设置 数值列字段名称
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.CheckedField">
-            <summary>
-            获得/设置 是否选中列字段名称
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.OnSelectedChanged">
+        <member name="P:BootstrapBlazor.Components.CheckboxList`1.OnSelectedChanged">
             <summary>
             获得/设置 SelectedItemChanged 方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.ValueAsString">
-            <summary>
-            获得/设置 所有选中的子项以逗号分隔的字符串 如 "Value1,Value2"
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.CheckboxListBase`2.ValueAsStringChanged">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.CheckboxListBase`2.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.CheckboxList`1.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.CheckboxListBase`2.OnStateChanged(`0,System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.CheckboxList`1.OnStateChanged(BootstrapBlazor.Components.SelectedItem,System.Boolean)">
             <summary>
             Checkbox 组件选项状态改变时触发此方法
             </summary>
             <param name="item"></param>
             <param name="v"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.CheckboxListBase`2.GetValue``1(`0)">
-            <summary>
-            获得 组件数值
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.CheckboxListBase`2.GetDisplayText(`0)">
-            <summary>
-            获得 Checkbox 组件显示名称方法
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.CheckboxListBase`2.GetChecked(`0)">
-            <summary>
-            获得 Checkbox 组件状态方法
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.Circle">
             <summary>
@@ -2177,6 +2141,36 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Console.ClassString">
+            <summary>
+            获得 组件样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Console.BodyStyleString">
+            <summary>
+            获得 Console Body Style 字符串
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Console.FooterClassString">
+            <summary>
+            获得 Footer 样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Console.ClearButtonClassString">
+            <summary>
+            获得 按钮样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Console.AutoScrollClassString">
+            <summary>
+            获得 客户端是否自动滚屏样式字符串
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Console.AutoScrollString">
+            <summary>
+            获得 客户端是否自动滚屏标识
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Console.ConsoleElement">
             <summary>
             获得 Console 组件客户端引用实例
@@ -2194,39 +2188,26 @@
             <param name="firstRender"></param>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.Console.ClickAutoScroll">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Console.GetClassString(BootstrapBlazor.Components.ConsoleMessageItem)">
+            <summary>
+            获取消息样式
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Console.ClearConsole">
+            <summary>
+            清空控制台消息方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.ConsoleBase">
             <summary>
             Console 组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ConsoleBase.ClassString">
-            <summary>
-            获得 组件样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ConsoleBase.BodyStyleString">
-            <summary>
-            获得 Console Body Style 字符串
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ConsoleBase.FooterClassString">
-            <summary>
-            获得 Footer 样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ConsoleBase.ClearButtonClassString">
-            <summary>
-            获得 按钮样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ConsoleBase.AutoScrollClassString">
-            <summary>
-            获得 客户端是否自动滚屏样式字符串
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ConsoleBase.AutoScrollString">
-            <summary>
-            获得 客户端是否自动滚屏标识
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ConsoleBase.Items">
@@ -2282,23 +2263,6 @@
         <member name="P:BootstrapBlazor.Components.ConsoleBase.Height">
             <summary>
             获得/设置 组件高度 默认为 126px;
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ConsoleBase.ClickAutoScroll">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ConsoleBase.GetClassString(BootstrapBlazor.Components.ConsoleMessageItem)">
-            <summary>
-            获取消息样式
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ConsoleBase.ClearConsole">
-            <summary>
-            清空控制台消息方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.ConsoleMessageItem">
@@ -3789,121 +3753,6 @@
             下拉框渲染类型
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.DropdownListBase`2">
-            <summary>
-            DropdownListBase 组件基类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.ClassName">
-            <summary>
-            获得 样式集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.InputClassName">
-            <summary>
-            获得 样式集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.ArrowClassName">
-            <summary>
-            获得 样式集合
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.ActiveItem(BootstrapBlazor.Components.SelectedItem)">
-            <summary>
-            设置当前项是否 Active 方法
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.Text">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.InputId">
-            <summary>
-            获得/设置 Select 内部 Input 组件 Id
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.ActiveItem(`0)">
-            <summary>
-            设置当前项是否 Active 方法
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.CurrentItem">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.PlaceHolder">
-            <summary>
-            获得 PlaceHolder 属性
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.Color">
-            <summary>
-            获得/设置 按钮颜色
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.Data">
-            <summary>
-            获得/设置 绑定数据集
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.TextField">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.ValueField">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.DropdownListBase`2.OnSelectedItemChanged">
-            <summary>
-            SelectedItemChanged 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)">
-            <summary>
-            SetParametersAsync 方法
-            </summary>
-            <param name="parameters"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.OnParametersSetAsync">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.OnItemClick(`0)">
-            <summary>
-            下拉框选项点击时调用此方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.GetValue(`0)">
-            <summary>
-            
-            </summary>
-            <param name="model"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DropdownListBase`2.GetText(`0)">
-            <summary>
-            
-            </summary>
-            <param name="model"></param>
-            <returns></returns>
-        </member>
         <member name="T:BootstrapBlazor.Components.DropdownWidget">
             <summary>
             DropdownWidget 组件
@@ -4173,13 +4022,6 @@
             OnAfterRenderAsync 方法
             </summary>
             <param name="firstRender"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EditorForm`1.AutoGenerateTemplate(BootstrapBlazor.Components.IEditorItem)">
-            <summary>
-            
-            </summary>
-            <param name="item"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.EditorForm`1.CreateCallback``1(`0,System.String)">
@@ -6242,11 +6084,6 @@
             
             </summary>
             <param name="item"></param>
-        </member>
-        <member name="T:BootstrapBlazor.Components.MinValidator">
-            <summary>
-            
-            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.MultiSelect`1">
             <summary>
@@ -11442,39 +11279,6 @@
             <param name="context"></param>
             <param name="results"></param>
         </member>
-        <member name="T:BootstrapBlazor.Components.EqualToValidator">
-            <summary>
-            值相等验证组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EqualToValidator.Localizer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EqualToValidator.Value">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EqualToValidator.ValueChanged">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EqualToValidator.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EqualToValidator.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
-            <summary>
-            
-            </summary>
-            <param name="propertyValue"></param>
-            <param name="context"></param>
-            <param name="results"></param>
-        </member>
         <member name="T:BootstrapBlazor.Components.IValidator">
             <summary>
             IValidator 接口
@@ -11493,35 +11297,12 @@
             <param name="context"></param>
             <param name="results"></param>
         </member>
-        <member name="T:BootstrapBlazor.Components.MinValidator`1">
+        <member name="T:BootstrapBlazor.Components.MinValidator">
             <summary>
             
             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.MinValidator`1.Value">
-            <summary>
-            获得/设置 最小值数值
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.MinValidator`1.OnInitialized">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.MinValidator`1.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
-            <summary>
-            
-            </summary>
-            <param name="propertyValue"></param>
-            <param name="context"></param>
-            <param name="results"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.RequiredValidator">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.RequiredValidator.Localizer">
             <summary>
             
             </summary>
@@ -11531,74 +11312,44 @@
             获得/设置 是否允许空字符串 默认 false 不允许
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.RequiredValidator.AllowEmptyList">
-            <summary>
-            获得/设置 是否允许空集合 默认 false 不允许
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.RequiredValidator.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Components.RequiredValidator.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
             <summary>
-            
+            数据验证方法
             </summary>
             <param name="propertyValue"></param>
             <param name="context"></param>
             <param name="results"></param>
         </member>
-        <member name="T:BootstrapBlazor.Components.StringLengthValidator">
+        <member name="T:BootstrapBlazor.Components.ValidatorBase">
             <summary>
-            
+            IValidator 实现类基类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StringLengthValidator.Localizer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.StringLengthValidator.Length">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.StringLengthValidator.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
-            <summary>
-            
-            </summary>
-            <param name="propertyValue"></param>
-            <param name="context"></param>
-            <param name="results"></param>
-        </member>
-        <member name="T:BootstrapBlazor.Components.ValidatorComponentBase">
-            <summary>
-            验证组件基类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidatorComponentBase.ErrorMessage">
+        <member name="P:BootstrapBlazor.Components.ValidatorBase.ErrorMessage">
             <summary>
             获得/设置 错误描述信息
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.ValidatorComponentBase.Validators">
+        <member name="M:BootstrapBlazor.Components.ValidatorBase.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
             <summary>
-            获得/设置 IValidateRules 实例
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ValidatorComponentBase.OnInitialized">
-            <summary>
-            初始化方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ValidatorComponentBase.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
-            <summary>
-            验证方法
+            数据验证方法
             </summary>
             <param name="propertyValue"></param>
             <param name="context"></param>
             <param name="results"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ValidatorBase.GetRuleKey">
+            <summary>
+            获得当前验证规则资源文件中 Key 格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ValidatorBase.GetLocalizerErrorMessage(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            通过资源文件获取 ErrorMessage 方法
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.Alignment">
             <summary>
@@ -12237,7 +11988,7 @@
         </member>
         <member name="M:BootstrapBlazor.Components.EnumExtensions.ToSelectList(System.Type,BootstrapBlazor.Components.SelectedItem)">
             <summary>
-            获取指定枚举类型的枚举值集合，默认通过 Description 标签显示 DisplayName 未设置 Description 标签时显示字段名称
+            获取指定枚举类型的枚举值集合，默认通过 DisplayAttribute DescriptionAttribute 标签显示 DisplayName 支持资源文件 回退机制显示字段名称
             </summary>
             <param name="type"></param>
             <param name="addtionalItem"></param>
@@ -12891,6 +12642,15 @@
             通过指定类型创建 IStringLocalizer 实例
             </summary>
             <param name="resourceSource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.TryGetLocalizerString(System.Type,System.String,System.String@)">
+            <summary>
+            获取指定 Type 的资源文件
+            </summary>
+            <param name="type"></param>
+            <param name="key"></param>
+            <param name="text"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Localization.Json.LocalizedHtmlString">
