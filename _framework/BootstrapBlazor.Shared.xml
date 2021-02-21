@@ -272,21 +272,6 @@
             
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.EditorDemo1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.EditorDemo2">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.EditorDemo2.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.Foo">
              <summary>
             
@@ -1247,17 +1232,6 @@
             
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Forms">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Forms.GetMethods">
-            <summary>
-            获得事件方法
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.GoTops">
             <summary>
             
@@ -1313,17 +1287,12 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.InputNumbers.Model">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.InputNumbers.InputModel.Count">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Inputs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Inputs.OnInitialized">
             <summary>
             
             </summary>
@@ -2052,6 +2021,11 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.TablesBase.Hobbys">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.TablesBase.GetTableColumnAttributes">
             <summary>
             
@@ -2484,6 +2458,22 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.ValidateForms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.ValidateForms.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.ValidateForms.GetMethods">
+            <summary>
+            获得事件方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Template">
             <summary>
             
@@ -2720,6 +2710,13 @@
             查询操作方法
             </summary>
             <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.TableDemoDataService`1.SaveAsync(`0)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
             <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.VesionManagerExtensions">
