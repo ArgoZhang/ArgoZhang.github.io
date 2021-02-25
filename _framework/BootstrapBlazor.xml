@@ -90,6 +90,11 @@
             获得/设置 是否为默认排序规则 默认为 SortOrder.Unset
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Data">
+            <summary>
+            获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Width">
             <summary>
             获得/设置 列宽
@@ -4084,6 +4089,11 @@
             获得/设置 显示顺序
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.EditorItem`1.Data">
+            <summary>
+            获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.EditorItem`1.EditorItems">
             <summary>
             获得/设置 IEditorItem 集合实例
@@ -4128,6 +4138,11 @@
         <member name="P:BootstrapBlazor.Components.IEditorItem.Text">
             <summary>
             获得/设置 表头显示文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IEditorItem.Data">
+            <summary>
+            获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.Step">
@@ -4535,27 +4550,27 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.LightBase">
+        <member name="T:BootstrapBlazor.Components.Light">
             <summary>
-            Light 组件基类
+            
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.LightBase.ClassString">
+        <member name="P:BootstrapBlazor.Components.Light.ClassString">
             <summary>
             获得 组件样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.LightBase.IsFlash">
+        <member name="P:BootstrapBlazor.Components.Light.IsFlash">
             <summary>
             获得/设置 组件是否闪烁 默认为 false 不闪烁
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.LightBase.Title">
+        <member name="P:BootstrapBlazor.Components.Light.Title">
             <summary>
             获得/设置 指示灯 Tooltip 显示文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.LightBase.Color">
+        <member name="P:BootstrapBlazor.Components.Light.Color">
             <summary>
             获得/设置 指示灯颜色 默认为 Success 绿色
             </summary>
@@ -6240,11 +6255,6 @@
             获得 当前选项显示文本
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.Initialized">
-            <summary>
-            获得/设置 是否初始化完成 默认为 false
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.SelectBase`1.SearchText">
             <summary>
             获得/设置 搜索文字
@@ -6287,7 +6297,7 @@
         </member>
         <member name="M:BootstrapBlazor.Components.SelectBase`1.RetrieveId">
             <summary>
-            
+            获得 input 组件 Id 方法
             </summary>
             <returns></returns>
         </member>
@@ -7386,7 +7396,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.TabLink.OnClick">
             <summary>
-            点击组件时回调此委托方法 默认为空 返回真时进行跳转 返回假时终止跳转
+            点击组件时回调此委托方法 默认为空
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TabLink.ChildContent">
@@ -7876,6 +7886,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.InternalTableColumn.Data">
+            <summary>
+            获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.InternalTableColumn.#ctor(System.String,System.Type,System.String)">
             <summary>
             构造函数
@@ -7883,6 +7898,13 @@
             <param name="fieldName">字段名称</param>
             <param name="fieldType">字段类型</param>
             <param name="fieldText">显示文字</param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.InternalTableColumn.InheritValue(BootstrapBlazor.Components.AutoGenerateClassAttribute,BootstrapBlazor.Components.ITableColumn)">
+            <summary>
+            集成 class 标签中设置的参数值
+            </summary>
+            <param name="source"></param>
+            <param name="dest"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.InternalTableColumn.CopyValue(BootstrapBlazor.Components.ITableColumn,BootstrapBlazor.Components.ITableColumn)">
             <summary>
@@ -9333,6 +9355,11 @@
         <member name="P:BootstrapBlazor.Components.TableColumn`1.Template">
             <summary>
             获得/设置 显示模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableColumn`1.Data">
+            <summary>
+            获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TableColumn`1.EditTemplate">
@@ -11968,9 +11995,9 @@
             <param name="fieldName"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.EnumExtensions.ToDescriptionLocalizerString(System.Type,System.String)">
+        <member name="M:BootstrapBlazor.Components.EnumExtensions.ToEnumDisplayName(System.Type,System.String)">
             <summary>
-            通过字段名称获取 DescriptionAttribute 标签值
+            通过字段名称获取 DisplayAttribute/DescriptionAttribute 标签值
             </summary>
             <param name="type"></param>
             <param name="fieldName"></param>
@@ -12293,7 +12320,7 @@
         </member>
         <member name="M:BootstrapBlazor.Components.Utility.GetDisplayName(System.Object,System.String)">
             <summary>
-            获取显示名称方法
+            获取资源文件中 DisplayAttribute/DisplayNameAttribute 标签名称方法
             </summary>
             <param name="model">模型实例</param>
             <param name="fieldName">字段名称</param>

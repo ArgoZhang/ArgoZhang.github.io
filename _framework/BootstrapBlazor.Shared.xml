@@ -332,6 +332,23 @@
             
              </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.FooExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.FooExtensions.GenerateFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.FooExtensions.GenerateWrapFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.InstallContent">
             <summary>
             
@@ -1302,19 +1319,14 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.Height">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.ShowFooter">
             <summary>
-            
+            获得/设置 是否显示页脚
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.IsFixedHeader">
             <summary>
-            
+            获得/设置 是否固定 Header
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.IsFixedFooter">
@@ -1963,6 +1975,53 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesFooter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesFooter.OnInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesSelection">
+            <summary>
+            选中行示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesSelection.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesToolbar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesToolbar.OnInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesWrap">
+            <summary>
+            折行演示示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesWrap.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesWrap.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Table.CustomerFilter.OnInitialized">
             <summary>
             OnInitialized 方法
@@ -1989,11 +2048,6 @@
             OnInitializedAsync 方法
             </summary>
             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesSelection.OnInitialized">
-             <summary>
-            
-             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.TablesBase">
             <summary>
@@ -2161,24 +2215,6 @@
             <summary>
             
             </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.TablesWrap">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesWrap.OnAfterRenderAsync(System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="firstRender"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesWrap.GenerateCellItems">
-            <summary>
-            
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Tabs">
             <summary>
