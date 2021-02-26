@@ -85,37 +85,37 @@
             返回值
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Data.WeatherForecast">
+        <member name="T:BootstrapBlazor.Shared.WeatherForecast">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Data.WeatherForecast.Date">
+        <member name="P:BootstrapBlazor.Shared.WeatherForecast.Date">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Data.WeatherForecast.TemperatureC">
+        <member name="P:BootstrapBlazor.Shared.WeatherForecast.TemperatureC">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Data.WeatherForecast.TemperatureF">
+        <member name="P:BootstrapBlazor.Shared.WeatherForecast.TemperatureF">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Data.WeatherForecast.Summary">
+        <member name="P:BootstrapBlazor.Shared.WeatherForecast.Summary">
             <summary>
             
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Data.WeatherForecastService">
+        <member name="T:BootstrapBlazor.Shared.WeatherForecastService">
             <summary>
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Data.WeatherForecastService.GetForecastAsync(System.DateTime)">
+        <member name="M:BootstrapBlazor.Shared.WeatherForecastService.GetForecastAsync(System.DateTime)">
             <summary>
             
             </summary>
@@ -344,6 +344,12 @@
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.FooExtensions.GenerateWrapFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.FooExtensions.GenerateHobbys">
             <summary>
             
             </summary>
@@ -1985,6 +1991,16 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesSearch">
+            <summary>
+            Table 组件搜索示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesSearch.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesSelection">
             <summary>
             选中行示例代码
@@ -2500,7 +2516,7 @@
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.ValidateForms.OnInitialized">
-            <summary>
+            <summary>baise
             OnInitialized 方法
             </summary>
         </member>

@@ -90,11 +90,6 @@
             获得/设置 是否为默认排序规则 默认为 SortOrder.Unset
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Data">
-            <summary>
-            获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Width">
             <summary>
             获得/设置 列宽
@@ -186,22 +181,6 @@
             
             </summary>
             <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Components.EditorOrderAttribute">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.EditorOrderAttribute.Order">
-            <summary>
-            获得 Order 属性
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.EditorOrderAttribute.#ctor(System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="order"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.FileValidationAttribute">
             <summary>
@@ -3962,6 +3941,18 @@
             编辑表单基类
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.EditorForm`1.GetCssString(BootstrapBlazor.Components.IEditorItem)">
+            <summary>
+            支持每行多少个控件功能
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorForm`1.ItemsPerRow">
+            <summary>
+            获得/设置 每行显示组件数量 默认为 null
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.EditorForm`1.FieldItems">
             <summary>
             获得/设置 列模板
@@ -4114,6 +4105,12 @@
             <summary>
             获取绑定字段信息方法
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.EditorItem`1.GenerateEditorItems">
+            <summary>
+            获得指定泛型的 IEditorItem 集合
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.IEditorItem">
             <summary>
@@ -4405,11 +4402,6 @@
             获得/设置 鼠标悬停提示文字信息
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Layout.TabSet">
-            <summary>
-            获得 Tab 组件实例
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Components.Layout.OnInitialized">
             <summary>
             OnInitialized 方法
@@ -4461,6 +4453,11 @@
         <member name="P:BootstrapBlazor.Components.LayoutBase.Side">
             <summary>
             获得/设置 Side 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.LayoutBase.NotAuthorized">
+            <summary>
+            获得/设置 NotAuthorized 模板
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.LayoutBase.SideWidth">
@@ -7094,47 +7091,6 @@
             Tab 组件基类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Tab.FirstRender">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Tab.GetContentClassString(BootstrapBlazor.Components.TabItem)">
-            <summary>
-            
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Tab.GetClassString(System.Boolean)">
-            <summary>
-            
-            </summary>
-            <param name="active"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Tab.GetIconClassString(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="icon"></param>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Tab.TabElement">
-            <summary>
-            获得/设置 Tab 组件 DOM 实例
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Tab.ClassString">
-            <summary>
-            获得 Tab 组件样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Tab.StyleString">
-            <summary>
-            获得 Tab 组件 Style
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.Tab.Items">
             <summary>
             获得/设置 TabItem 集合
@@ -7185,6 +7141,11 @@
             获得/设置 TabItems 模板
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Tab.NotAuthorized">
+            <summary>
+            获得/设置 NotAuthorized 模板
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Tab.Body">
             <summary>
             获得/设置 TabItems 模板
@@ -7225,10 +7186,21 @@
             获得/设置 关闭其他 TabItem 菜单文本
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Tab.Resource">
+            <summary>
+            The resource to which access is being controlled.
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnInitializedAsync">
             <summary>
             OnInitializedAsync 方法
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Tab.OnParametersSet">
+            <summary>
+            OnParametersSet 方法
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnAfterRenderAsync(System.Boolean)">
             <summary>
@@ -7300,11 +7272,37 @@
             </summary>
             <param name="item"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.Dispose(System.Boolean)">
+        <member name="T:BootstrapBlazor.Components.TabAuthorizeView">
             <summary>
-            Dispose 方法
+            
             </summary>
-            <param name="disposing"></param>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabAuthorizeView.RouteContext">
+            <summary>
+            获得/设置 路由关联上下文
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabAuthorizeView.NotAuthorized">
+            <summary>
+            获得/设置 NotAuthorized 模板
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TabAuthorizeView.Resource">
+            <summary>
+            The resource to which access is being controlled.
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TabAuthorizeView.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TabAuthorizeView.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+            <summary>
+            BuildRenderTree 方法
+            </summary>
+            <param name="builder"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.TabItem">
             <summary>
@@ -8113,7 +8111,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.QueryPageOptions.Searchs">
             <summary>
-            获得/设置 过滤条件集合
+            获得/设置 搜索条件集合
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.QueryPageOptions.SortName">
@@ -8916,7 +8914,7 @@
         </member>
         <member name="M:BootstrapBlazor.Components.Table`1.GetSearchs">
             <summary>
-            
+            通过列集合中的 Searchable 列与 SearchText 拼装 IFilterAction 集合 
             </summary>
             <returns></returns>
         </member>
@@ -12065,7 +12063,7 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.NavigationManagerExtensions.NavigateTo(Microsoft.AspNetCore.Components.NavigationManager,System.String,System.String,System.String)">
+        <member name="M:BootstrapBlazor.Components.NavigationManagerExtensions.NavigateTo(Microsoft.AspNetCore.Components.NavigationManager,System.String,System.String,System.String,System.Nullable{System.Boolean})">
             <summary>
             导航并添加 TabItem 方法
             </summary>
@@ -12073,6 +12071,7 @@
             <param name="url"></param>
             <param name="text"></param>
             <param name="icon"></param>
+            <param name="closable"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.ObjectExtensions">
             <summary>
@@ -12183,13 +12182,13 @@
         </member>
         <member name="P:BootstrapBlazor.Components.TabItemTextOptions.IsActive">
             <summary>
-            获得/设置 是否激活
+            获得/设置 是否激活 默认为 null
             </summary>
             <value></value>
         </member>
         <member name="P:BootstrapBlazor.Components.TabItemTextOptions.Closable">
             <summary>
-            获得/设置 当前 TabItem 是否可关闭 默认为 true 可关闭
+            获得/设置 当前 TabItem 是否可关闭 默认为 null
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.CssBuilder">
@@ -12937,12 +12936,11 @@
             <param name="filter"></param>
             <returns></returns>
         </member>
-        <member name="M:System.Linq.LambdaExtensions.GetSortLambda``1(System.Collections.Generic.IEnumerable{``0})">
+        <member name="M:System.Linq.LambdaExtensions.GetSortLambda``1">
             <summary>
-            
+            获得排序 Expression 表达式
             </summary>
             <typeparam name="TItem"></typeparam>
-            <param name="items"></param>
             <returns></returns>
         </member>
         <member name="M:System.Linq.LambdaExtensions.Sort``1(System.Collections.Generic.IEnumerable{``0},System.String,BootstrapBlazor.Components.SortOrder)">
