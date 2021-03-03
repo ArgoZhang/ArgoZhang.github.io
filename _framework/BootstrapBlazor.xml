@@ -329,6 +329,11 @@
             获得/设置 无匹配数据时显示提示信息 默认提示"无匹配数据"
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.AutoComplete.DisplayCount">
+            <summary>
+            获得/设置 匹配数据时显示的数量
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.AutoComplete.IsLikeMatch">
             <summary>
             是否开启模糊查询，默认为 false
@@ -1125,6 +1130,11 @@
         <member name="P:BootstrapBlazor.Components.ButtonBase.IsDisabled">
             <summary>
             获得/设置 是否禁用 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonBase.StopPropagation">
+            <summary>
+            获得/设置 点击时间是否向上传播 默认 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ButtonBase.ChildContent">
@@ -2099,6 +2109,55 @@
             设置是否被选中方法
             </summary>
             <param name="collapsed"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ColorPicker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ColorPicker.ClassName">
+            <summary>
+            获得 class 样式集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ColorPicker.PlaceHolder">
+            <summary>
+            获得/设置 input 类型 placeholder 属性
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ColorPicker.ShowBar">
+            <summary>
+            获得/设置 是否显示右侧颜色预览框 默认为 true 显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ColorPicker.ColorChanged">
+            <summary>
+            获得/设置 颜色更改回调委托 默认为 null
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ColorPicker.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ColorPicker.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ColorPicker.UpdateColor(System.String)">
+            <summary>
+            更新颜色
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ColorPicker.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.DialogEventArgs">
             <summary>
@@ -8250,6 +8309,20 @@
             明细行首小图标单元格样式
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.GetTreeClassString(`0)">
+            <summary>
+            树形数据展开小箭头
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.GetTreeStyleString(`0)">
+            <summary>
+            树形数据展开小箭头
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.Table`1.GetDetailRowClassString(`0)">
             <summary>
             获得明细行样式
@@ -8269,11 +8342,46 @@
             明细行集合用于数据懒加载
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.TreeRows">
+            <summary>
+            获得/设置 树形数据已展开集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.IsTree">
+            <summary>
+            获得/设置 是否为树形数据 默认为 false
+            </summary>
+            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName"/> 参数设置</remarks>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.OnTreeExpand">
+            <summary>
+            获得/设置 树形数据节点展开式回调委托方法
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.IndentSize">
+            <summary>
+            获得/设置 缩进大小 默认为 16 单位 px
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Table`1.ExpandDetailRow(`0)">
             <summary>
             明细行功能中切换行状态时调用此方法
             </summary>
             <param name="item"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.ToggleTreeRow(`0)">
+            <summary>
+            展开收缩树形数据节点方法
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.CheckTreeChildren(`0)">
+            <summary>
+            通过设置的 HasChildren 属性得知是否有子节点用于显示 UI
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.DetailRows">
             <summary>
@@ -8378,6 +8486,16 @@
         <member name="P:BootstrapBlazor.Components.Table`1.ShowDetailRow">
             <summary>
             获得/设置 是否显示每行的明细行展开图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName">
+            <summary>
+            获得/设置 树形数据模式子项字段 默认为 Children
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName">
+            <summary>
+            获得设置 树形数据模式子项字段是否有子节点属性名称 默认为 HasChildren
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Table`1.OnInitializedAsync">
@@ -9536,6 +9654,42 @@
         <member name="M:BootstrapBlazor.Components.TableToolbarPopconfirmButton`1.OnInitialized">
             <summary>
             OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.TableTreeNode`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TItem"></typeparam>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableTreeNode`1.Value">
+            <summary>
+            获得/设置 当前节点值
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableTreeNode`1.IsExpand">
+            <summary>
+            获得/设置 是否展开
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableTreeNode`1.Children">
+            <summary>
+            获得/设置 子节点集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableTreeNode`1.HasChildren">
+            <summary>
+            获得/设置 是否有子节点
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableTreeNode`1.Parent">
+            <summary>
+            获得/设置 父级节点对象实例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TableTreeNode`1.#ctor(`0)">
+            <summary>
+            构造函数
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Tag">
@@ -10999,7 +11153,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.ParsingErrorMessage">
             <summary>
-            获得/设置 类型转化失败格式化字符串 默认为 {0}字段值必须为{1}类型
+            获得/设置 类型转化失败格式化字符串 默认为 null
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.Value">
@@ -11056,6 +11210,11 @@
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.EditForm">
+            <summary>
+            获得 ValidateFormBase 实例
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ValidateBase`1.EditFormShowLabel">
             <summary>
             获得 ValidateFormBase 实例
             </summary>

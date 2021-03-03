@@ -317,6 +317,31 @@
             
              </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.Generate(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <param name="localizer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GenerateFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GenerateWrapFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GenerateHobbys(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.EnumEducation">
              <summary>
             
@@ -331,29 +356,6 @@
              <summary>
             
              </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Components.FooExtensions">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.FooExtensions.GenerateFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.FooExtensions.GenerateWrapFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.FooExtensions.GenerateHobbys">
-            <summary>
-            
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.InstallContent">
             <summary>
@@ -583,7 +585,7 @@
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Title">
             <summary>
-            获得/设置 颜色 默认为 Info
+            获得/设置 显示文本
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Icon">
@@ -1040,6 +1042,17 @@
         <member name="M:BootstrapBlazor.Shared.Pages.Collapses.GetAttributes">
             <summary>
             获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.ColorPickers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.ColorPickers.GetAttributes">
+            <summary>
+            
             </summary>
             <returns></returns>
         </member>
@@ -2019,6 +2032,16 @@
         <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesToolbar.OnInitialized">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesTree">
+            <summary>
+            树形数据演示示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesTree.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesWrap">
