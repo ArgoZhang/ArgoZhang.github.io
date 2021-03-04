@@ -109,7 +109,7 @@
       "url": "_content\/BootstrapBlazor.Chart\/css\/bootstrap.blazor.chart.bundle.min.css"
     },
     {
-      "hash": "sha256-nGyZ75QZ4iy23n7TPbJp+xWzy1BeY1Xtg2yiOu3eVzY=",
+      "hash": "sha256-9gSA\/mwfSubMwJ\/2AWzTB7rdLctRdZNm8gtnSAy8uqc=",
       "url": "_content\/BootstrapBlazor.Chart\/js\/bootstrap.blazor.chart.bundle.min.js"
     },
     {
@@ -569,7 +569,7 @@
       "url": "_content\/BootstrapBlazor.Shared\/lib\/summernote\/summernote-zh-CN.min.js"
     },
     {
-      "hash": "sha256-k0WMJLJGXiffYhpWYEO\/mwjmCoo\/8x95A83KAGCVlDA=",
+      "hash": "sha256-Ik74oyggFW5iMto+v8tkJaWPuquGHKfkxD32VqAzkPg=",
       "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css"
     },
     {
@@ -617,7 +617,7 @@
       "url": "_content\/BootstrapBlazor\/lib\/summernote\/font\/summernote.woff2"
     },
     {
-      "hash": "sha256-fZJ9+tkYThEy+Jcpcljyw\/lP3x04BMqL40HPiMnk8KA=",
+      "hash": "sha256-H7n7rvoDba75Tm9bf+RZG19CY3\/ZPqJtnJrfe7VE\/Kk=",
       "url": "_framework\/BootstrapBlazor.Chart.dll"
     },
     {
@@ -625,7 +625,7 @@
       "url": "_framework\/BootstrapBlazor.Markdown.dll"
     },
     {
-      "hash": "sha256-TDi3B0bsTKwJ3M5zaYUUWNlxyciqwfc7DnVCu133CGs=",
+      "hash": "sha256-SpB\/LhDJc88aWva8Npwx5ENO+2mDHQJaaqggpbJILAs=",
       "url": "_framework\/BootstrapBlazor.TableExport.dll"
     },
     {
@@ -757,15 +757,15 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-A+t\/ZjzVOas6IL1cy80AyLJzEwX2z+17Tjq1uT9aaLM=",
+      "hash": "sha256-M8vdtx46umT07UQZKDtotP9tANC9lLyQ9hhnUQibeyE=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
-      "hash": "sha256-z\/psIDHRd8n06qlW+hLkrUD4Q50L+iS\/IG9+n8N8w0o=",
+      "hash": "sha256-bceQZ\/8LRnpw38R9Hcp8wY+EsSyl62KpNQ6u4ZyzqwY=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-cYtlhpVm6HIxrKaMTjRExGVzuEqBmKckhlR+f2y6HF8=",
+      "hash": "sha256-P4lQOxRU1Ei3jB6yYBWiT+iGKLksTqr1T7gT2F42klQ=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -937,7 +937,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-Mv5Vq5emabR\/2AadgOmIHD\/mX1L0wcnT2ddANL\/nUA4=",
+      "hash": "sha256-Li\/oGi66zEyuUE3sKFKJrO0a6niLLrrVE3mQ93y43Ck=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -945,5 +945,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "mBXbBx91"
+  "version": "FyPb6LuZ"
 };
