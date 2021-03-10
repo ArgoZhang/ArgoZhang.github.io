@@ -212,7 +212,7 @@ section {
     }
 
     .content .code-label {
-        font-weight: 500;
+        font-weight: bold;
         color: #333;
         margin-bottom: 2px;
     }
@@ -1423,4 +1423,75 @@ section {
 
 .widget .dropdown-item:not(:nth-of-type(odd)):active {
     background-color: inherit;
+}
+
+.ms-learn {
+    position: fixed;
+    bottom: 4rem;
+    background: #fff;
+    box-shadow: 0 0 12px #211b50;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 2000;
+    width: 260px;
+    right: calc(50% - 130px);
+    opacity: 0.7;
+    transition: opacity .3s linear;
+}
+
+    .ms-learn:hover {
+        opacity: 1;
+    }
+
+    .ms-learn .btn-learn {
+        display: block;
+        margin: 0;
+        outline: 0;
+        border: none;
+        width: 100%;
+        color: #fff;
+        background: #8759ff;
+        line-height: 1.5;
+        padding: .5em 0;
+        min-width: 15em;
+        cursor: pointer;
+        transition: background .3s linear;
+    }
+
+        .ms-learn .btn-learn:hover {
+            background: rgba(135,89,255,.9);
+        }
+
+    .ms-learn .learn-list {
+        margin-top: 1rem;
+        padding-right: 5rem;
+        display: none;
+        position: relative;
+    }
+
+        .ms-learn .learn-list .learn-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .ms-learn .learn-list .btn-close {
+            padding: .25rem .5rem;
+            font-size: 65%;
+            color: #fff;
+            background: #8759ff;
+            border-radius: .25rem;
+            position: absolute;
+            right: 1rem;
+            margin-top: -2px;
+            transition: all .3s linear;
+        }
+
+            .ms-learn .learn-list .btn-close:hover {
+                background: rgba(135,89,255,.9);
+                color: #fff;
+            }
+
+@media (min-width: 768px) {
+    .ms-learn {
+        right: 1rem;
+    }
 }
