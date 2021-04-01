@@ -197,6 +197,11 @@
             获得/设置 资源配置集合
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.CurrentTheme">
+            <summary>
+            获得/设置 当前主题
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.WebsiteOptions.#ctor">
             <summary>
             构造函数
@@ -290,6 +295,21 @@
         <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.Desc">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.DialogDemo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.DialogDemo.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.DialogDemo.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.Foo">
@@ -529,6 +549,21 @@
              </summary>
              <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.FooContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.FooContext.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.FooContext.Emails">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.ResultDialogDemo2.Foo">
             <summary>
             
@@ -569,17 +604,28 @@
             获得/设置 组件数量
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ThemeChooser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ThemeChooser.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ThemeChooser.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.CustomerSelectDialog.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
             <summary>
             级联绑定菜单
             </summary>
             <param name="item"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.GenerateItems">
-             <summary>
-            
-             </summary>
-             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.OnInitialized">
              <summary>
@@ -644,6 +690,16 @@
             </summary>
             <param name="firstRender"></param>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Labels">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Labels.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Alerts">
             <summary>
@@ -897,6 +953,44 @@
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Carousels.GetAttributes">
+            <summary>
+            获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Cascaders">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Cascaders.Model">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Cascaders.Trace">
+            <summary>
+            获得/设置 Logger 实例
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Shared.Pages.Cascaders.Items">
+            <summary>
+            获得 默认数据集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Cascaders.OnItemChanged(BootstrapBlazor.Components.CascaderItem[])">
+            <summary>
+            下拉选项改变时调用此方法
+            </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Cascaders.GetEvents">
+            <summary>
+            获得事件方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Cascaders.GetAttributes">
             <summary>
             获得属性方法
             </summary>
@@ -1193,17 +1287,12 @@
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Dialogs">
             <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Dialogs.RadioItems">
-            <summary>
-            
+            弹窗组件示例代码
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Dialogs.DialogService">
             <summary>
-            
+            获得 弹窗注入服务
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Dialogs.OnClick">
@@ -1554,26 +1643,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.CascadeModal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.Dialog1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.Dialog2">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.Dialog3">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Modals.GetAttributes">
             <summary>
             
@@ -1789,6 +1858,16 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Rows">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Rows.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Rows.RowFoo.Educations">
             <summary>
             
             </summary>
@@ -2015,9 +2094,43 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesColumn">
+            <summary>
+            Table 组件列属性示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesColumn.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesColumn.IntFormatter(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesColumn.CustomerButton(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.Components.Foo})">
+            <summary>
+            
+            </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesColumn.OnRowButtonClick(BootstrapBlazor.Shared.Pages.Components.Foo)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesDetailRow">
             <summary>
             
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesDetailRow.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Table.TablesDetailRow.DetailRow.Id">
@@ -2060,6 +2173,57 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesExport">
+            <summary>
+            Table 组件数据导出示例
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Table.TablesExport.Version">
+            <summary>
+            获得/设置 版本号字符串
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesExport.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesExport.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesFilter">
+            <summary>
+            过滤示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesFilter.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesFixedColumn">
+            <summary>
+            固定列示例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesFixedColumn.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesFixedHeader">
+            <summary>
+            Table 组件固定表头示例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesFixedHeader.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesFooter">
             <summary>
             
@@ -2068,6 +2232,36 @@
         <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesFooter.OnInitialized">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesHeader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesHeader.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesNameDrop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Table.TablesNameDrop.Model">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesPages">
+            <summary>
+            Table 组件分页示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesPages.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesRow">
@@ -2153,17 +2347,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Table.TablesExport.Version">
-            <summary>
-            获得/设置 版本号字符串
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesExport.OnInitializedAsync">
-            <summary>
-            OnInitializedAsync 方法
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.TablesBase">
             <summary>
             
@@ -2191,124 +2374,6 @@
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.TablesBase.Hobbys">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.TablesBaseColumn">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseColumn.IntFormatter(System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="d"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseColumn.CustomerButton(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.Components.Foo})">
-            <summary>
-            
-            </summary>
-            <param name="items"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseColumn.OnRowButtonClick(BootstrapBlazor.Shared.Pages.Components.Foo)">
-            <summary>
-            
-            </summary>
-            <param name="item"></param>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.TablesBaseEdit">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseEdit.EditItems">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseEdit.Educations">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnEditQueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
-             <summary>
-            
-             </summary>
-             <param name="options"></param>
-             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnAddAsync">
-             <summary>
-            
-             </summary>
-             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnSaveAsync(BootstrapBlazor.Shared.Pages.Components.Foo)">
-             <summary>
-            
-             </summary>
-             <param name="item"></param>
-             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseEdit.OnDeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.Components.Foo})">
-             <summary>
-            
-             </summary>
-             <param name="items"></param>
-             <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.TablesBaseQuery">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseQuery.SearchModel">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.OnResetSearchAsync(BootstrapBlazor.Shared.Pages.Components.Foo)">
-             <summary>
-            
-             </summary>
-             <param name="item"></param>
-             <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.TablesBaseQuery.PageItemsSource">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.OnQueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
-             <summary>
-            
-             </summary>
-             <param name="options"></param>
-             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.TablesBaseQuery.FooQueryAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Shared.Pages.Components.Foo},BootstrapBlazor.Components.QueryPageOptions)">
-             <summary>
-            
-             </summary>
-             <param name="items"></param>
-             <param name="options"></param>
-             <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.TablesNameDrop">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.TablesNameDrop.Model">
             <summary>
             
             </summary>
@@ -2436,6 +2501,11 @@
         <member name="T:BootstrapBlazor.Shared.Pages.Toasts">
             <summary>
             Toasts 示例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Toasts.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Toasts.OnAfterRenderAsync(System.Boolean)">
@@ -2654,21 +2724,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Shared.ComponentLayout.Title">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Shared.ComponentLayout.Example">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Shared.ComponentLayout.Video">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnInitialized">
             <summary>
             OnInitialized 方法
@@ -2679,7 +2734,7 @@
             OnParametersSet 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnAfterRender(System.Boolean)">
+        <member name="M:BootstrapBlazor.Shared.Shared.ComponentLayout.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRender 方法
             </summary>
@@ -2817,7 +2872,7 @@
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.TableDemoDataServiceCollectionExtensions.AddTableDemoDataService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
-            增加 PetaPoco 数据库操作服务
+            增加 演示数据库操作服务
             </summary>
             <param name="services"></param>
             <returns></returns>
