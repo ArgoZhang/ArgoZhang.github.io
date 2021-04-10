@@ -444,15 +444,21 @@
             获得/设置 是否显示 Border 默认为 false
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.AvatarBase.GetUrlAsync">
+            <summary>
+            获得/设置 获取图片地址异步回调方法
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.AvatarBase.IsLoaded">
             <summary>
             获得/设置 是否显示图片
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.AvatarBase.OnParametersSet">
+        <member name="M:BootstrapBlazor.Components.AvatarBase.OnInitializedAsync">
             <summary>
-            OnParametersSet 方法
+            OnInitializedAsync 方法
             </summary>
+            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.AvatarBase.OnError">
             <summary>
@@ -611,11 +617,18 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.BarcodeReader.Dispose(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.BarcodeReader.DisposeAsyncCore(System.Boolean)">
             <summary>
-            Dispose 方法
+            DisposeAsyncCore 方法
             </summary>
             <param name="disposing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BarcodeReader.DisposeAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.DeviceItem">
             <summary>
@@ -683,17 +696,6 @@
         <member name="M:BootstrapBlazor.Components.BootstrapComponentBase.OnInitialized">
             <summary>
             OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.BootstrapComponentBase.Dispose(System.Boolean)">
-            <summary>
-            Dispose 方法
-            </summary>
-            <param name="disposing"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.BootstrapComponentBase.Dispose">
-            <summary>
-            Dispose 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.BootstrapDynamicComponent">
@@ -871,7 +873,7 @@
             </summary>
             <param name="jsRuntime"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.JSInterop`1.Invoke(`0,System.Object,System.String,System.Object[])">
+        <member name="M:BootstrapBlazor.Components.JSInterop`1.InvokeVoidAsync(`0,System.Object,System.String,System.Object[])">
             <summary>
             Invoke 方法
             </summary>
@@ -879,6 +881,16 @@
             <param name="el"></param>
             <param name="func"></param>
             <param name="args"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.JSInterop`1.InvokeAsync``1(`0,System.Object,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="el"></param>
+            <param name="func"></param>
+            <param name="args"></param>
+            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.JSInterop`1.Dispose(System.Boolean)">
             <summary>
@@ -976,6 +988,11 @@
             获得/设置 是否选中
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.SelectedItem.IsDisabled">
+            <summary>
+            获得/设置 是否禁用
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.SelectedItem.GroupName">
             <summary>
             获得/设置 分组名称
@@ -1051,11 +1068,17 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TooltipComponentBase.Dispose(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.TooltipComponentBase.DisposeAsyncCore(System.Boolean)">
             <summary>
-            Dispose 方法
+            DisposeAsyncCore 方法
             </summary>
             <param name="disposing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TooltipComponentBase.DisposeAsync">
+            <summary>
+            DisposeAsync 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Breadcrumb">
             <summary>
@@ -1546,11 +1569,17 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Camera.Dispose(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.Camera.DisposeAsyncCore(System.Boolean)">
             <summary>
-            Dispose 方法
+            DisposeAsyncCore 方法
             </summary>
             <param name="disposing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Camera.DisposeAsync">
+            <summary>
+            DisposeAsync 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Captcha">
             <summary>
@@ -1614,6 +1643,11 @@
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Captcha.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Captcha.Dispose">
             <summary>
             Dispose 方法
             </summary>
@@ -2043,6 +2077,11 @@
             获得 class 样式集合
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.CheckboxBase`1.InnerClassString">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.CheckboxBase`1.StateString">
             <summary>
             获得 复选框状态字符串
@@ -2051,6 +2090,11 @@
         <member name="P:BootstrapBlazor.Components.CheckboxBase`1.IsBoolean">
             <summary>
             判断双向绑定类型是否为 boolean 类型
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.CheckboxBase`1.Color">
+            <summary>
+            获得/设置 按钮颜色
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.CheckboxBase`1.ShowAfterLabel">
@@ -2403,6 +2447,11 @@
             Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ColorPicker.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.DialogEventArgs">
             <summary>
@@ -3127,6 +3176,13 @@
             获得/设置 时间刻度行高
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.TimePickerCell.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.TimePickerCell.OnClickUp">
             <summary>
             上翻页按钮调用此方法
@@ -3135,6 +3191,17 @@
         <member name="M:BootstrapBlazor.Components.TimePickerCell.OnClickDown">
             <summary>
             下翻页按钮调用此方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TimePickerCell.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TimePickerCell.Dispose">
+            <summary>
+            Dispose 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.DateTimeRange">
@@ -3341,9 +3408,14 @@
         </member>
         <member name="M:BootstrapBlazor.Components.Dialog.Dispose(System.Boolean)">
             <summary>
-            
+            Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Dialog.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.DialogBase`1">
             <summary>
@@ -3513,6 +3585,11 @@
             获得/设置 获得/设置 重置按钮文本
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.EditDialog`1.ShowLoading">
+            <summary>
+            获得/设置 查询时是否显示正在加载中动画 默认为 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.EditDialog`1.SaveButtonText">
             <summary>
             获得/设置 查询按钮文本
@@ -3528,6 +3605,13 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.EditDialog`1.ToggleLoading(System.Boolean)">
+            <summary>
+            显示/隐藏 Loading 遮罩
+            </summary>
+            <param name="state">true 时显示，false 时隐藏</param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.EditDialogOption`1">
             <summary>
             编辑弹窗配置类
@@ -3541,6 +3625,11 @@
         <member name="P:BootstrapBlazor.Components.EditDialogOption`1.ShowLabel">
             <summary>
             获得/设置 是否显示标签 默认为 true 显示标签
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.ShowLoading">
+            <summary>
+            获得/设置 查询时是否显示正在加载中动画 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.EditDialogOption`1.Model">
@@ -3832,6 +3921,123 @@
             获得/设置 搜索回调委托
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.Display`1">
+            <summary>
+            Display 组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Display`1.CurrentTextAsString">
+            <summary>
+            获得 显示文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Display`1.FormatterAsync">
+            <summary>
+            获得/设置 异步格式化字符串
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Display`1.FormatString">
+            <summary>
+            获得/设置 格式化字符串 如时间类型设置 yyyy-MM-dd
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Display`1.Data">
+            <summary>
+            获得/设置 数据集用于 CheckboxList Select 组件 通过 Value 显示 Text 使用 默认 null
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Display`1.OnParametersSetAsync">
+            <summary>
+            OnParametersSetAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Display`1.FormatTextAsString(`0)">
+            <summary>
+            数值格式化委托方法
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Display`1.ConvertArrayToString(`0)">
+            <summary>
+            获取属性方法 Lambda 表达式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Display`1.ConvertEnumerableToString(`0)">
+            <summary>
+            获取属性方法 Lambda 表达式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.DisplayBase`1">
+            <summary>
+            显示组件基类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.IsShowLabel">
+            <summary>
+            是否显示 标签
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.FieldIdentifier">
+            <summary>
+            Gets the <see cref="P:BootstrapBlazor.Components.DisplayBase`1.FieldIdentifier"/> for the bound value.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.NullableUnderlyingType">
+            <summary>
+            获得/设置 泛型参数 TValue 可为空类型 Type 实例，为空时表示类型不可为空
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.Value">
+            <summary>
+            Gets or sets the value of the input. This should be used with two-way binding.
+            </summary>
+            <example>
+            @bind-Value="model.PropertyName"
+            </example>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.ValueChanged">
+            <summary>
+            Gets or sets a callback that updates the bound value.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.ValueExpression">
+            <summary>
+            Gets or sets an expression that identifies the bound value.
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.ShowLabel">
+            <summary>
+            获得/设置 是否显示前置标签 默认值为 null 为空时默认不显示标签
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DisplayBase`1.DisplayText">
+            <summary>
+            获得/设置 显示名称
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DisplayBase`1.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)">
+            <summary>
+            SetParametersAsync 方法
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DisplayBase`1.OnParametersSet">
+            <summary>
+            OnParametersSet 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DisplayBase`1.FormatValueAsString(`0)">
+            <summary>
+            将 Value 格式化为 String 方法
+            </summary>
+            <param name="value">The value to format.</param>
+            <returns>A string representation of the value.</returns>
         </member>
         <member name="T:BootstrapBlazor.Components.DividerBase">
             <summary>
@@ -4205,6 +4411,11 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.Editor.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.EditorToolbarButton">
             <summary>
             富文本框插件信息
@@ -4260,6 +4471,11 @@
         <member name="P:BootstrapBlazor.Components.EditorForm`1.ShowLabel">
             <summary>
             获得/设置 是否显示前置标签 默认为 null 未设置时默认显示标签
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorForm`1.IsDisplay">
+            <summary>
+            获得/设置 是否显示为 Display 组件 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.EditorForm`1.AutoGenerateAllItem">
@@ -4652,6 +4868,11 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.BootstrapInputNumber`1.OnParametersSet">
+            <summary>
+            OnParametersSet 方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.BootstrapInputNumber`1.TryParseValueFromString(System.String,`0@,System.String@)">
             <summary>
             
@@ -4749,10 +4970,18 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Layout.Dispose(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.Layout.DisposeAsyncCore(System.Boolean)">
             <summary>
-            Dispose 方法
+            DisposeAsyncCore 方法
             </summary>
+            <param name="disposing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Layout.DisposeAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.LayoutBase">
             <summary>
@@ -5331,6 +5560,11 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.Message.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.MessageItem">
             <summary>
             MessageItem 组件
@@ -5516,6 +5750,17 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.Modal.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Modal.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.ModalDialog">
             <summary>
             
@@ -5619,6 +5864,11 @@
             Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ModalDialog.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.NavBase">
             <summary>
@@ -6121,9 +6371,14 @@
         </member>
         <member name="M:BootstrapBlazor.Components.QRCode.Dispose(System.Boolean)">
             <summary>
-            
+            Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.QRCode.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Radio">
             <summary>
@@ -6215,6 +6470,12 @@
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Rate.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Rate.Dispose">
             <summary>
             Dispose 方法
             </summary>
@@ -6520,11 +6781,22 @@
             </summary>
             <param name="valid"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.MultiSelect`1.SetItems(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
+            <summary>
+            更改组件数据源方法
+            </summary>
+            <param name="items"></param>
+        </member>
         <member name="M:BootstrapBlazor.Components.MultiSelect`1.Dispose(System.Boolean)">
             <summary>
             Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MultiSelect`1.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Select`1">
             <summary>
@@ -6693,6 +6965,11 @@
             获得/设置 是否选中
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.SelectOption.IsDisabled">
+            <summary>
+            获得/设置 是否禁用
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.SelectOption.GroupName">
             <summary>
             获得/设置 分组名称
@@ -6791,6 +7068,11 @@
             Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Slider.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.SliderBase">
             <summary>
@@ -7231,6 +7513,11 @@
             
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.SweetAlert.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.SweetAlertBody">
             <summary>
@@ -8162,6 +8449,11 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.TableFilter.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.IDataService`1">
             <summary>
             IDataService 接口
@@ -8674,12 +8966,6 @@
             获得/设置 树形数据已展开集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Table`1.IsTree">
-            <summary>
-            获得/设置 是否为树形数据 默认为 false
-            </summary>
-            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName"/> 参数设置</remarks>
-        </member>
         <member name="P:BootstrapBlazor.Components.Table`1.IsLoadChildren">
             <summary>
             获得/设置 是否正在加载子项 默认为 false
@@ -8757,7 +9043,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.Items">
             <summary>
-            获得/设置 数据集合
+            获得/设置 数据集合，适用于无功能时仅做数据展示使用，高级功能时请使用 <see cref="P:BootstrapBlazor.Components.Table`1.OnQueryAsync"/> 回调委托
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.TableSize">
@@ -8815,10 +9101,17 @@
             获得/设置 是否显示每行的明细行展开图标
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.IsTree">
+            <summary>
+            获得/设置 是否为树形数据 默认为 false
+            </summary>
+            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName"/> 参数设置树状数据关联列，是否有子项请使用 <seealso cref="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName"/> 树形进行设置</remarks>
+        </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName">
             <summary>
             获得/设置 树形数据模式子项字段 默认为 Children
             </summary>
+            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName"/> 参数判断是否有子项</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName">
             <summary>
@@ -8867,6 +9160,11 @@
             Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ExtendButtonsColumnClass">
             <summary>
@@ -9019,10 +9317,24 @@
             <param name="val"></param>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.OnClickRefreshAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.Table`1.QueryAsync">
             <summary>
             查询按钮调用此方法
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.ToggleLoading(System.Boolean,System.Nullable{System.Boolean})">
+            <summary>
+            显示/隐藏 Loading 遮罩
+            </summary>
+            <param name="state">true 时显示，false 时隐藏</param>
+            <param name="external">有值 时表示外部调用，内部逻辑不进行设置; 无值时表示组件内部处理</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Table`1.QueryData">
@@ -9633,7 +9945,7 @@
         </member>
         <member name="M:BootstrapBlazor.Components.Table`1.SaveModelAsync(Microsoft.AspNetCore.Components.Forms.EditContext)">
             <summary>
-            
+            保存数据方法
             </summary>
             <param name="context"></param>
             <returns></returns>
@@ -9675,27 +9987,17 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.TableCellButton`1">
+        <member name="T:BootstrapBlazor.Components.TableCellButton">
             <summary>
             单元格内按钮组件
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TableCellButton`1.Item">
-            <summary>
-            获得/设置 当前行绑定数据
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableCellButton`1.OnClickCallback">
+        <member name="P:BootstrapBlazor.Components.TableCellButton.OnClickCallback">
             <summary>
             获得/设置 按钮点击后的回调方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TableCellButton`1.OnClickWithoutRenderCallback">
-            <summary>
-            获得/设置 OnClick 事件不刷新父组件
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.TableCellButton`1.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.TableCellButton.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
@@ -10015,6 +10317,11 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.TableToolbarButton`1.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.TableToolbarPopconfirmButton`1">
             <summary>
             
@@ -10040,6 +10347,11 @@
             Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TableToolbarPopconfirmButton`1.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.TableTreeNode`1">
             <summary>
@@ -10278,6 +10590,86 @@
             </summary>
             <param name="disposing"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.Timer.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.Title">
+            <summary>
+            Title 组件
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Title.Text">
+            <summary>
+            获得/设置 当前页标题文字
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Title.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Title.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Title.SetTitle(System.String)">
+            <summary>
+            设置网站 Title 方法
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Title.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Title.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.TitleService">
+            <summary>
+            Title 服务
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TitleService.Cache">
+            <summary>
+            获得 回调委托缓存集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TitleService.SetTitle(System.String)">
+            <summary>
+            设置当前页面 Title 方法
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TitleService.Register(Microsoft.AspNetCore.Components.IComponent,System.Func{System.String,System.Threading.Tasks.ValueTask})">
+            <summary>
+            注册服务
+            </summary>
+            <param name="key"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TitleService.UnRegister(Microsoft.AspNetCore.Components.IComponent)">
+            <summary>
+            注销事件
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TitleService.SetWebSiteTitle(System.String)">
+            <summary>
+            设置网站标题方法
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.Toast">
             <summary>
             Toast 弹出窗组件
@@ -10316,9 +10708,14 @@
         </member>
         <member name="M:BootstrapBlazor.Components.Toast.Dispose(System.Boolean)">
             <summary>
-            
+            Dispose 方法
             </summary>
             <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Toast.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.ToastBox">
             <summary>
@@ -10378,6 +10775,12 @@
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.ToastBox.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ToastBox.Dispose">
             <summary>
             Dispose 方法
             </summary>
@@ -11041,6 +11444,13 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.AvatarUpload`1.GetItemClassString(BootstrapBlazor.Components.UploadFile)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
         <member name="P:BootstrapBlazor.Components.AvatarUpload`1.ItemClassString">
             <summary>
             
@@ -11076,6 +11486,12 @@
             
             </summary>
             <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.AvatarUpload`1.RetrieveId">
+            <summary>
+            获得 弹窗客户端 ID
+            </summary>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.ButtonUpload`1">
@@ -11215,6 +11631,16 @@
             <param name="args"></param>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.IUpload">
+            <summary>
+            IUpload 接口
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IUpload.UploadFiles">
+            <summary>
+            获得/设置 上传文件实例集合
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.MultipleUploadBase`1">
             <summary>
             
@@ -11232,11 +11658,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.MultipleUploadBase`1.UploadFiles">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.MultipleUploadBase`1.DefaultFileList">
             <summary>
             获得/设置 已上传文件集合
@@ -11247,9 +11668,9 @@
             获得/设置 是否显示上传进度 默认为 false
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.MultipleUploadBase`1.OnParametersSet">
+        <member name="M:BootstrapBlazor.Components.MultipleUploadBase`1.OnInitialized">
             <summary>
-            OnParametersSet 方法
+            OnInitialized 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.MultipleUploadBase`1.OnFileDelete(BootstrapBlazor.Components.UploadFile)">
@@ -11306,6 +11727,16 @@
             获得/设置 Upload 组件实例
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.UploadBase`1.CurrentFile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.UploadBase`1.UploadFiles">
+            <summary>
+            获得/设置 上传文件集合
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.UploadBase`1.Accept">
             <summary>
             获得/设置 上传接收的文件格式 默认为 null 接收任意格式
@@ -11333,6 +11764,18 @@
             </summary>
             <param name="item"></param>
             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadBase`1.ValidateFile">
+            <summary>
+            触发客户端验证方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UploadBase`1.ToggleMessage(System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationResult},System.Boolean)">
+            <summary>
+            显示/隐藏验证结果方法
+            </summary>
+            <param name="results"></param>
+            <param name="validProperty">是否对本属性进行数据验证</param>
         </member>
         <member name="M:BootstrapBlazor.Components.UploadBase`1.OnFileDelete(BootstrapBlazor.Components.UploadFile)">
             <summary>
@@ -11413,6 +11856,16 @@
         <member name="P:BootstrapBlazor.Components.UploadFile.Uploaded">
             <summary>
             获得/设置 文件是否上传处理完毕
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.UploadFile.ValidateId">
+            <summary>
+            获得/设置 用于客户端验证 Id
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.UploadFile.IsValid">
+            <summary>
+            获得/设置 组件是否合规 默认为 null 未检查
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.UploadFile.RequestBase64ImageFileAsync(System.String,System.Int32,System.Int32,System.Int64,System.Threading.CancellationToken)">
@@ -11496,19 +11949,9 @@
             获得/设置 上一次转化失败错误描述信息
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.NullableUnderlyingType">
-            <summary>
-            获得/设置 泛型参数 TValue 可为空类型 Type 实例
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.EditContext">
             <summary>
             Gets the associated <see cref="P:BootstrapBlazor.Components.ValidateBase`1.EditContext"/>.
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.FieldIdentifier">
-            <summary>
-            Gets the <see cref="P:BootstrapBlazor.Components.ValidateBase`1.FieldIdentifier"/> for the bound value.
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.ErrorMessage">
@@ -11536,11 +11979,6 @@
             获得 组件是否被禁用属性值
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.IsShowLabel">
-            <summary>
-            是否显示 标签
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.Required">
             <summary>
             是否显示 必填项标记
@@ -11561,24 +11999,6 @@
             获得/设置 类型转化失败格式化字符串 默认为 null
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.Value">
-            <summary>
-            Gets or sets the value of the input. This should be used with two-way binding.
-            </summary>
-            <example>
-            @bind-Value="model.PropertyName"
-            </example>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.ValueChanged">
-            <summary>
-            Gets or sets a callback that updates the bound value.
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.ValueExpression">
-            <summary>
-            Gets or sets an expression that identifies the bound value.
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.Id">
             <summary>
             获得/设置 当前组件 Id
@@ -11592,16 +12012,6 @@
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.SkipValidate">
             <summary>
             获得/设置 是否不进行验证 默认为 false
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.ShowLabel">
-            <summary>
-            获得/设置 是否显示前置标签 默认值为 null 为空时默认不显示标签
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.DisplayText">
-            <summary>
-            获得/设置 显示名称
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.IsDisabled">
@@ -11623,13 +12033,6 @@
             <summary>
             获得 ValidateFormBase 实例
             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ValidateBase`1.FormatValueAsString(`0)">
-            <summary>
-            Formats the value as a string. Derived classes can override this to determine the formating used for <see cref="P:BootstrapBlazor.Components.ValidateBase`1.CurrentValueAsString"/>.
-            </summary>
-            <param name="value">The value to format.</param>
-            <returns>A string representation of the value.</returns>
         </member>
         <member name="M:BootstrapBlazor.Components.ValidateBase`1.TryParseValueFromString(System.String,`0@,System.String@)">
             <summary>
@@ -11720,12 +12123,6 @@
             客户端检查完成时调用此方法
             </summary>
             <param name="valid">检查结果</param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ValidateBase`1.Dispose(System.Boolean)">
-            <summary>
-            Dispose 方法
-            </summary>
-            <param name="disposing"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.BootstrapBlazorDataAnnotationsValidator">
             <summary>
@@ -11844,7 +12241,7 @@
             <param name="results"></param>
             <param name="fieldIdentifier"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.ValidateForm.ValidateDataAnnotations(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Reflection.PropertyInfo)">
+        <member name="M:BootstrapBlazor.Components.ValidateForm.ValidateDataAnnotations(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Reflection.PropertyInfo,System.String)">
             <summary>
             通过属性设置的 DataAnnotation 进行数据验证
             </summary>
@@ -11852,6 +12249,7 @@
             <param name="context"></param>
             <param name="results"></param>
             <param name="propertyInfo"></param>
+            <param name="memberName"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.ValidateForm.ValidateProperty(System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
             <summary>
@@ -12803,6 +13201,11 @@
             获得/设置 回落默认语言文化 默认为 en 英文
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.ToastPlacement">
+            <summary>
+            获得/设置 Toast 组件全局弹窗默认位置 默认为 null 当设置值后覆盖整站设置
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SupportedCultures">
             <summary>
             获得 组件内置本地化语言列表
@@ -13015,6 +13418,15 @@
             </summary>
             <typeparam name="TModel"></typeparam>
             <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Utility.Copy``1(``0,``0)">
+            <summary>
+            泛型 Copy 方法
+            </summary>
+            <typeparam name="TModel"></typeparam>
+            <param name="source"></param>
+            <param name="destination"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Utility.GenerateColumns``1(System.Func{BootstrapBlazor.Components.ITableColumn,System.Boolean})">
@@ -13405,6 +13817,15 @@
             获取指定 Type 的资源文件
             </summary>
             <param name="type"></param>
+            <param name="key"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.TryGetLocalizerString(Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.String@)">
+            <summary>
+            获取指定 Type 的资源文件
+            </summary>
+            <param name="localizer"></param>
             <param name="key"></param>
             <param name="text"></param>
             <returns></returns>

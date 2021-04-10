@@ -14,7 +14,7 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.App.OnAfterRender(System.Boolean)">
+        <member name="M:BootstrapBlazor.Shared.App.OnAfterRenderAsync(System.Boolean)">
             <summary>
             
             </summary>
@@ -200,6 +200,11 @@
         <member name="P:BootstrapBlazor.Shared.WebsiteOptions.CurrentTheme">
             <summary>
             获得/设置 当前主题
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.TotalCount">
+            <summary>
+            获得/设置 组件总数
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.WebsiteOptions.#ctor">
@@ -1319,6 +1324,16 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Displays">
+            <summary>
+            Display 组件示例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Displays.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Dividers">
             <summary>
             Dividers 组件示例文档
@@ -1669,6 +1684,17 @@
             获得 默认数据集合
             </summary>
         </member>
+        <member name="F:BootstrapBlazor.Shared.Pages.MultiSelects.Items3">
+            <summary>
+            获得 默认数据集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.MultiSelects.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
+            <summary>
+            级联绑定菜单
+            </summary>
+            <param name="item"></param>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.MultiSelects.GetEvents">
             <summary>
             获得事件方法
@@ -1926,6 +1952,11 @@
             </summary>
         </member>
         <member name="F:BootstrapBlazor.Shared.Pages.Selects.Items">
+            <summary>
+            获得 默认数据集合
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Shared.Pages.Selects.Items4">
             <summary>
             获得 默认数据集合
             </summary>
@@ -2244,6 +2275,16 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesLoading">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesLoading.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesNameDrop">
             <summary>
             
@@ -2497,6 +2538,11 @@
             
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Title">
+            <summary>
+            Title 网站标题示例代码
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Toasts">
             <summary>
@@ -2809,31 +2855,6 @@
              </summary>
              <returns></returns>
         </member>
-        <member name="T:Microsoft.Extensions.DependencyInjection.ICultureStorage">
-            <summary>
-            ICulture
-            </summary>
-        </member>
-        <member name="P:Microsoft.Extensions.DependencyInjection.ICultureStorage.Mode">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:Microsoft.Extensions.DependencyInjection.CultureStorageMode">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Microsoft.Extensions.DependencyInjection.CultureStorageMode.Webapi">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Microsoft.Extensions.DependencyInjection.CultureStorageMode.LocalStorage">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.ExampleExtensions">
             <summary>
             示例代码获取服务
@@ -2851,13 +2872,12 @@
             
             </summary>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Shared.WebsiteOptions},Microsoft.Extensions.DependencyInjection.ICultureStorage)">
+        <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{BootstrapBlazor.Shared.WebsiteOptions})">
             <summary>
             构造方法
             </summary>
             <param name="client"></param>
             <param name="options"></param>
-            <param name="storage"></param>
         </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.ExampleService.GetCodeAsync(System.String)">
             <summary>
