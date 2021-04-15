@@ -696,16 +696,6 @@
             <param name="firstRender"></param>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Labels">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Labels.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Alerts">
             <summary>
             
@@ -1147,17 +1137,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Collapses.Trace">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Collapses.ButtonClick(Microsoft.AspNetCore.Components.Web.MouseEventArgs)">
-            <summary>
-            
-            </summary>
-            <param name="e"></param>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Collapses.GetAttributes">
             <summary>
             获得属性方法
@@ -1460,6 +1439,16 @@
         <member name="M:BootstrapBlazor.Shared.Pages.Inputs.OnInitialized">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Labels">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Labels.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.LayoutPages">

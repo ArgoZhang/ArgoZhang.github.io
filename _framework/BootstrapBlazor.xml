@@ -388,84 +388,84 @@
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.AvatarBase">
+        <member name="T:BootstrapBlazor.Components.Avatar">
             <summary>
             Avatar 头像框组件
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.ClassName">
+        <member name="P:BootstrapBlazor.Components.Avatar.ClassName">
             <summary>
             获得 样式集合
             </summary>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.ImgClassString">
+        <member name="P:BootstrapBlazor.Components.Avatar.ImgClassString">
             <summary>
             获得 图片样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.IsCircle">
+        <member name="P:BootstrapBlazor.Components.Avatar.IsCircle">
             <summary>
             获得/设置 是否为圆形
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.Url">
+        <member name="P:BootstrapBlazor.Components.Avatar.Url">
             <summary>
             获得/设置 Image 头像路径地址
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.IsIcon">
+        <member name="P:BootstrapBlazor.Components.Avatar.IsIcon">
             <summary>
             获得/设置 是否为图标
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.Icon">
+        <member name="P:BootstrapBlazor.Components.Avatar.Icon">
             <summary>
             获得/设置 头像框显示图标
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.IsText">
+        <member name="P:BootstrapBlazor.Components.Avatar.IsText">
             <summary>
             获得/设置 是否为显示为文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.Text">
+        <member name="P:BootstrapBlazor.Components.Avatar.Text">
             <summary>
             获得/设置 头像框显示文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.Size">
+        <member name="P:BootstrapBlazor.Components.Avatar.Size">
             <summary>
             获得/设置 头像框大小
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.IsBorder">
+        <member name="P:BootstrapBlazor.Components.Avatar.IsBorder">
             <summary>
             获得/设置 是否显示 Border 默认为 false
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.GetUrlAsync">
+        <member name="P:BootstrapBlazor.Components.Avatar.GetUrlAsync">
             <summary>
             获得/设置 获取图片地址异步回调方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.AvatarBase.IsLoaded">
+        <member name="P:BootstrapBlazor.Components.Avatar.IsLoaded">
             <summary>
             获得/设置 是否显示图片
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.AvatarBase.OnInitializedAsync">
+        <member name="M:BootstrapBlazor.Components.Avatar.OnParametersSetAsync">
             <summary>
             OnInitializedAsync 方法
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.AvatarBase.OnError">
+        <member name="M:BootstrapBlazor.Components.Avatar.OnError">
             <summary>
             图片加载失败时回调此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.AvatarBase.OnLoad">
+        <member name="M:BootstrapBlazor.Components.Avatar.OnLoad">
             <summary>
             图片加载成功时回调此方法
             </summary>
@@ -1068,6 +1068,17 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.TooltipComponentBase.IsRendered">
+            <summary>
+            获得/设置 组件是否已经 Render
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TooltipComponentBase.OnAfterRender(System.Boolean)">
+            <summary>
+            OnAfterRender 方法
+            </summary>
+            <param name="firstRender"></param>
+        </member>
         <member name="M:BootstrapBlazor.Components.TooltipComponentBase.DisposeAsyncCore(System.Boolean)">
             <summary>
             DisposeAsyncCore 方法
@@ -1161,7 +1172,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.ButtonBase.OnClickButton">
             <summary>
-            
+            按钮点击回调方法，内置支持 IsAsync 开关
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ButtonBase.ButtonIcon">
@@ -1249,6 +1260,11 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.ButtonBase.OnParametersSet">
+            <summary>
+            OnParametersSet 方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.ButtonBase.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRenderAsync 方法
@@ -1267,19 +1283,24 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.PopConfirmButton.PopoverService">
+            <summary>
+            获得/设置 PopoverConfirm 服务实例
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.PopConfirmButton.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.PopConfirmButton.Show">
+            <summary>
+            显示确认弹窗方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.PopConfirmButtonBase">
             <summary>
             确认弹窗按钮组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.PopConfirmButtonBase.PopoverService">
-            <summary>
-            获得/设置 PopoverConfirm 服务实例
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.PopConfirmButtonBase.Placement">
@@ -1335,16 +1356,6 @@
         <member name="P:BootstrapBlazor.Components.PopConfirmButtonBase.ConfirmIcon">
             <summary>
             获得/设置 确认框图标
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PopConfirmButtonBase.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PopConfirmButtonBase.Show">
-            <summary>
-            显示确认弹窗方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Calendar">
@@ -2346,6 +2357,11 @@
             获得/设置 CollapseItems 模板
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.CollapseBase.OnCollapseChanged">
+            <summary>
+            获得/设置 CollapseItem 展开收缩时回调方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.CollapseBase.AddItem(BootstrapBlazor.Components.CollapseItem)">
             <summary>
             添加 TabItem 方法 由 TabItem 方法加载时调用
@@ -2376,6 +2392,11 @@
         <member name="P:BootstrapBlazor.Components.CollapseItem.Icon">
             <summary>
             获得/设置 图标字符串 如 "fa fa"
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.CollapseItem.TitleColor">
+            <summary>
+            获得/设置 标题颜色 默认无颜色 Color.None
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.CollapseItem.ChildContent">
@@ -4970,6 +4991,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.Layout.IsRendered">
+            <summary>
+            获得/设置 组件是否已经 Render
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Layout.DisposeAsyncCore(System.Boolean)">
             <summary>
             DisposeAsyncCore 方法
@@ -5702,6 +5728,12 @@
             获得 后台关闭弹窗设置
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.Modal.OnAfterRender(System.Boolean)">
+            <summary>
+            OnAfterRender 方法
+            </summary>
+            <param name="firstRender"></param>
+        </member>
         <member name="M:BootstrapBlazor.Components.Modal.AddDialog(BootstrapBlazor.Components.ModalDialog)">
             <summary>
             添加对话框方法
@@ -6066,26 +6098,27 @@
             获得/设置 PopoverConfirm 服务实例
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.PopoverConfirmBase">
-            <summary>
-            PopoverConfirm 弹出窗组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.PopoverConfirmBase.PopoverService">
-            <summary>
-            获得/设置 PopoverConfirm 服务实例
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PopoverConfirmBase.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.PopoverConfirm.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.PopoverConfirmBase.OnAfterRenderAsync(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.PopoverConfirm.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRender 方法
             </summary>
             <param name="firstRender"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.PopoverConfirm.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.PopoverConfirm.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.PopoverConfirmBox">
             <summary>
@@ -6241,33 +6274,6 @@
             <summary>
             Popover 服务类
             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.PopoverService.ConfirmBox">
-            <summary>
-            获得/设置 内部确认弹窗引用
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PopoverService.Show(BootstrapBlazor.Components.PopoverConfirmOption)">
-            <summary>
-            显示确认弹窗方法
-            </summary>
-            <param name="option"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PopoverService.InvokeRun">
-            <summary>
-            InvokeRun 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PopoverService.Hide">
-            <summary>
-            关闭确认弹窗方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.PopoverService.Register(System.Action)">
-            <summary>
-            订阅弹窗事件
-            </summary>
-            <param name="callback"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.ProgressBase">
             <summary>
@@ -9329,12 +9335,18 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.ToggleLoading(System.Boolean,System.Nullable{System.Boolean})">
+        <member name="M:BootstrapBlazor.Components.Table`1.ToggleLoading(System.Boolean)">
             <summary>
             显示/隐藏 Loading 遮罩
             </summary>
             <param name="state">true 时显示，false 时隐藏</param>
-            <param name="external">有值 时表示外部调用，内部逻辑不进行设置; 无值时表示组件内部处理</param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Table`1.InternalToggleLoading(System.Boolean)">
+            <summary>
+            显示/隐藏 Loading 遮罩
+            </summary>
+            <param name="state">true 时显示，false 时隐藏</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Table`1.QueryData">
@@ -10642,6 +10654,11 @@
         <member name="P:BootstrapBlazor.Components.TitleService.Cache">
             <summary>
             获得 回调委托缓存集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TitleService.#ctor">
+            <summary>
+            默认构造函数
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.TitleService.SetTitle(System.String)">
@@ -12297,6 +12314,16 @@
             获得/设置 是否允许空字符串 默认 false 不允许
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.RequiredValidator.LocalizerFactory">
+            <summary>
+            获得/设置 IStringLocalizerFactory 注入服务实例 默认为 null
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.RequiredValidator.Options">
+            <summary>
+            获得/设置 Json 资源文件配置 默认为 null
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.RequiredValidator.Validate(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.List{System.ComponentModel.DataAnnotations.ValidationResult})">
             <summary>
             数据验证方法
@@ -12329,11 +12356,13 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.ValidatorBase.GetLocalizerErrorMessage(System.ComponentModel.DataAnnotations.ValidationContext)">
+        <member name="M:BootstrapBlazor.Components.ValidatorBase.GetLocalizerErrorMessage(System.ComponentModel.DataAnnotations.ValidationContext,Microsoft.Extensions.Localization.IStringLocalizerFactory,BootstrapBlazor.Localization.Json.JsonLocalizationOptions)">
             <summary>
             通过资源文件获取 ErrorMessage 方法
             </summary>
             <param name="context"></param>
+            <param name="localizerFactory"></param>
+            <param name="options"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.Alignment">
@@ -13043,6 +13072,14 @@
             通过字段名称获取 DescriptionAttribute 标签值
             </summary>
             <param name="type"></param>
+            <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.EnumExtensions.ToEnumDisplayName``1(System.String)">
+            <summary>
+            通过字段名称获取 DisplayAttribute/DescriptionAttribute 标签值
+            </summary>
+            <typeparam name="TEnum"></typeparam>
             <param name="fieldName"></param>
             <returns></returns>
         </member>
@@ -13810,15 +13847,6 @@
             通过指定类型创建 IStringLocalizer 实例
             </summary>
             <param name="resourceSource"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.TryGetLocalizerString(System.Type,System.String,System.String@)">
-            <summary>
-            获取指定 Type 的资源文件
-            </summary>
-            <param name="type"></param>
-            <param name="key"></param>
-            <param name="text"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Localization.Json.JsonStringLocalizerFactory.TryGetLocalizerString(Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.String@)">
