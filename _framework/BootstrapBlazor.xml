@@ -1177,7 +1177,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.ButtonBase.ButtonIcon">
             <summary>
-            
+            获得/设置 实际按钮渲染图标
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ButtonBase.ButtonStyle">
@@ -1253,6 +1253,11 @@
         <member name="P:BootstrapBlazor.Components.ButtonBase.ChildContent">
             <summary>
             获得/设置 RenderFragment 实例
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ButtonBase.IsAsyncLoading">
+            <summary>
+            获得/设置 是否当前正在异步执行操作
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.ButtonBase.OnInitialized">
@@ -4106,6 +4111,133 @@
             获得/设置 子内容
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Components.Download">
+            <summary>
+            下载组件
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Download.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Download.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Download.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.DownloadOption">
+            <summary>
+            文件下载配置类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DownloadOption.FileContent">
+            <summary>
+            获取/设置 要下载的文件数据字节数组
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DownloadOption.FileName">
+            <summary>
+            获取/设置 下载文件另存为文件名
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DownloadOption.Mime">
+            <summary>
+            获取/设置 要下载的文件MIME，默认application/octet-stream
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.DownloadService">
+            <summary>
+            文件下载服务类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DownloadService.Cache">
+            <summary>
+            获得 回调委托缓存集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DownloadService.CacheUrl">
+            <summary>
+            获得 获取地址的回调委托缓存集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.Register(Microsoft.AspNetCore.Components.IComponent,System.Func{BootstrapBlazor.Components.DownloadOption,System.Threading.Tasks.Task})">
+            <summary>
+            注册服务
+            </summary>
+            <param name="key"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.RegisterUrl(Microsoft.AspNetCore.Components.IComponent,System.Func{BootstrapBlazor.Components.DownloadOption,System.Threading.Tasks.Task{System.String}})">
+            <summary>
+            注册获取Url服务
+            </summary>
+            <param name="key"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.UnRegister(Microsoft.AspNetCore.Components.IComponent)">
+            <summary>
+            注销事件
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.UnRegisterUrl(Microsoft.AspNetCore.Components.IComponent)">
+            <summary>
+            注销获取Url事件
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.DownloadAsync(System.String,System.IO.Stream,System.String)">
+            <summary>
+            下载文件方法
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="stream">文件流</param>
+            <param name="mime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.DownloadAsync(System.String,System.Byte[],System.String)">
+            <summary>
+            下载文件方法
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="fileContent">文件内容 byte[] 数组</param>
+            <param name="mime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.CreateUrlAsync(System.String,System.IO.Stream,System.String)">
+            <summary>
+            获取文件连接方法
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="stream">文件流</param>
+            <param name="mime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.CreateUrlAsync(System.String,System.Byte[],System.String)">
+            <summary>
+            获取文件连接方法
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="fileContent">文件内容 byte[] 数组</param>
+            <param name="mime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.DownloadAsync(BootstrapBlazor.Components.DownloadOption)">
+            <summary>
+            下载文件方法
+            </summary>
+            <param name="option">文件下载选项</param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DownloadService.CreateUrlAsync(BootstrapBlazor.Components.DownloadOption)">
+            <summary>
+            获取文件连接方法
+            </summary>
+            <param name="option">文件下载选项</param>
+        </member>
         <member name="T:BootstrapBlazor.Components.Drawer">
             <summary>
             Drawer 组件基类
@@ -4217,6 +4349,16 @@
             </summary>
             <param name="item"></param>
             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Dropdown`1.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Dropdown`1.OnItemClick(BootstrapBlazor.Components.SelectedItem)">
+            <summary>
+            下拉框选项点击时调用此方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.DropdownBase`1">
             <summary>
@@ -5782,13 +5924,13 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Modal.Dispose(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.Modal.DisposeAsyncCore(System.Boolean)">
             <summary>
             Dispose
             </summary>
             <param name="disposing"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Modal.Dispose">
+        <member name="M:BootstrapBlazor.Components.Modal.DisposeAsync">
             <summary>
             Dispose 方法
             </summary>
@@ -6769,6 +6911,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.MultiSelect`1.FormatValueAsString(`0)">
+            <summary>
+            FormatValueAsString 方法
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.MultiSelect`1.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRenderAsync 方法
@@ -6787,7 +6936,7 @@
             </summary>
             <param name="valid"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.MultiSelect`1.SetItems(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
+        <member name="M:BootstrapBlazor.Components.MultiSelect`1.SetItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             更改组件数据源方法
             </summary>
@@ -6832,9 +6981,45 @@
             <param name="item"></param>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.Select`1.Childs">
+            <summary>
+            Razor 文件中 Options 模板子项
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Select`1.OnSearchTextChanged">
             <summary>
             获得/设置 搜索文本发生变化时回调此方法
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Select`1.ShowSearch">
+            <summary>
+            获得/设置 是否显示搜索框 默认为 false 不显示
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Select`1.PlaceHolder">
+            <summary>
+            获得 PlaceHolder 属性
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Select`1.Options">
+            <summary>
+            获得/设置 选项模板支持静态数据
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.RetrieveId">
+            <summary>
+            获得 input 组件 Id 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Select`1.InputId">
+            <summary>
+            获得/设置 Select 内部 Input 组件 Id
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Select`1.SearchText">
+            <summary>
+            获得/设置 搜索文字
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Select`1.OnInitialized">
@@ -6856,11 +7041,22 @@
             <param name="index"></param>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.OnItemClick(BootstrapBlazor.Components.SelectedItem)">
+            <summary>
+            下拉框选项点击时调用此方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Select`1.GetShownItems">
             <summary>
             获取显示的候选项集合
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.Add(BootstrapBlazor.Components.SelectedItem)">
+            <summary>
+            添加静态下拉项方法
+            </summary>
+            <param name="item"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.SelectBase`1">
             <summary>
@@ -6872,34 +7068,9 @@
             当前选择项实例
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.InputId">
-            <summary>
-            获得/设置 Select 内部 Input 组件 Id
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.CurrentTextAsString">
-            <summary>
-            获得 当前选项显示文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.SearchText">
-            <summary>
-            获得/设置 搜索文字
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.ShowSearch">
-            <summary>
-            获得/设置 是否显示搜索框 默认为 false 不显示
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.SelectBase`1.Color">
             <summary>
             获得/设置 按钮颜色
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.PlaceHolder">
-            <summary>
-            获得 PlaceHolder 属性
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.SelectBase`1.Items">
@@ -6917,39 +7088,11 @@
             SelectedItemChanged 方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.SelectBase`1.Options">
-            <summary>
-            获得/设置 选项模板支持静态数据
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.RetrieveId">
-            <summary>
-            获得 input 组件 Id 方法
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.OnItemClick(BootstrapBlazor.Components.SelectedItem)">
-            <summary>
-            下拉框选项点击时调用此方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.GetItems">
-            <summary>
-            获得 数据源
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:BootstrapBlazor.Components.SelectBase`1.SetItems(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             更改组件数据源方法
             </summary>
             <param name="items"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SelectBase`1.Add(BootstrapBlazor.Components.SelectedItem)">
-            <summary>
-            添加静态下拉项方法
-            </summary>
-            <param name="item"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.SelectOption">
             <summary>
@@ -11048,216 +11191,208 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.LeftButtonClassName">
+            <summary>
+            获得/设置 按钮文本样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.RightButtonClassName">
+            <summary>
+            获得/设置 按钮文本样式
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.LeftItems">
+            <summary>
+            获得/设置 左侧数据集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.RightItems">
+            <summary>
+            获得/设置 右侧数据集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.IsTransfer">
+            <summary>
+            获得/设置 是否按钮点击转移 优化性能使用
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.Items">
+            <summary>
+            获得/设置 组件绑定数据项集合
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.ItemsChanged">
+            <summary>
+            获得/设置 组件绑定数据项集合选项变化时回调方法
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.LeftPanelText">
+            <summary>
+            获得/设置 左侧面板 Header 显示文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.RightPanelText">
+            <summary>
+            获得/设置 右侧面板 Header 显示文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.LeftButtonText">
+            <summary>
+            获得/设置 左侧按钮显示文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.RightButtonText">
+            <summary>
+            获得/设置 右侧按钮显示文本
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.ShowSearch">
+            <summary>
+            获得/设置 是否显示搜索框
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.LeftPannelSearchPlaceHolderString">
+            <summary>
+            获得/设置 左侧面板搜索框 placeholder 文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.RightPannelSearchPlaceHolderString">
+            <summary>
+            获得/设置 右侧面板搜索框 placeholder 文字
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Transfer.IsDisabled">
+            <summary>
+            获得/设置 是否禁用 默认为 false
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Transfer.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.TransferBase">
+        <member name="M:BootstrapBlazor.Components.Transfer.OnParametersSet">
             <summary>
-            Transfer 穿梭框组件基类
+            OnParametersSet 方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.LeftButtonClassName">
+        <member name="M:BootstrapBlazor.Components.Transfer.OnAfterRender(System.Boolean)">
             <summary>
-            获得/设置 按钮文本样式
+            OnAfterRender 方法
             </summary>
+            <param name="firstRender"></param>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.RightButtonClassName">
-            <summary>
-            获得/设置 按钮文本样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.LeftItems">
-            <summary>
-            获得/设置 左侧数据集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.RightItems">
-            <summary>
-            获得/设置 右侧数据集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.LeftPanel">
-            <summary>
-            获得/设置 左侧选项集合头部复选框
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.RightPanel">
-            <summary>
-            获得/设置 右侧选项集合头部复选框
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.LeftButton">
-            <summary>
-            获得/设置 左侧选项集合头部复选框
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.RightButton">
-            <summary>
-            获得/设置 右侧选项集合头部复选框
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.Items">
-            <summary>
-            获得/设置 组件绑定数据项集合
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.ItemsChanged">
-            <summary>
-            获得/设置 组件绑定数据项集合选项变化时回调方法
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.LeftPanelText">
-            <summary>
-            获得/设置 左侧面板 Header 显示文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.RightPanelText">
-            <summary>
-            获得/设置 右侧面板 Header 显示文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.LeftButtonText">
-            <summary>
-            获得/设置 左侧按钮显示文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.RightButtonText">
-            <summary>
-            获得/设置 右侧按钮显示文本
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.ShowSearch">
-            <summary>
-            获得/设置 是否显示搜索框
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.LeftPannelSearchPlaceHolderString">
-            <summary>
-            获得/设置 左侧面板搜索框 placeholder 文字
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.RightPannelSearchPlaceHolderString">
-            <summary>
-            获得/设置 右侧面板搜索框 placeholder 文字
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferBase.IsDisabled">
-            <summary>
-            获得/设置 是否禁用 默认为 false
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.TransferBase.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.TransferBase.Transfer(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem},System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
+        <member name="M:BootstrapBlazor.Components.Transfer.TransferItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem},System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             选中数据移动方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferBase.OnSelectedItemsChanged">
+        <member name="M:BootstrapBlazor.Components.Transfer.OnSelectedItemsChanged">
             <summary>
             选项状态改变时回调此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferBase.GetButtonState(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
+        <member name="M:BootstrapBlazor.Components.Transfer.SetItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
+            <summary>
+            更改组件数据源方法
+            </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Transfer.GetButtonState(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             获得按钮是否可用
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.TransferPanelBase">
+        <member name="T:BootstrapBlazor.Components.TransferPanel">
             <summary>
             TransferPanelBase 穿梭框面板组件
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.HeaderCheckbox">
-            <summary>
-            获得/设置 头部复选框
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.SearchText">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.SearchText">
             <summary>
             获得/设置 搜索关键字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.SearchClass">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.SearchClass">
             <summary>
             获得 搜索图标样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.PanelListClassString">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.PanelListClassString">
             <summary>
             获得 Panel 样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.DisabledString">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.DisabledString">
             <summary>
             获得 组件是否被禁用属性值
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.Items">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.Items">
             <summary>
             获得/设置 数据集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.Text">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.Text">
             <summary>
             获得/设置 面板显示文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.ShowSearch">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.ShowSearch">
             <summary>
             获得/设置 是否显示搜索框
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.OnSelectedItemsChanged">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.OnSelectedItemsChanged">
             <summary>
             获得/设置 选项状态变化时回调方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.SearchPlaceHolderString">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.SearchPlaceHolderString">
             <summary>
             获得/设置 搜索框的 placeholder 字符串
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanelBase.IsDisabled">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.IsDisabled">
             <summary>
             获得/设置 是否禁用 默认为 false
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferPanelBase.HeaderCheckState">
+        <member name="M:BootstrapBlazor.Components.TransferPanel.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TransferPanel.HeaderCheckState">
             <summary>
             头部复选框初始化值方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferPanelBase.OnHeaderCheck(BootstrapBlazor.Components.CheckboxState,BootstrapBlazor.Components.SelectedItem)">
+        <member name="M:BootstrapBlazor.Components.TransferPanel.OnHeaderCheck(BootstrapBlazor.Components.CheckboxState,BootstrapBlazor.Components.SelectedItem)">
             <summary>
             左侧头部复选框初始化值方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferPanelBase.OnStateChanged(BootstrapBlazor.Components.CheckboxState,BootstrapBlazor.Components.SelectedItem)">
+        <member name="M:BootstrapBlazor.Components.TransferPanel.OnStateChanged(BootstrapBlazor.Components.CheckboxState,BootstrapBlazor.Components.SelectedItem)">
             <summary>
             
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferPanelBase.OnSearch(Microsoft.AspNetCore.Components.ChangeEventArgs)">
+        <member name="M:BootstrapBlazor.Components.TransferPanel.OnSearch(Microsoft.AspNetCore.Components.ChangeEventArgs)">
             <summary>
             搜索框文本改变时回调此方法
             </summary>
             <param name="e"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferPanelBase.OnKeyUp(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs)">
+        <member name="M:BootstrapBlazor.Components.TransferPanel.OnKeyUp(Microsoft.AspNetCore.Components.Web.KeyboardEventArgs)">
             <summary>
             搜索文本框按键回调方法
             </summary>
             <param name="e"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferPanelBase.ClearSearch">
+        <member name="M:BootstrapBlazor.Components.TransferPanel.ClearSearch">
             <summary>
             清空搜索条件方法
             </summary>

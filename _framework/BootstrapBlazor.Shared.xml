@@ -302,6 +302,27 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.CultureChooser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.CultureChooser.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.CustomerSelectDialog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.CustomerSelectDialog.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
+            <summary>
+            级联绑定菜单
+            </summary>
+            <param name="item"></param>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.DialogDemo">
             <summary>
             
@@ -625,12 +646,6 @@
             </summary>
             <param name="firstRender"></param>
             <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.CustomerSelectDialog.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
-            <summary>
-            级联绑定菜单
-            </summary>
-            <param name="item"></param>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.OnInitialized">
              <summary>
@@ -1324,6 +1339,18 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Downloads">
+            <summary>
+            Title 网站标题示例代码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Downloads.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            渲染完成事件
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Drawers">
             <summary>
             
@@ -1658,26 +1685,6 @@
             
              </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.MultiSelects.Trace">
-            <summary>
-            获得/设置 Logger 实例
-            </summary>
-        </member>
-        <member name="F:BootstrapBlazor.Shared.Pages.MultiSelects.Items">
-            <summary>
-            获得 默认数据集合
-            </summary>
-        </member>
-        <member name="F:BootstrapBlazor.Shared.Pages.MultiSelects.LongItems">
-            <summary>
-            获得 默认数据集合
-            </summary>
-        </member>
-        <member name="F:BootstrapBlazor.Shared.Pages.MultiSelects.Items3">
-            <summary>
-            获得 默认数据集合
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.MultiSelects.OnCascadeBindSelectClick(BootstrapBlazor.Components.SelectedItem)">
             <summary>
             级联绑定菜单
@@ -1940,7 +1947,7 @@
             获得/设置 Logger 实例
             </summary>
         </member>
-        <member name="F:BootstrapBlazor.Shared.Pages.Selects.Items">
+        <member name="P:BootstrapBlazor.Shared.Pages.Selects.Items">
             <summary>
             获得 默认数据集合
             </summary>
@@ -2641,11 +2648,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Transfers.Trace">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Transfers.OnInitialized">
             <summary>
             
@@ -2754,6 +2756,23 @@
             
              </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Shared.BaseLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.BaseLayout.OnInitialized">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.BaseLayout.PWAInstallable">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Shared.ComponentLayout">
             <summary>
             
@@ -2832,17 +2851,6 @@
             <summary>
             更新组件方法
             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Shared.BaseLayout.OnInitialized">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Shared.BaseLayout.PWAInstallable">
-             <summary>
-            
-             </summary>
-             <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.ExampleExtensions">
             <summary>

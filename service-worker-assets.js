@@ -17,7 +17,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-O1bW\/YT78sURcQ6jfjancJzPviSYumPRYPzvMqqTyws=",
+      "hash": "sha256-4CIu\/DdzclYH04oJnKyKLVQEGSFeUb8uems3BJPv06s=",
       "url": "index.html"
     },
     {
@@ -69,11 +69,11 @@
       "url": "_framework\/dotnet.5.0.5.js"
     },
     {
-      "hash": "sha256-8bJj7Bv82RBpn9IY\/Dd64j64Gif27m2XjcM\/dCUeMaM=",
+      "hash": "sha256-bpZtzJP24s2WH4rEWszMG95E8gpLTVVeZwABBTKjUbI=",
       "url": "_framework\/BootstrapBlazor.Shared.xml"
     },
     {
-      "hash": "sha256-1ex1hq8u76YQ1RTjvU7AOWYFhveJxg1FK+1mtl3lbTQ=",
+      "hash": "sha256-oAARV3vahdt4ig2qDurDmW7tWRn60BwoBrwXZBF4tLI=",
       "url": "_framework\/BootstrapBlazor.xml"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_content\/BootstrapBlazor.Shared\/css\/layui.css"
     },
     {
-      "hash": "sha256-sOoppnikEXlWElS05p\/vuDa\/rHpLSq1nlH\/cuUlma4s=",
+      "hash": "sha256-M8nMIyXIyOeK9rmh6PL9N2B8MJ2tjp5YXt9DVfhlfXE=",
       "url": "_content\/BootstrapBlazor.Shared\/css\/site.css"
     },
     {
@@ -589,11 +589,11 @@
       "url": "_content\/BootstrapBlazor.Shared\/lib\/summernote\/summernote-zh-CN.min.js"
     },
     {
-      "hash": "sha256-VQiHtR1T52DvudiE1b63gukZ1\/cH1GdTw9e3x1RWhLc=",
+      "hash": "sha256-iB1Q9yjLhJLM\/72OWuAAGCrtmCStExPEwMMBAp75Yp4=",
       "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css"
     },
     {
-      "hash": "sha256-ZoX7xph7\/eAn1MoZhIWKUzF4XxvjwtT\/q1QWmlLc5ug=",
+      "hash": "sha256-OBl0G6z3a6SiztGbVd\/8hWzO0Sy2DaXs4Ov9y0ZJ5+g=",
       "url": "_content\/BootstrapBlazor\/js\/bootstrap.blazor.bundle.min.js"
     },
     {
@@ -637,15 +637,15 @@
       "url": "_content\/BootstrapBlazor\/lib\/summernote\/font\/summernote.woff2"
     },
     {
-      "hash": "sha256-Yhzm9rVtj6SvC7w9NBk37QU8llq\/vQ5kb7yvx6TlUs0=",
+      "hash": "sha256-sUUw3rNAAzYnUSA7jvKBTNVtcbRmh6f57h09RFwAWtI=",
       "url": "_framework\/BootstrapBlazor.Chart.dll"
     },
     {
-      "hash": "sha256-3uPjrTuDOHBAUS0bNx7nlupSicX2VIOWeYUiievHLss=",
+      "hash": "sha256-4f5RhZBBzSEQXhcNtId1qMPQCsdPsShErlo5EyMmQdk=",
       "url": "_framework\/BootstrapBlazor.Markdown.dll"
     },
     {
-      "hash": "sha256-5bDmEniaG6JmnXfg95KqCd0QyAJekfYaXKr1YRSysoc=",
+      "hash": "sha256-AiO2lrppnhMZomZwGWqMOTsNwyOq\/TdGRA9TA6QofU8=",
       "url": "_framework\/BootstrapBlazor.TableExport.dll"
     },
     {
@@ -777,15 +777,15 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-wYfYtqjwyon0UjkJavGebIFYzoRkCW5b50SKT6Pd5bo=",
+      "hash": "sha256-cTHKIt57HXhQliXC6Rh91QlChHXJRUcMG7bkt7ufCw0=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
-      "hash": "sha256-KoSf0Hr0txQePzd9RT+L9WvKCWNNBbqZSec0Qfc40Nc=",
+      "hash": "sha256-mTiO4WrwuzFFTwM\/udDn4ziQa3kTEVXzb6MwRLPw23s=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-MnJh70T+UpD\/vzDB0uQgNVnFH0k3JafxsfusobNbhz0=",
+      "hash": "sha256-SfunBUxVKWiSTxEiGNCDBgAndB+yiAIB9MRl2NZ3uLA=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -853,7 +853,7 @@
       "url": "_framework\/System.IO.FileSystem.dll"
     },
     {
-      "hash": "sha256-wwu+mxXPByD15cXLvh+QcdxAK1+5AZxv3f\/qOKkyFQo=",
+      "hash": "sha256-8JtbOHnPYyACPHXNSSn7GixE65uBW71ZUCwPlRUZp\/g=",
       "url": "_framework\/System.Linq.Expressions.dll"
     },
     {
@@ -957,11 +957,11 @@
       "url": "_framework\/System.Text.RegularExpressions.dll"
     },
     {
-      "hash": "sha256-8vvpf\/1bNy1ueuIhP9aYZodCU15zY0PKDx63sKL775c=",
+      "hash": "sha256-6+7Py8lT59oGgriaMDMw5IhpQB8X0V1q8NwhtCR5kjI=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-9Wm1imnvuLYLadsCLDlYpAWZE2FDt2fpOzPQBOP3U8Q=",
+      "hash": "sha256-tcngNVzYtqVXuNVUEKFAyntu0A\/axsKaXO93vbvcZrg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -969,5 +969,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "g32f8qRC"
+  "version": "6h12ExfU"
 };
