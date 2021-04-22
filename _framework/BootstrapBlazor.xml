@@ -11181,124 +11181,140 @@
             OnInitialized 方法
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.Transfer">
+        <member name="T:BootstrapBlazor.Components.Transfer`1">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.Localizer">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.Localizer">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.LeftButtonClassName">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.LeftButtonClassName">
             <summary>
             获得/设置 按钮文本样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.RightButtonClassName">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.RightButtonClassName">
             <summary>
             获得/设置 按钮文本样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.LeftItems">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.LeftItems">
             <summary>
             获得/设置 左侧数据集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.RightItems">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.RightItems">
             <summary>
             获得/设置 右侧数据集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.IsTransfer">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.IsTransfer">
             <summary>
             获得/设置 是否按钮点击转移 优化性能使用
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.Items">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.Items">
             <summary>
             获得/设置 组件绑定数据项集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.ItemsChanged">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.OnSelectedItemsChanged">
             <summary>
-            获得/设置 组件绑定数据项集合选项变化时回调方法
+            获得/设置 选中项集合发生改变时回调委托方法
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.LeftPanelText">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.LeftPanelText">
             <summary>
             获得/设置 左侧面板 Header 显示文本
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.RightPanelText">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.RightPanelText">
             <summary>
             获得/设置 右侧面板 Header 显示文本
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.LeftButtonText">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.LeftButtonText">
             <summary>
             获得/设置 左侧按钮显示文本
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.RightButtonText">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.RightButtonText">
             <summary>
             获得/设置 右侧按钮显示文本
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.ShowSearch">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.ShowSearch">
             <summary>
             获得/设置 是否显示搜索框
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.LeftPannelSearchPlaceHolderString">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.LeftPannelSearchPlaceHolderString">
             <summary>
             获得/设置 左侧面板搜索框 placeholder 文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.RightPannelSearchPlaceHolderString">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.RightPannelSearchPlaceHolderString">
             <summary>
             获得/设置 右侧面板搜索框 placeholder 文字
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer.IsDisabled">
+        <member name="P:BootstrapBlazor.Components.Transfer`1.LocalizerFactory">
             <summary>
-            获得/设置 是否禁用 默认为 false
+            获得/设置 IStringLocalizerFactory 注入服务实例 默认为 null
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Transfer.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.Transfer`1.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Transfer.OnParametersSet">
+        <member name="M:BootstrapBlazor.Components.Transfer`1.OnParametersSet">
             <summary>
             OnParametersSet 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Transfer.OnAfterRender(System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.Transfer`1.OnAfterRender(System.Boolean)">
             <summary>
             OnAfterRender 方法
             </summary>
             <param name="firstRender"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Transfer.TransferItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem},System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
+        <member name="M:BootstrapBlazor.Components.Transfer`1.TransferItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem},System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             选中数据移动方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Transfer.OnSelectedItemsChanged">
+        <member name="M:BootstrapBlazor.Components.Transfer`1.TryParseValueFromString(System.String,`0@,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <param name="result"></param>
+            <param name="validationErrorMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Transfer`1.FormatValueAsString(`0)">
+            <summary>
+            FormatValueAsString 方法
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Transfer`1.SelectedItemsChanged">
             <summary>
             选项状态改变时回调此方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Transfer.SetItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
+        <member name="M:BootstrapBlazor.Components.Transfer`1.SetItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             更改组件数据源方法
             </summary>
             <param name="items"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Transfer.GetButtonState(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
+        <member name="M:BootstrapBlazor.Components.Transfer`1.GetButtonState(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             获得按钮是否可用
             </summary>

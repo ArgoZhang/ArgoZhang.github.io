@@ -2648,12 +2648,12 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Transfers.OnInitialized">
+        <member name="M:BootstrapBlazor.Shared.Pages.Transfers.OnInitializedAsync">
             <summary>
-            
+            OnInitializedAsync 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Transfers.OnItemsChanged(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
+        <member name="M:BootstrapBlazor.Shared.Pages.Transfers.OnSelectedItemsChanged(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.SelectedItem})">
             <summary>
             
             </summary>
