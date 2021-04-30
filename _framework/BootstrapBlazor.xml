@@ -5419,6 +5419,21 @@
             获得 组件样式
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Menu.ActiveMenu">
+            <summary>
+            用于提高性能存储当前 active 状态的菜单
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.Menu._init">
+            <summary>
+            菜单是否初始化
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.Menu._invokeJs">
+            <summary>
+            是否需要调用 JS
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Menu.Items">
             <summary>
             获得/设置 菜单数据集合
@@ -5428,16 +5443,28 @@
             <summary>
             获得/设置 是否为手风琴效果 默认为 false
             </summary>
+            <remarks>启用此功能时 <see cref="P:BootstrapBlazor.Components.Menu.IsExpandAll" /> 参数不生效</remarks>
         </member>
-        <member name="P:BootstrapBlazor.Components.Menu.IsVertical">
+        <member name="P:BootstrapBlazor.Components.Menu.IsExpandAll">
             <summary>
-            获得/设置 侧栏垂直模式
+            获得/设置 是否全部展开 默认为 false
             </summary>
-            <value></value>
+            <remarks>手风琴效果 <see cref="P:BootstrapBlazor.Components.Menu.IsAccordion" /> 时此参数不生效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Menu.IsCollapsed">
             <summary>
             获得/设置 侧栏是否收起 默认 false 未收起
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Menu.IsVertical">
+            <summary>
+            获得/设置 侧栏垂直模式 默认 false
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Menu.IndentSize">
+            <summary>
+            获得/设置 缩进大小 默认为 16 单位 px
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Menu.DisableNavigation">
@@ -5455,25 +5482,21 @@
             获得/设置 NavigationManager 实例
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Menu.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.Menu.OnParametersSet">
             <summary>
-            OnInitialized 方法
+            OnParametersSet 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Menu.CascadingSetActive(BootstrapBlazor.Components.MenuItem)">
+        <member name="M:BootstrapBlazor.Components.Menu.OnAfterRenderAsync(System.Boolean)">
             <summary>
-            根据当前路径设置菜单激活状态
+            OnAfterRenderAsync 方法
             </summary>
-            <param name="item"></param>
+            <param name="firstRender"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.MenuItem">
             <summary>
             MenuItem 组件
-            </summary>
-        </member>
-        <member name="F:BootstrapBlazor.Components.MenuItem._items">
-            <summary>
-            
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.MenuItem.Parent">
@@ -5527,24 +5550,34 @@
             获得/设置 菜单内子组件
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.MenuItem.Indent">
+            <summary>
+            获得 当前菜单所在层次 从 0 开始
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MenuItem.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MenuItem.#ctor(System.String,System.String,System.String)">
+            <summary>
+            带参数构造函数
+            </summary>
+            <param name="text">显示文本</param>
+            <param name="url">菜单地址</param>
+            <param name="icon">菜单图标</param>
+        </member>
         <member name="M:BootstrapBlazor.Components.MenuItem.AddItem(BootstrapBlazor.Components.MenuItem)">
             <summary>
             添加 Menutem 方法 由 MenuItem 方法加载时调用
             </summary>
             <param name="item">Menutem 实例</param>
         </member>
-        <member name="M:BootstrapBlazor.Components.MenuItem.CascadingSetActive(BootstrapBlazor.Components.MenuItem,System.Boolean)">
+        <member name="M:BootstrapBlazor.Components.MenuItem.SetIndent">
             <summary>
-            级联设置菜单 active=true 方法
+            设置当前节点缩进方法
             </summary>
-            <param name="item"></param>
-            <param name="active"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.MenuItem.CascadingCancelActive(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.MenuItem})">
-            <summary>
-            级联设置菜单 Active=false 方法
-            </summary>
-            <param name="items"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.MenuItem.GetAllSubItems">
             <summary>
@@ -5555,11 +5588,6 @@
         <member name="T:BootstrapBlazor.Components.MenuLink">
             <summary>
             MenuLink 组件内部封装 NavLink 组件
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.MenuLink.DisableNavigation">
-            <summary>
-            获得/设置 是否禁止导航 默认为 false 允许导航
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.MenuLink.Item">
@@ -5577,32 +5605,6 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.SideMenu.GetMenuItemLinkClassString(BootstrapBlazor.Components.MenuItem)">
-            <summary>
-            获得 MenuItemLink 样式
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SideMenu.GetMenuItemClassString(BootstrapBlazor.Components.MenuItem)">
-            <summary>
-            获得 MenuItem 样式
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.SideMenu.GetExpandedString(BootstrapBlazor.Components.MenuItem)">
-            <summary>
-            获得 是否展开字符串
-            </summary>
-            <param name="item"></param>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.SideMenu.DisableNavigation">
-            <summary>
-            获得/设置 是否禁止导航 默认为 false 允许导航
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.SideMenu.Items">
             <summary>
             获得/设置 菜单数据集合
@@ -5612,6 +5614,13 @@
             <summary>
             获得/设置 菜单项点击回调委托
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.SideMenu.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)">
+            <summary>
+            SetParametersAsync 方法
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.SubMenu">
             <summary>
@@ -5633,22 +5642,16 @@
             获得/设置 菜单项点击回调委托
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.SubMenu.GetClassString(System.String,BootstrapBlazor.Components.MenuItem)">
+        <member name="M:BootstrapBlazor.Components.SubMenu.GetClassString(BootstrapBlazor.Components.MenuItem)">
             <summary>
             
             </summary>
-            <param name="className"></param>
             <param name="item"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.TopMenu">
             <summary>
             
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TopMenu.DisableNavigation">
-            <summary>
-            获得/设置 是否禁止导航 默认为 false 允许导航
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TopMenu.Items">
@@ -5661,12 +5664,11 @@
             获得/设置 菜单项点击回调委托
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TopMenu.GetClassString(System.String,BootstrapBlazor.Components.MenuItem)">
+        <member name="M:BootstrapBlazor.Components.TopMenu.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)">
             <summary>
-            
+            SetParametersAsync 方法
             </summary>
-            <param name="className"></param>
-            <param name="item"></param>
+            <param name="parameters"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.Message">
@@ -7027,6 +7029,11 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.Select`1.OnParametersSet">
+            <summary>
+            OnParametersSet 方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Select`1.OnAfterRenderAsync(System.Boolean)">
             <summary>
             OnAfterRenderAsync 方法
@@ -7529,7 +7536,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.SwalOption.Category">
             <summary>
-            获得/设置 提示类型 默认为 Sucess
+            获得/设置 提示类型 默认为 Success
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.SwalOption.Title">
@@ -12292,6 +12299,13 @@
             </summary>
             <param name="valid">检查结果</param>
         </member>
+        <member name="M:BootstrapBlazor.Components.ValidateBase`1.DisposeAsyncCore(System.Boolean)">
+            <summary>
+            DisposeAsyncCore 方法
+            </summary>
+            <param name="disposing"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.BootstrapBlazorDataAnnotationsValidator">
             <summary>
             BootstrapBlazorDataAnnotationsValidator 验证组件
@@ -12380,6 +12394,13 @@
             <param name="key"></param>
             <param name="comp"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.ValidateForm.TryRemoveValidator(Microsoft.AspNetCore.Components.Forms.FieldIdentifier@,BootstrapBlazor.Components.IValidateComponent@)">
+            <summary>
+            移除数据验证组件到 EditForm 中
+            </summary>
+            <param name="key"></param>
+            <param name="com"></param>
+        </member>
         <member name="M:BootstrapBlazor.Components.ValidateForm.SetError``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)">
             <summary>
             设置指定字段错误信息
@@ -12431,6 +12452,19 @@
             注册提交按钮
             </summary>
             <param name="button"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ValidateForm.DisposeAsyncCore(System.Boolean)">
+            <summary>
+            DisposeAsyncCore 方法
+            </summary>
+            <param name="disposing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ValidateForm.DisposeAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.IValidator">
             <summary>
@@ -13299,6 +13333,24 @@
             <param name="func">Javascript 方法</param>
             <param name="args">Javascript 参数</param>
         </member>
+        <member name="T:BootstrapBlazor.Components.MenuItemExtensions">
+            <summary>
+            MenuItem 扩展操作类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MenuItemExtensions.GetDisabledClassString(BootstrapBlazor.Components.MenuItem)">
+            <summary>
+            通过 MenumItem 获取 IsDisabled 状态字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.MenuItemExtensions.CascadingSetActive(BootstrapBlazor.Components.MenuItem,System.Boolean)">
+            <summary>
+            级联设置 <see cref="T:BootstrapBlazor.Components.MenuItem"/> Active 状态
+            </summary>
+            <param name="item"></param>
+            <param name="active"></param>
+        </member>
         <member name="T:BootstrapBlazor.Components.NavigationManagerExtensions">
             <summary>
             
@@ -13345,6 +13397,21 @@
             通过类型获取类型描述文字
             </summary>
             <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ObjectExtensions.TryConvertTo(System.String,System.Type,System.Object@)">
+            <summary>
+            字符串类型转换为其他数据类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ObjectExtensions.TryConvertTo``1(System.String,``0@)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TValue"></typeparam>
+            <param name="source"></param>
+            <param name="val"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.ObjectExtensions.ToFileSizeString(System.Int64)">

@@ -1524,6 +1524,12 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Layouts.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Lights">
             <summary>
             
@@ -1592,26 +1598,10 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Menus.Trace">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Menus.TraceSideMenu">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Menus.OnInitialized">
+        <member name="M:BootstrapBlazor.Shared.Pages.Menus.OnInitializedAsync">
             <summary>
             OnInitialized 方法
             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Menus.GetAttributes">
-            <summary>
-            
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Messages">
             <summary>
@@ -2803,12 +2793,6 @@
              <summary>
             
              </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Shared.NavMenu.DemoMenuItem.AddItem(BootstrapBlazor.Components.MenuItem)">
-             <summary>
-            
-             </summary>
-             <param name="item"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Shared.PageLayout">
             <summary>
