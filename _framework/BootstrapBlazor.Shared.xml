@@ -2106,9 +2106,9 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesAutoRefresh.OnInitialized">
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesAutoRefresh.OnInitializedAsync">
             <summary>
-            
+            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesColumn">
@@ -2693,10 +2693,11 @@
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.ValidateForms.OnInitialized">
-            <summary>baise
-            OnInitialized 方法
+        <member name="M:BootstrapBlazor.Shared.Pages.ValidateForms.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
             </summary>
+            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.ValidateForms.GetMethods">
             <summary>
@@ -2823,6 +2824,12 @@
             <summary>
             获得/设置 是否开启多标签模式
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.PageLayout.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.PageLayout.OnAfterRenderAsync(System.Boolean)">
             <summary>

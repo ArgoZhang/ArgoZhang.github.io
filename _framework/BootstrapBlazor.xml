@@ -2196,6 +2196,11 @@
             获得/设置 是否显示边框 默认为 true
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.CheckboxList`1.IsVertical">
+            <summary>
+            获得/设置 是否为竖向排列 默认为 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.CheckboxList`1.OnSelectedChanged">
             <summary>
             获得/设置 SelectedItemChanged 方法
@@ -5036,13 +5041,10 @@
             OnParametersSet 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.BootstrapInputNumber`1.TryParseValueFromString(System.String,`0@,System.String@)">
+        <member name="M:BootstrapBlazor.Components.BootstrapInputNumber`1.FormatParsingErrorMessage">
             <summary>
             
             </summary>
-            <param name="value"></param>
-            <param name="result"></param>
-            <param name="validationErrorMessage"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.BootstrapInputNumber`1.FormatValueAsString(`0)">
@@ -5214,6 +5216,11 @@
         <member name="P:BootstrapBlazor.Components.LayoutBase.UseTabSet">
             <summary>
             获得/设置 是否右侧使用 Tab 组件 默认为 false 不使用
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.LayoutBase.TabItemTextDictionary">
+            <summary>
+            获得/设置 TabItem 显示文本字典 默认 null 未设置时取侧边栏菜单显示文本
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.LayoutBase.ExcludeUrls">
@@ -5528,6 +5535,11 @@
         <member name="P:BootstrapBlazor.Components.MenuItem.IsCollapsed">
             <summary>
             获得/设置 是否收缩 默认收缩
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MenuItem.Target">
+            <summary>
+            获得/设置 A 标签 target 参数
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.MenuItem.IsDisabled">
@@ -6005,6 +6017,11 @@
         <member name="P:BootstrapBlazor.Components.ModalDialog.OnClose">
             <summary>
             获得/设置 关闭弹窗是回调委托
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ModalDialog.CloseButtonText">
+            <summary>
+            获得/设置 关闭按钮显示文字 资源文件设置为 关闭
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ModalDialog.Modal">
@@ -7984,14 +8001,14 @@
             获得/设置 关闭其他 TabItem 菜单文本
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Tab.Resource">
+        <member name="P:BootstrapBlazor.Components.Tab.TabItemTextDictionary">
             <summary>
-            The resource to which access is being controlled.
+            获得/设置 TabItem 显示文本字典 默认 null 未设置时取侧边栏菜单显示文本
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Tab.OnInitializedAsync">
+        <member name="M:BootstrapBlazor.Components.Tab.OnInitialized">
             <summary>
-            OnInitializedAsync 方法
+            OnInitialized 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.Tab.OnParametersSet">
@@ -8164,6 +8181,12 @@
             </summary>
             <param name="parameters"></param>
             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TabItem.SetText(System.String)">
+            <summary>
+            内置 TabItem 显示文字
+            </summary>
+            <param name="text"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.TabLink">
             <summary>
@@ -11218,11 +11241,6 @@
             获得/设置 右侧数据集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Transfer`1.IsTransfer">
-            <summary>
-            获得/设置 是否按钮点击转移 优化性能使用
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.Transfer`1.Items">
             <summary>
             获得/设置 组件绑定数据项集合
@@ -11282,12 +11300,6 @@
             <summary>
             OnParametersSet 方法
             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Transfer`1.OnAfterRender(System.Boolean)">
-            <summary>
-            OnAfterRender 方法
-            </summary>
-            <param name="firstRender"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.Transfer`1.TransferItems(System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem},System.Collections.Generic.List{BootstrapBlazor.Components.SelectedItem})">
             <summary>
@@ -12219,6 +12231,12 @@
             <param name="validationErrorMessage">If the value could not be parsed, provides a validation error message.</param>
             <returns>True if the value could be parsed; otherwise false.</returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.ValidateBase`1.FormatParsingErrorMessage">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="P:BootstrapBlazor.Components.ValidateBase`1.FieldClass">
             <summary>
             Gets a string that indicates the status of the field being edited. This will include
@@ -12387,19 +12405,19 @@
             验证组件缓存
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.ValidateForm.AddValidator(Microsoft.AspNetCore.Components.Forms.FieldIdentifier@,BootstrapBlazor.Components.IValidateComponent)">
+        <member name="M:BootstrapBlazor.Components.ValidateForm.AddValidator(System.ValueTuple{System.String,System.Type},System.ValueTuple{Microsoft.AspNetCore.Components.Forms.FieldIdentifier,BootstrapBlazor.Components.IValidateComponent})">
             <summary>
             添加数据验证组件到 EditForm 中
             </summary>
             <param name="key"></param>
-            <param name="comp"></param>
+            <param name="value"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.ValidateForm.TryRemoveValidator(Microsoft.AspNetCore.Components.Forms.FieldIdentifier@,BootstrapBlazor.Components.IValidateComponent@)">
+        <member name="M:BootstrapBlazor.Components.ValidateForm.TryRemoveValidator(System.ValueTuple{System.String,System.Type},System.ValueTuple{Microsoft.AspNetCore.Components.Forms.FieldIdentifier,BootstrapBlazor.Components.IValidateComponent}@)">
             <summary>
             移除数据验证组件到 EditForm 中
             </summary>
             <param name="key"></param>
-            <param name="com"></param>
+            <param name="value"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.ValidateForm.SetError``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)">
             <summary>
@@ -13456,6 +13474,11 @@
             获得/设置 回落默认语言文化 默认为 en 英文
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.FallbackCulture">
+            <summary>
+            获得/设置 回落默认语言文化 默认为 en 英文
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.ToastPlacement">
             <summary>
             获得/设置 Toast 组件全局弹窗默认位置 默认为 null 当设置值后覆盖整站设置
@@ -13463,7 +13486,12 @@
         </member>
         <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.SupportedCultures">
             <summary>
-            获得 组件内置本地化语言列表
+            获得/设置 组件内置本地化语言列表 默认为 null
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.FallBackToParentUICultures">
+            <summary>
+            获得/设置 是否回落到 UI 父文化 默认为 true
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.Themes">
@@ -13964,7 +13992,17 @@
         </member>
         <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.FallbackCulture">
             <summary>
-            获得/设置 回落默认文化
+            获得/设置 回落默认文化 默认为 en 英文
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.FallBackToParentUICultures">
+            <summary>
+            获得/设置 是否回落到 UI 父文化 默认为 true
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.SupportedCultures">
+            <summary>
+            获得 组件内置本地化语言列表
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Localization.Json.JsonLocalizationOptions.#ctor">
