@@ -257,6 +257,44 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.ChartToast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ChartToast.ToastService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ChartToast.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+            <summary>
+            BuildRenderTree 方法
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ChartToast.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ChartToast.ShowToast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ChartToast.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ChartToast.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.ComponentCard">
             <summary>
             
@@ -1006,60 +1044,122 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Shared.Pages.Charts">
+        <member name="T:BootstrapBlazor.Shared.Pages.Charts.Bar">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Charts.ToastService">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Charts.OnAfterRenderAsync(System.Boolean)">
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Bar.OnAfterRender(System.Boolean)">
             <summary>
             
             </summary>
             <param name="firstRender"></param>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Charts.ShowToast">
+        <member name="T:BootstrapBlazor.Shared.Pages.Charts.Bubble">
             <summary>
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Dispose(System.Boolean)">
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Bubble.OnAfterRender(System.Boolean)">
             <summary>
             
             </summary>
-            <param name="disposing"></param>
+            <param name="firstRender"></param>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Dispose">
+        <member name="T:BootstrapBlazor.Shared.Pages.Charts.Doughnut">
             <summary>
             
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Charts.GetEvents">
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Doughnut.OnAfterRender(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="firstRender"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Charts.Index">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Index.OnInitializedAsync">
+            <summary>
+            OnInitializedAsync 方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Index.GetEvents">
             <summary>
             获得事件方法
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Charts.GetAttributes">
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Index.GetAttributes">
             <summary>
             获得属性方法
             </summary>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Charts.Version">
+        <member name="T:BootstrapBlazor.Shared.Pages.Charts.Line">
             <summary>
-            获得/设置 版本号字符串
+            
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Charts.OnInitializedAsync">
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Line.OnAfterRender(System.Boolean)">
             <summary>
-            OnInitializedAsync 方法
+            
             </summary>
-            <returns></returns>
+            <param name="firstRender"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Charts.Pie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Pie.OnAfterRender(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="firstRender"></param>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Charts.Utility">
+            <summary>
+            Chart 工具类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Utility.RandomData(BootstrapBlazor.Components.Chart)">
+            <summary>
+            
+            </summary>
+            <param name="chart"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Utility.AddDataSet(BootstrapBlazor.Components.Chart,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="chart"></param>
+            <param name="dsCount"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Utility.RemoveDataSet(BootstrapBlazor.Components.Chart,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="chart"></param>
+            <param name="dsCount"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Utility.AddData(BootstrapBlazor.Components.Chart,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="chart"></param>
+            <param name="daCount"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Charts.Utility.RemoveData(BootstrapBlazor.Components.Chart,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="chart"></param>
+            <param name="daCount"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.CheckboxLists">
             <summary>
@@ -1398,6 +1498,37 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Empties">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Empties.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Empties.SubTitle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Empties.Localizer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Empties.OnInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Empties.GetAttributes">
+            <summary>
+            获得属性方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Footers">
             <summary>
             
@@ -1620,46 +1751,6 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Modals">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.Modal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.BackdropModal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.SmailModal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.LargeModal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.ExtraLargeModal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.CenterModal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.LongContentModal">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Modals.ScrollModal">
             <summary>
             
             </summary>
