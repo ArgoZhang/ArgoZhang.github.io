@@ -167,6 +167,11 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.WebsiteOptions.WikiUrl">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Shared.WebsiteOptions.QQGroup1Link">
             <summary>
             获得 QQ 1 群链接地址
@@ -2845,8 +2850,15 @@
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.BaseLayout.OnInitialized">
             <summary>
-            
+            OnInitialized 方法
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Shared.BaseLayout.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.BaseLayout.PWAInstallable">
