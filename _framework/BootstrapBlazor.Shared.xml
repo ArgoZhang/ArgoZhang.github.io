@@ -9,11 +9,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.App.JSRuntime">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.App.OnAfterRenderAsync(System.Boolean)">
             <summary>
             
@@ -366,6 +361,16 @@
             </summary>
             <param name="item"></param>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.DialogBodyFoo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.DialogBodyFoo.UpdateAsync(System.String)">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.DialogDemo">
             <summary>
             
@@ -379,6 +384,26 @@
         <member name="M:BootstrapBlazor.Shared.Pages.Components.DialogDemo.OnInitialized">
             <summary>
             OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Components.DialogHeaderFoo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.DialogHeaderFoo.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.DialogHeaderFoo.OnValueChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.DialogHeaderFoo.OnInitialized">
+            <summary>
+            
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.Foo">
@@ -690,6 +715,12 @@
             <param name="firstRender"></param>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.TreeDataFoo.GetTreeItems">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.OnInitialized">
              <summary>
             
@@ -710,11 +741,6 @@
         <member name="P:BootstrapBlazor.Shared.Pages.Components.Logger.AdditionalAttributes">
             <summary>
             获得/设置 用户自定义属性
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Title">
-            <summary>
-            获得/设置 显示文本
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Icon">
@@ -752,6 +778,39 @@
             
             </summary>
             <param name="firstRender"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Introduction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Introduction.WebsiteOption">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Introduction.Localizer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Introduction.OnInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Introduction.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Introduction.DisposeAsync">
+            <summary>
+            
+            </summary>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Alerts">
@@ -1301,34 +1360,14 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.SpanValue">
+        <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.ModelValidateValue">
             <summary>
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.SpanValue2">
+        <member name="M:BootstrapBlazor.Shared.Pages.DateTimePickers.OnInitialized">
             <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.DateLogger">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.TimeLogger">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.DateTimeLogger">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.BindValue">
-            <summary>
-            
+            OnInitialized 方法
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.DateTimePickers.BindValueString">
@@ -1533,6 +1572,16 @@
             获得属性方法
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.FloatingLabels">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.FloatingLabels.OnInitialized">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Footers">
             <summary>
@@ -1865,11 +1914,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Progresss.Trace">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Progresss.GetAttributes">
             <summary>
             获得属性方法
@@ -2124,11 +2168,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Switchs.Trace">
-             <summary>
-            
-             </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Switchs.OnValueChanged(System.Boolean)">
              <summary>
             
@@ -2244,6 +2283,16 @@
         <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesDialog.OnInitialized">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesDynamic">
+            <summary>
+            动态表格示例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesDynamic.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesEdit">
@@ -2706,6 +2755,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Transitions">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Trees">
             <summary>
             
@@ -2734,9 +2788,9 @@
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.ValidateForms">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.ValidateForms.OnInitializedAsync">
             <summary>

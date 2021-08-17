@@ -15,7 +15,7 @@
         },
         highlight: function (el) {
             var $el = $(el);
-            $el.find('[data-toggle="tooltip"]').tooltip();
+            $el.find('[data-bs-toggle="tooltip"]').tooltip();
             var code = $el.find('code')[0];
             if (code) {
                 hljs.highlightBlock(code);
@@ -51,18 +51,23 @@
                 }
             });
         },
-        loading: function () {
-            var $loader = $("#loading");
-            if ($loader.length > 0) {
-                $loader.addClass("is-done");
-                var handler = window.setTimeout(function () {
-                    window.clearTimeout(handler);
-                    $loader.remove();
-                    $('body').removeClass('overflow-hidden');
-                }, 600);
+        loading: function (wasm, error, reload) {
+            if (wasm) {
+                var $loader = $("#loading");
+                if ($loader.length > 0) {
+                    $loader.addClass("is-done");
+                    var handler = window.setTimeout(function () {
+                        window.clearTimeout(handler);
+                        $loader.remove();
+                        $('body').removeClass('overflow-hidden');
+                    }, 600);
+                }
             }
+
+            $('.reload').text(reload);
+            $('#blazor-error-ui > span:first').text(error);
         },
-        indexTyper: function (el) {
+        indexTyper: function (el, text1, text2, text3) {
             var $this = $(el);
             var $cursor = $this.next();
 
@@ -101,10 +106,6 @@
                 });
             };
 
-            var text1 = ['最', '好', '用', '的'];
-            var text2 = ['最', '好', '看', '的'];
-            var text3 = ['最', '简', '单', '实', '用', '的'];
-
             var loop = function () {
                 var handler = window.setTimeout(function () {
                     window.clearTimeout(handler);
@@ -130,7 +131,7 @@
                 }
 
                 var $this = $(this);
-                var $bar = $this.find('[data-slide]');
+                var $bar = $this.find('[data-bs-slide]');
                 $bar.removeClass('d-none');
                 var hoverHandler = window.setTimeout(function () {
                     window.clearTimeout(hoverHandler);
@@ -138,7 +139,7 @@
                 }, 10);
             }, function () {
                 var $this = $(this);
-                var $bar = $this.find('[data-slide]');
+                var $bar = $this.find('[data-bs-slide]');
                 $this.removeClass('hover');
                 leaveHandler = window.setTimeout(function () {
                     window.clearTimeout(leaveHandler);
@@ -146,7 +147,7 @@
                 }, 300);
             });
 
-            $('.welcome-footer [data-toggle="tooltip"]').tooltip();
+            $('.welcome-footer [data-bs-toggle="tooltip"]').tooltip();
         },
         table_wrap: function () {
             var handler = window.setInterval(function () {
@@ -164,7 +165,7 @@
             }, 500);
         },
         tooltip: function () {
-            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-bs-toggle="tooltip"]').tooltip();
         },
         table_test: function (el, obj, method) {
             var $el = $(el);
@@ -177,7 +178,7 @@
         },
         initTheme: function (el) {
             var $el = $(el);
-            $el.find('[data-toggle="tooltip"]').tooltip();
+            $el.find('[data-bs-toggle="tooltip"]').tooltip();
             $el.on('click', '.btn-theme, .theme-close, .theme-item', function (e) {
                 var $theme = $el.find('.theme-list');
                 $theme.toggleClass('is-open').slideToggle('fade');
