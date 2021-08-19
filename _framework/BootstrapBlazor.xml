@@ -5629,6 +5629,11 @@
             </summary>
             <value></value>
         </member>
+        <member name="P:BootstrapBlazor.Components.Menu.IsBottom">
+            <summary>
+            获得/设置 侧边栏垂直模式在底部 默认 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Menu.IndentSize">
             <summary>
             获得/设置 缩进大小 默认为 16 单位 px
@@ -5819,6 +5824,21 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TopMenu.GetDropdownClassString(BootstrapBlazor.Components.MenuItem,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="item"></param>
+             <param name="className"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.TopMenu.GetIconString(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="icon"></param>
+             <returns></returns>
         </member>
         <member name="P:BootstrapBlazor.Components.TopMenu.Items">
             <summary>
