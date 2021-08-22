@@ -1311,6 +1311,23 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Client">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Client.ClientContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Client.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Collapses">
             <summary>
             

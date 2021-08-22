@@ -140,6 +140,11 @@
             获得/设置 组件类型 默认为 null
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.ComponentParameters">
+            <summary>
+            获得/设置 组件自定义类型参数集合 默认为 null
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.Template">
             <summary>
             获得/设置 显示模板
@@ -4811,6 +4816,11 @@
             获得/设置 组件类型 默认为 null
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.EditorItem`1.ComponentParameters">
+            <summary>
+            获得/设置 组件自定义类型参数集合 默认为 null
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.EditorItem`1.Order">
             <summary>
             获得/设置 显示顺序
@@ -4906,6 +4916,11 @@
         <member name="P:BootstrapBlazor.Components.IEditorItem.ComponentType">
             <summary>
             获得/设置 组件类型 默认为 null
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IEditorItem.ComponentParameters">
+            <summary>
+            获得/设置 组件自定义类型参数集合 默认为 null
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.Lookup">
@@ -9242,6 +9257,11 @@
             获得/设置 组件类型 默认为 null
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.InternalTableColumn.ComponentParameters">
+            <summary>
+            获得/设置 组件自定义类型参数集合 默认为 null
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.InternalTableColumn.Data">
             <summary>
             获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
@@ -10963,6 +10983,11 @@
             获得/设置 组件类型 默认为 null
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.TableColumn`1.ComponentParameters">
+            <summary>
+            获得/设置 组件自定义类型参数集合 默认为 null
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.TableColumn`1.PropertyType">
             <summary>
             获得/设置 绑定列类型
@@ -11420,12 +11445,12 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.TextareaBase">
+        <member name="T:BootstrapBlazor.Components.Textarea">
             <summary>
-            Textarea 组件基类
+            
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TextareaBase.ClassName">
+        <member name="P:BootstrapBlazor.Components.Textarea.ClassName">
             <summary>
             获得 class 样式集合
             </summary>
@@ -13445,6 +13470,116 @@
             <param name="options"></param>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.HttpContextService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.Id">
+            <summary>
+            获得/设置 操作日志主键ID
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.UserName">
+            <summary>
+            获得/设置 用户名称
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.Ip">
+            <summary>
+            获得/设置 客户端IP
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.City">
+            <summary>
+            获得/设置 客户端地点
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.Browser">
+            <summary>
+            获得/设置 客户端浏览器
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.OS">
+            <summary>
+            获得/设置 客户端操作系统
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.RequestUrl">
+            <summary>
+            获取/设置 请求网址
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.UserAgent">
+            <summary>
+            获得/设置 客户端 UserAgent
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.Referer">
+            <summary>
+            获得/设置 客户端 Referer
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.HttpContextService.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Components.NavigationManager)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="httpContextAccessor"></param>
+            <param name="navigation"></param>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.ReturnTask">
+            <summary>
+            获得/设置 模态弹窗返回值任务实例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.HttpContextService.RetrieveRemoteIp">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Components.HttpContextService.Cache">
+            <summary>
+            获得 回调委托缓存集合
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.HttpContextService.Register(Microsoft.AspNetCore.Components.IComponent,System.Func{System.String,System.Threading.Tasks.ValueTask})">
+            <summary>
+            注册服务
+            </summary>
+            <param name="key"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.HttpContextService.UnRegister(Microsoft.AspNetCore.Components.IComponent)">
+            <summary>
+            注销事件
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.WebClientInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientInfo.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientInfo.UpdateIp(System.String)">
+            <summary>
+            清除 ToastBox 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientInfo.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientInfo.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.AggregateType">
             <summary>
             函数枚举
@@ -14311,6 +14446,18 @@
             <param name="fieldIdentifier"></param>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.InternalIPAddressExtensions">
+            <summary>
+            IPAddress 内部操作扩展类
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.InternalIPAddressExtensions.ToIPv4String(System.Net.IPAddress)">
+            <summary>
+            
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.JSRuntimeExtensions">
             <summary>
             JSRuntime 扩展操作类
@@ -14639,6 +14786,89 @@
             <summary>
             获得/设置 高度
             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ClientBrowser">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ClientBrowser.#ctor(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="userAgent"></param>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ClientBrowser.Major">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ClientBrowser.Name">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ClientBrowser.Version">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ClientOS">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ClientOS.#ctor(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="userAgent"></param>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ClientOS.Name">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ClientOS.Version">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.MatchExpression">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MatchExpression.Regexes">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.MatchExpression.Action">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.UserAgent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.UserAgent.Browser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.UserAgent.OS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.UserAgent.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userAgent"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.Utility">
             <summary>
@@ -15228,6 +15458,13 @@
             <param name="services"></param>
             <param name="configureOptions"></param>
             <param name="setupAction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.UseBootstrapBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
             <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.JsonLocalizationServiceCollectionExtensions">
