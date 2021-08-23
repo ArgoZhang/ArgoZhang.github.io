@@ -1125,6 +1125,96 @@
             DisposeAsync 方法
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Components.WebClientService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.Id">
+            <summary>
+            获得/设置 操作日志主键ID
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.UserName">
+            <summary>
+            获得/设置 用户名称
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.Ip">
+            <summary>
+            获得/设置 客户端IP
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.City">
+            <summary>
+            获得/设置 客户端地点
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.Browser">
+            <summary>
+            获得/设置 客户端浏览器
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.OS">
+            <summary>
+            获得/设置 客户端操作系统
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.RequestUrl">
+            <summary>
+            获取/设置 请求网址
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.UserAgent">
+            <summary>
+            获得/设置 客户端 UserAgent
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.Referer">
+            <summary>
+            获得/设置 客户端 Referer
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.ReturnTask">
+            <summary>
+            获得/设置 模态弹窗返回值任务实例
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientService.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.Components.NavigationManager,Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider)">
+            <summary>
+            
+            </summary>
+            <param name="runtime"></param>
+            <param name="navigation"></param>
+            <param name="authenticationStateProvider"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientService.RetrieveRemoteInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientService.SetData(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="ip"></param>
+            <param name="os"></param>
+            <param name="browser"></param>
+            <param name="agent"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientService.Dispose(System.Boolean)">
+            <summary>
+            Dispose 方法
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.WebClientService.Dispose">
+            <summary>
+            Dispose 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.Breadcrumb">
             <summary>
             Breadcrumb 组件
@@ -5589,6 +5679,124 @@
             点击元素事件
             </summary>
             <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.BlazorLogger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BlazorLogger.Logger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BlazorLogger.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BlazorLogger.ChildContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BlazorLogger.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+            <summary>
+            BuildRenderTree 方法
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BlazorLogger.Log(Microsoft.Extensions.Logging.LogLevel,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BlazorLogger.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BlazorLogger.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <param name="exception"></param>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BlazorLogger.FormatException(System.Exception,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            格式化异常信息
+            </summary>
+            <param name="exception"></param>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.IBlazorLogger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IBlazorLogger.Log(System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IBlazorLogger.Log(Microsoft.Extensions.Logging.LogLevel,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IBlazorLogger.Log(System.Exception,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="ex"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IBlazorLogger.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <param name="exception"></param>
+            <param name="message"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IBlazorLogger.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            
+            </summary>
+            <param name="logLevel"></param>
+            <param name="exception"></param>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IBlazorLogger.FormatException(System.Exception,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            格式化 Exception 信息
+            </summary>
+            <param name="ex"></param>
+            <param name="collection"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.Menu">
@@ -13470,116 +13678,6 @@
             <param name="options"></param>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.HttpContextService">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.Id">
-            <summary>
-            获得/设置 操作日志主键ID
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.UserName">
-            <summary>
-            获得/设置 用户名称
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.Ip">
-            <summary>
-            获得/设置 客户端IP
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.City">
-            <summary>
-            获得/设置 客户端地点
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.Browser">
-            <summary>
-            获得/设置 客户端浏览器
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.OS">
-            <summary>
-            获得/设置 客户端操作系统
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.RequestUrl">
-            <summary>
-            获取/设置 请求网址
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.UserAgent">
-            <summary>
-            获得/设置 客户端 UserAgent
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.Referer">
-            <summary>
-            获得/设置 客户端 Referer
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.HttpContextService.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Components.NavigationManager)">
-            <summary>
-            构造函数
-            </summary>
-            <param name="httpContextAccessor"></param>
-            <param name="navigation"></param>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.ReturnTask">
-            <summary>
-            获得/设置 模态弹窗返回值任务实例
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.HttpContextService.RetrieveRemoteIp">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Components.HttpContextService.Cache">
-            <summary>
-            获得 回调委托缓存集合
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.HttpContextService.Register(Microsoft.AspNetCore.Components.IComponent,System.Func{System.String,System.Threading.Tasks.ValueTask})">
-            <summary>
-            注册服务
-            </summary>
-            <param name="key"></param>
-            <param name="callback"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Components.HttpContextService.UnRegister(Microsoft.AspNetCore.Components.IComponent)">
-            <summary>
-            注销事件
-            </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.WebClientInfo">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.WebClientInfo.OnInitialized">
-            <summary>
-            OnInitialized 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.WebClientInfo.UpdateIp(System.String)">
-            <summary>
-            清除 ToastBox 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.WebClientInfo.Dispose(System.Boolean)">
-            <summary>
-            Dispose 方法
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.WebClientInfo.Dispose">
-            <summary>
-            Dispose 方法
-            </summary>
-        </member>
         <member name="T:BootstrapBlazor.Components.AggregateType">
             <summary>
             函数枚举
@@ -14425,6 +14523,19 @@
             判断类型是否为枚举类型
             </summary>
             <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ExceptionExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.ExceptionExtensions.Format(System.Exception,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            格式化异常信息
+            </summary>
+            <param name="exception"></param>
+            <param name="collection"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.FieldIdentifierExtensions">
@@ -15445,6 +15556,49 @@
             <summary>
             IStringLocalizer 实现类
             </summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.ConfigurationExtensions">
+            <summary>
+            IConfiguration 扩展类
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetOS">
+            <summary>
+            获得 环境变量中的 OS 属性值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetUserName(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            获得 环境变量中的 UserName 属性值
+            </summary>
+            <param name="config"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetEnvironmentName(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            获得 环境变量中的 ASPNETCORE_ENVIRONMENT 属性值
+            </summary>
+            <param name="config"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetIISPath(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            获得 环境变量中的 ASPNETCORE_IIS_PHYSICAL_PATH 属性值
+            </summary>
+            <param name="config"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetVisualStudioVersion(Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            获得 环境变量中的 VisualStudioEdition 属性值
+            </summary>
+            <param name="config"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions">
             <summary>

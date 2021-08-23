@@ -721,6 +721,17 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.BlockLogger.ClassName">
+            <summary>
+            获得 按钮样式集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.BlockLogger.AdditionalAttributes">
+            <summary>
+            获得/设置 用户自定义属性
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.DataDialogComponent.OnInitialized">
              <summary>
             
@@ -731,17 +742,6 @@
             
             </summary>
             <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Logger.ClassName">
-            <summary>
-            获得 按钮样式集合
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Components.Logger.AdditionalAttributes">
-            <summary>
-            获得/设置 用户自定义属性
-            </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Pages.Components.Tips.Icon">
             <summary>
@@ -814,11 +814,6 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Alerts">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Alerts.Trace">
             <summary>
             
             </summary>
@@ -976,11 +971,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Cameras.Trace">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Cameras.GetAttributes">
             <summary>
             获得属性方法
@@ -1079,11 +1069,6 @@
              <summary>
             
              </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Cascaders.Trace">
-            <summary>
-            获得/设置 Logger 实例
-            </summary>
         </member>
         <member name="F:BootstrapBlazor.Shared.Pages.Cascaders.Items">
             <summary>
@@ -1316,7 +1301,7 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Client.ClientContext">
+        <member name="P:BootstrapBlazor.Shared.Pages.Client.ClientService">
             <summary>
             
             </summary>
@@ -1601,6 +1586,11 @@
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Footers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.GlobalException">
             <summary>
             
             </summary>
@@ -2539,11 +2529,6 @@
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Tags">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Tags.Trace">
             <summary>
             
             </summary>
