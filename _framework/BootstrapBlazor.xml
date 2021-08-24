@@ -5316,6 +5316,151 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BootstrapBlazor.Components.BaiDuIPLocator">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BaiDuIPLocator.Data">
+            <summary>
+            详细地址信息
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BaiDuIPLocator.Status">
+            <summary>
+            结果状态返回码
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BaiDuIPLocator.Locate(BootstrapBlazor.Components.IPLocatorOption)">
+             <summary>
+            
+             </summary>
+             <param name="option"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.BaiDuIPLocator.ToString">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.LocationInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.LocationInfo.Location">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.DefaultIPLocator">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DefaultIPLocator.Locate(BootstrapBlazor.Components.IPLocatorOption)">
+             <summary>
+            
+             </summary>
+             <param name="option"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DefaultIPLocator.Locate``1(BootstrapBlazor.Components.IPLocatorOption)">
+             <summary>
+            
+             </summary>
+             <param name="option"></param>
+             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.DefaultIPLocatorProvider">
+            <summary>
+            默认 IP 地理位置定位器
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DefaultIPLocatorProvider.#ctor(System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Logging.ILogger{BootstrapBlazor.Components.DefaultIPLocatorProvider})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="factory"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DefaultIPLocatorProvider.Locate(System.String)">
+            <summary>
+            定位方法
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.IIPLocator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IIPLocator.Locate(BootstrapBlazor.Components.IPLocatorOption)">
+             <summary>
+            
+             </summary>
+             <param name="option">定位器配置信息</param>
+             <returns>定位器定位结果</returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.IIPLocatorProvider">
+            <summary>
+            IP 地址定位服务
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.IIPLocatorProvider.Locate(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="ip"></param>
+             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Components.IPLocatorOption">
+            <summary>
+            IP定位器配置项
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.LocatorName">
+            <summary>
+            获得/设置 定位器名称
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.LocatorFactory">
+            <summary>
+            获得/设置 定位器创建方法未设置使用内部定位器
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.Url">
+            <summary>
+            获得/设置 IP定位器请求地址
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.RequestTimeout">
+            <summary>
+            获得/设置 IP地址请求超时时间 默认为 3000 毫秒
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.Localhosts">
+            <summary>
+            获得 本机地址列表
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.IP">
+            <summary>
+            获得/设置 IP地址
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.HttpClient">
+            <summary>
+            获得/设置 HttpClient 实体类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IPLocatorOption.Logger">
+            <summary>
+            获得/设置 ILogger 实体类
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Components.Layout">
             <summary>
             
@@ -14680,15 +14825,28 @@
             <param name="fileSize"></param>
             <returns></returns>
         </member>
-        <member name="T:BootstrapBlazor.Components.ServiceProviderHelper">
+        <member name="T:BootstrapBlazor.Components.StringExtensions">
             <summary>
-            ServiceProviderHelper 注入服务扩展类
+            
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.ServiceProviderHelper.ServiceProvider">
+        <member name="M:BootstrapBlazor.Components.StringExtensions.SpanSplit(System.String,System.String,System.StringSplitOptions)">
             <summary>
-            获取系统 IServiceProvider 接口
+            SpanSplit 扩展方法
             </summary>
+            <param name="source">源数组</param>
+            <param name="splitStr">分隔符数组 分割规则作为整体</param>
+            <param name="stringSplitOptions">StringSplitOptions 选项</param>
+            <returns>分割后的字符串数组</returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.StringExtensions.SpanSplitAny(System.String,System.String,System.StringSplitOptions)">
+            <summary>
+            SpanSplit 扩展方法
+            </summary>
+            <param name="source">源数组</param>
+            <param name="splitStr">分隔符数组 分割规则是任意一个</param>
+            <param name="stringSplitOptions">StringSplitOptions 选项</param>
+            <returns>分割后的字符串数组</returns>
         </member>
         <member name="T:BootstrapBlazor.Components.BootstrapBlazorOptions">
             <summary>
@@ -14896,6 +15054,16 @@
         <member name="P:BootstrapBlazor.Components.Offset.Height">
             <summary>
             获得/设置 高度
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Components.ServiceProviderHelper">
+            <summary>
+            ServiceProviderHelper 注入服务扩展类
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.ServiceProviderHelper.ServiceProvider">
+            <summary>
+            获取系统 IServiceProvider 接口
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.ClientBrowser">
@@ -15557,6 +15725,52 @@
             IStringLocalizer 实现类
             </summary>
         </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions">
+            <summary>
+            BootstrapBlazor 服务扩展类
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.AddBootstrapBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BootstrapBlazor.Components.BootstrapBlazorOptions},System.Action{BootstrapBlazor.Localization.Json.JsonLocalizationOptions},System.Action{BootstrapBlazor.Components.IPLocatorOption})">
+            <summary>
+            增加 BootstrapBlazor 服务
+            </summary>
+            <param name="services"></param>
+            <param name="configureOptions"></param>
+            <param name="localizationAction"></param>
+            <param name="locatorAction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.UseBootstrapBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.JsonLocalizationServiceCollectionExtensions">
+            <summary>
+            多语言支持注入服务扩展类
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.JsonLocalizationServiceCollectionExtensions.AddJsonLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BootstrapBlazor.Localization.Json.JsonLocalizationOptions})">
+            <summary>
+            注入 Json 格式多语言服务
+            </summary>
+            <param name="services">IServiceCollection 实例</param>
+            <param name="setupAction">JsonLocalizationOptions 配置回调方法</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
         <member name="T:Microsoft.Extensions.Configuration.ConfigurationExtensions">
             <summary>
             IConfiguration 扩展类
@@ -15599,51 +15813,6 @@
             <param name="config"></param>
             <param name="defaultValue"></param>
             <returns></returns>
-        </member>
-        <member name="T:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions">
-            <summary>
-            BootstrapBlazor 服务扩展类
-            </summary>
-        </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.AddBootstrapBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BootstrapBlazor.Components.BootstrapBlazorOptions},System.Action{BootstrapBlazor.Localization.Json.JsonLocalizationOptions})">
-            <summary>
-            增加 BootstrapBlazor 服务
-            </summary>
-            <param name="services"></param>
-            <param name="configureOptions"></param>
-            <param name="setupAction"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.BootstrapBlazorServiceCollectionExtensions.UseBootstrapBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
-            <summary>
-            
-            </summary>
-            <param name="builder"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Microsoft.Extensions.DependencyInjection.JsonLocalizationServiceCollectionExtensions">
-            <summary>
-            多语言支持注入服务扩展类
-            </summary>
-        </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.JsonLocalizationServiceCollectionExtensions.AddJsonLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BootstrapBlazor.Localization.Json.JsonLocalizationOptions})">
-            <summary>
-            注入 Json 格式多语言服务
-            </summary>
-            <param name="services">IServiceCollection 实例</param>
-            <param name="setupAction">JsonLocalizationOptions 配置回调方法</param>
-            <returns></returns>
-        </member>
-        <member name="T:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            
-            </summary>
-            <param name="config"></param>
         </member>
         <member name="T:Microsoft.Extensions.Localization.StringLocalizerExtensions">
             <summary>

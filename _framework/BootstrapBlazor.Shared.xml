@@ -1301,11 +1301,6 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.Client.ClientService">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Client.OnAfterRenderAsync(System.Boolean)">
             <summary>
             
@@ -1768,6 +1763,18 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Locator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Locator.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Markdowns">
             <summary>
