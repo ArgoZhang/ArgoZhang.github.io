@@ -12529,7 +12529,7 @@
             获得 Panel 样式
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.TransferPanel.DisabledString">
+        <member name="P:BootstrapBlazor.Components.TransferPanel.Disabled">
             <summary>
             获得 组件是否被禁用属性值
             </summary>
@@ -12829,6 +12829,11 @@
             获得/设置 是否被禁用 默认 false
             </summary>
             <value></value>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TreeItem.IsDisabled">
+            <summary>
+            获得/设置 是否被禁用 默认 false
+            </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TreeItem.IsExpanded">
             <summary>
@@ -13411,7 +13416,7 @@
             获得/设置 组件是否合规 默认为 null 未检查
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.ValidateBase`1.DisabledString">
+        <member name="P:BootstrapBlazor.Components.ValidateBase`1.Disabled">
             <summary>
             获得 组件是否被禁用属性值
             </summary>
@@ -14741,12 +14746,6 @@
             <summary>
             MenuItem 扩展操作类
             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.MenuItemExtensions.GetDisabledClassString(BootstrapBlazor.Components.MenuItem)">
-            <summary>
-            通过 MenumItem 获取 IsDisabled 状态字符串
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.MenuItemExtensions.CascadingSetActive(BootstrapBlazor.Components.MenuItem,System.Boolean)">
             <summary>
