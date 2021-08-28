@@ -1160,6 +1160,16 @@
             获得/设置 客户端操作系统
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.Device">
+            <summary>
+            获得/设置 客户端设备类型
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.WebClientService.Language">
+            <summary>
+            获得/设置 客户端浏览器语言
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.WebClientService.RequestUrl">
             <summary>
             获取/设置 请求网址
@@ -1194,7 +1204,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.WebClientService.SetData(System.String,System.String,System.String,System.String,System.String)">
+        <member name="M:BootstrapBlazor.Components.WebClientService.SetData(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -1202,6 +1212,8 @@
             <param name="ip"></param>
             <param name="os"></param>
             <param name="browser"></param>
+            <param name="device"></param>
+            <param name="language"></param>
             <param name="agent"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.WebClientService.Dispose(System.Boolean)">
@@ -7355,6 +7367,11 @@
         <member name="P:BootstrapBlazor.Components.Search.SearchButtonLoadingIcon">
             <summary>
             获得/设置 正在搜索按钮图标
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Search.IsOnInputTrigger">
+            <summary>
+            获得/设置 搜索模式是否为输入即触发 默认 false 点击搜索按钮触发
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Search.IsAutoFocus">
@@ -15064,89 +15081,6 @@
             <summary>
             获取系统 IServiceProvider 接口
             </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.ClientBrowser">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ClientBrowser.#ctor(System.String)">
-             <summary>
-            
-             </summary>
-             <param name="userAgent"></param>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ClientBrowser.Major">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ClientBrowser.Name">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ClientBrowser.Version">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.ClientOS">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.ClientOS.#ctor(System.String)">
-             <summary>
-            
-             </summary>
-             <param name="userAgent"></param>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ClientOS.Name">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ClientOS.Version">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.MatchExpression">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.MatchExpression.Regexes">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.MatchExpression.Action">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="T:BootstrapBlazor.Components.UserAgent">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UserAgent.Browser">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.UserAgent.OS">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.UserAgent.#ctor(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="userAgent"></param>
         </member>
         <member name="T:BootstrapBlazor.Components.Utility">
             <summary>

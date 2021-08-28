@@ -73,7 +73,7 @@
       "url": "_framework\/BootstrapBlazor.Shared.xml"
     },
     {
-      "hash": "sha256-V1WwdtXoQKYLF+tsNO24Nbsq1lp9xcClA3YXp+O2iyA=",
+      "hash": "sha256-yekCZKQa0zDG\/YxcBR1rfx7tlWMrrwvSTjO5SRSVpV8=",
       "url": "_framework\/BootstrapBlazor.xml"
     },
     {
@@ -125,8 +125,16 @@
       "url": "_content\/BootstrapBlazor.Shared\/css\/layui.css"
     },
     {
-      "hash": "sha256-lFHEsSFmAS+H8HgKEq0FSsiEi+zOaVxl6EHbXKeNhCE=",
+      "hash": "sha256-LcgiNo6Ln1wu\/rDmMgdjfBymQgtJ1epoEta6nYSXLwQ=",
+      "url": "_content\/BootstrapBlazor.Shared\/css\/motronic.css"
+    },
+    {
+      "hash": "sha256-Na2vX1dUsxeVZR8zDWsZGu365fS1TDjrwuuai2AjQ6A=",
       "url": "_content\/BootstrapBlazor.Shared\/css\/site.css"
+    },
+    {
+      "hash": "sha256-Uk26X+ej9ZcbyOBwUTPv7OjZnc5S2Z2KiOrobUch01s=",
+      "url": "_content\/BootstrapBlazor.Shared\/css\/wip.css"
     },
     {
       "hash": "sha256-sH60MBNoFKn6G+hB9YfZwhMu1d84LDh81GYUZFbdbqU=",
@@ -581,7 +589,7 @@
       "url": "_content\/BootstrapBlazor.Shared\/images\/ValidateForm.png"
     },
     {
-      "hash": "sha256-F9f+y39HCaok0pLoJOXkSWeqSjn+zV3F9JES03TEHTU=",
+      "hash": "sha256-bgIUZhkJcjOFEaEAHyJ2t8UaiDkwilOX\/3TeINypA6o=",
       "url": "_content\/BootstrapBlazor.Shared\/js\/common.js"
     },
     {
@@ -597,11 +605,11 @@
       "url": "_content\/BootstrapBlazor.Shared\/lib\/summernote\/summernote-zh-CN.min.js"
     },
     {
-      "hash": "sha256-k7ZEND0MRclDr7mHscM75mGd9V7VUb7yABk6ZLpUuyY=",
+      "hash": "sha256-gXMYE2YeMQYeqlDPdkyicg9nV3sZWdXBYUrj\/1Dw4hU=",
       "url": "_content\/BootstrapBlazor\/css\/bootstrap.blazor.bundle.min.css"
     },
     {
-      "hash": "sha256-U5tMTDH7eYwYxViU4n7EB7vVWQ9XZmRtOQCcoVfhs+I=",
+      "hash": "sha256-\/9h2GV7HY06L5gRFIViG+D6FHjthiuRfT2RNn0OPxFo=",
       "url": "_content\/BootstrapBlazor\/js\/bootstrap.blazor.bundle.min.js"
     },
     {
@@ -621,15 +629,15 @@
       "url": "_content\/BootstrapBlazor\/lib\/summernote\/font\/summernote.woff2"
     },
     {
-      "hash": "sha256-bKqqlLVaK5h1+6DKYbcHMujSGBfMUmMQ3wgRxkjvFEU=",
+      "hash": "sha256-pkeCaxnJJUQ\/ApElEFkJn9h\/aWOXv+6O0O51IcDu5Dg=",
       "url": "_framework\/BootstrapBlazor.Chart.dll"
     },
     {
-      "hash": "sha256-XO7lr6LegnZe2\/\/Dhz9lIu+7+RSAdpzU+oicdI2ArrQ=",
+      "hash": "sha256-aPB5feo7hax1Wbo395mebQoHirTcSbb\/Kn5S4n\/HtEs=",
       "url": "_framework\/BootstrapBlazor.Markdown.dll"
     },
     {
-      "hash": "sha256-ji3ca22BVDPV\/ssgeS7k8E6KtDIB+L3My7VZNSRnYyQ=",
+      "hash": "sha256-2qQ1RGXOxzKWWEa0lw8\/TsDbYSdWmdmjuw5CfyoAXd8=",
       "url": "_framework\/BootstrapBlazor.TableExport.dll"
     },
     {
@@ -741,7 +749,7 @@
       "url": "_framework\/Microsoft.Extensions.Options.ConfigurationExtensions.dll"
     },
     {
-      "hash": "sha256-liIak60bS5ZKImrdCPKuwdZsFACxZyJwc63G+KbJMiM=",
+      "hash": "sha256-AvaHW1zs7tzDVK855V3GcSZzG9ldLfHPB5Z3ytkbF3k=",
       "url": "_framework\/Microsoft.Extensions.Primitives.dll"
     },
     {
@@ -777,15 +785,15 @@
       "url": "_framework\/System.Xml.XPath.XmlDocument.dll"
     },
     {
-      "hash": "sha256-Vk5azGi2MCpx87q0Qy5hSQf9v8sBWtU5xVYtT2gBX9U=",
+      "hash": "sha256-w78XZplFUoqKsaMGLU9o6hiuR+YfH6xyszzselAq7TE=",
       "url": "_framework\/BootstrapBlazor.dll"
     },
     {
-      "hash": "sha256-vQKBz7X7YjtEWa\/F4T6+7glu0dpQCIQreDDIdtIXqQU=",
+      "hash": "sha256-iwjZ4Rd+cMI5MaG5kDxM4PyYFa505QxBKWw08vjHYeQ=",
       "url": "_framework\/BootstrapBlazor.Shared.dll"
     },
     {
-      "hash": "sha256-Ru2gl8SCaLCb58gqsgmYFiFsU\/sboITRpi8C+h3xUKM=",
+      "hash": "sha256-KTKNIxctACXQ5JTUN1tuZnF1iYfD6C6\/sr+6O5jO4J8=",
       "url": "_framework\/BootstrapBlazor.WebAssembly.ClientHost.dll"
     },
     {
@@ -965,7 +973,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-1u587PiMlvxuMYLJqRBaPNTxAhr9odSPObxT953iLOU=",
+      "hash": "sha256-eHk3shRvHlzDyiUHamLmRsZiN8WARUV8TE2k\/c9Fjus=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -973,5 +981,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "EpJ7w1Ji"
+  "version": "ntspNFkk"
 };
