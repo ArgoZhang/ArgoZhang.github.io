@@ -12260,6 +12260,15 @@
             <param name="autoHide"></param>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.ToastService.Warning(System.String,System.String,System.Boolean)">
+            <summary>
+            Toast 调用警告信息快捷方法
+            </summary>
+            <param name="title"></param>
+            <param name="content"></param>
+            <param name="autoHide"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.ToastService.Dispose(System.Boolean)">
             <summary>
             
@@ -14559,7 +14568,7 @@
         </member>
         <member name="F:BootstrapBlazor.Components.ToastCategory.Success">
             <summary>
-            成功
+            成功信息
             </summary>
         </member>
         <member name="F:BootstrapBlazor.Components.ToastCategory.Information">
@@ -14570,6 +14579,11 @@
         <member name="F:BootstrapBlazor.Components.ToastCategory.Error">
             <summary>
             错误信息
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.ToastCategory.Warning">
+            <summary>
+            警告信息
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.UploadStyle">
