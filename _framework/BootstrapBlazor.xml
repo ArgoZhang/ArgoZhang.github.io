@@ -396,7 +396,7 @@
             OnBlur 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.AutoComplete.OnItemClick(System.String)">
+        <member name="M:BootstrapBlazor.Components.AutoComplete.OnClickItem(System.String)">
             <summary>
             鼠标点击候选项时回调此方法
             </summary>
@@ -7369,11 +7369,6 @@
             获得/设置 正在搜索按钮图标
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Search.IsOnInputTrigger">
-            <summary>
-            获得/设置 搜索模式是否为输入即触发 默认 false 点击搜索按钮触发
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.Search.IsAutoFocus">
             <summary>
             获得/设置 是否自动获得焦点
@@ -7434,6 +7429,13 @@
             OnKeyUp 方法
             </summary>
             <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Search.OnClickItem(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.ISelect">

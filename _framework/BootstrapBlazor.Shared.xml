@@ -320,6 +320,11 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.ComponentCard.IsHide">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.ComponentCategory">
             <summary>
             
@@ -339,6 +344,12 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.ComponentCategory.OnAfterRender(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="firstRender"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.CultureChooser">
             <summary>
