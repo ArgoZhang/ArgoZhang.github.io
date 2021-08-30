@@ -2230,6 +2230,11 @@
             获得 class 样式集合
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Checkbox`1.InputClassString">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.Checkbox`1.GetInnerClassString(System.String)">
             <summary>
             
@@ -2240,6 +2245,11 @@
             获得 复选框状态字符串
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Checkbox`1.CheckedString">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Checkbox`1.IsBoolean">
             <summary>
             判断双向绑定类型是否为 boolean 类型
@@ -2248,6 +2258,11 @@
         <member name="P:BootstrapBlazor.Components.Checkbox`1.Color">
             <summary>
             获得/设置 按钮颜色
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Checkbox`1.Size">
+            <summary>
+            获得/设置 Size 大小
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Checkbox`1.ShowAfterLabel">
@@ -7141,6 +7156,11 @@
             获得/设置 按钮颜色
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.RadioList`1.GroupName">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.RadioList`1.OnInitialized">
             <summary>
             OnInitialized 方法
@@ -7277,56 +7297,14 @@
             
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.Scroll.ClassString">
-            <summary>
-            获得 组件样式
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Scroll.AutoHideString">
-            <summary>
-            获得 是否自动隐藏
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Scroll.ScrollElement">
-            <summary>
-            Scroll 组件 DOM 实例
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.Scroll.IsForce">
-            <summary>
-            获得/设置 是否强制使用滚动条 默认为 true
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.Scroll.OnAfterRenderAsync(System.Boolean)">
-            <summary>
-            OnAfterRenderAsync 方法
-            </summary>
-            <param name="firstRender"></param>
-            <returns></returns>
-        </member>
-        <member name="T:BootstrapBlazor.Components.ScrollBase">
-            <summary>
-            Scroll 组件基类
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ScrollBase.ChildContent">
+        <member name="P:BootstrapBlazor.Components.Scroll.ChildContent">
             <summary>
             获得/设置 子组件
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.ScrollBase.Height">
+        <member name="P:BootstrapBlazor.Components.Scroll.Height">
             <summary>
             获得/设置 组件高度
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ScrollBase.Width">
-            <summary>
-            获得/设置 组件宽度
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.ScrollBase.IsAutoHide">
-            <summary>
-            获得/设置 是否自动隐藏 默认为 true
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.Search">
@@ -14383,27 +14361,32 @@
         </member>
         <member name="F:BootstrapBlazor.Components.Size.ExtraSmall">
             <summary>
-            xs 超小设置 576px
+            xs 超小设置小于 576px
             </summary>
         </member>
         <member name="F:BootstrapBlazor.Components.Size.Small">
             <summary>
-            sm 小设置 576px
+            sm 小设置大于等于 576px
             </summary>
         </member>
         <member name="F:BootstrapBlazor.Components.Size.Medium">
             <summary>
-            md 中等设置 768px
+            md 中等设置大于等于 768px
             </summary>
         </member>
         <member name="F:BootstrapBlazor.Components.Size.Large">
             <summary>
-            lg 大设置 992px
+            lg 大设置大于等于 992px
             </summary>
         </member>
         <member name="F:BootstrapBlazor.Components.Size.ExtraLarge">
             <summary>
-            xl 超大设置 1200px
+            xl 超大设置大于等于 1200px
+            </summary>
+        </member>
+        <member name="F:BootstrapBlazor.Components.Size.ExtraExtraLarge">
+            <summary>
+            xl 超大设置大于等于 1400px
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.SortOrder">

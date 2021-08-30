@@ -2667,27 +2667,6 @@
             <param name="firstRender"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Toasts.OnPlacementClick(BootstrapBlazor.Components.Placement)">
-            <summary>
-            
-            </summary>
-            <param name="placement"></param>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Toasts.OnSuccessClick">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Toasts.OnErrorClick">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Toasts.OnInfoClick">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Toasts.OnNotAutoHideClick">
             <summary>
             
