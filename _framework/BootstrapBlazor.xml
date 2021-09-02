@@ -386,10 +386,27 @@
             <param name="item"></param>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.AutoComplete.AutoCompleteElement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoComplete.CurrentItemIndex">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.AutoComplete.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.AutoComplete.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            firstRender
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.AutoComplete.OnBlur">
             <summary>
@@ -7357,6 +7374,11 @@
             获得/设置 点击搜索后是否自动清空搜索框
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.Search.IsOnInputTrigger">
+            <summary>
+            获得/设置 搜索模式是否为输入即触发 默认 false 点击搜索按钮触发
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.Search.SearchButtonText">
             <summary>
             获得/设置 搜索按钮文字
@@ -8024,62 +8046,62 @@
             获得/设置 每个 step 的间距不填写将自适应间距支持百分比
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepItem.Line">
+        <member name="P:BootstrapBlazor.Components.StepItem.Template">
             <summary>
-            获得/设置 进度条是否充满 默认 false
+            获得/设置 每个 step 的模板
             </summary>
         </member>
-        <member name="T:BootstrapBlazor.Components.StepsBase">
+        <member name="T:BootstrapBlazor.Components.Steps">
             <summary>
-            Step 组件基类
+            Step 组件类
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepsBase.ClassString">
+        <member name="P:BootstrapBlazor.Components.Steps.ClassString">
             <summary>
             获得 组件样式字符串
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepsBase.Items">
+        <member name="P:BootstrapBlazor.Components.Steps.Items">
             <summary>
             获得/设置 步骤集合
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepsBase.IsVertical">
+        <member name="P:BootstrapBlazor.Components.Steps.IsVertical">
             <summary>
             获得/设置 是否垂直渲染 默认 false 水平渲染
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepsBase.IsCenter">
+        <member name="P:BootstrapBlazor.Components.Steps.IsCenter">
             <summary>
             获得/设置 是否居中对齐
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepsBase.Status">
+        <member name="P:BootstrapBlazor.Components.Steps.Status">
             <summary>
             获得/设置 设置当前激活步骤
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepsBase.ChildContent">
+        <member name="P:BootstrapBlazor.Components.Steps.ChildContent">
             <summary>
             获得/设置 组件内容实例
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.StepsBase.OnStatusChanged">
+        <member name="P:BootstrapBlazor.Components.Steps.OnStatusChanged">
             <summary>
             获得/设置 步骤组件状态改变时回调委托
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.StepsBase.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.Steps.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.StepsBase.OnParametersSet">
+        <member name="M:BootstrapBlazor.Components.Steps.OnParametersSetAsync">
             <summary>
-            OnParametersSet 方法
+            OnParametersSetAsync 方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.StepsBase.RenderStep(BootstrapBlazor.Components.StepItem)">
+        <member name="M:BootstrapBlazor.Components.Steps.RenderStep(BootstrapBlazor.Components.StepItem)">
             <summary>
             渲染 Step 组件方法
             </summary>
