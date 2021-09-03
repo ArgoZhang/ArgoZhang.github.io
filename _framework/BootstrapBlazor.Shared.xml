@@ -1907,6 +1907,16 @@
             
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.PopoverConfirms.Trace1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.PopoverConfirms.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.PopoverConfirms.OnClose">
             <summary>
             

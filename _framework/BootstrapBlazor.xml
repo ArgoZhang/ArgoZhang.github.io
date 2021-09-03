@@ -1119,17 +1119,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="P:BootstrapBlazor.Components.TooltipComponentBase.IsRendered">
-            <summary>
-            获得/设置 组件是否已经 Render
-            </summary>
-        </member>
-        <member name="M:BootstrapBlazor.Components.TooltipComponentBase.OnAfterRender(System.Boolean)">
-            <summary>
-            OnAfterRender 方法
-            </summary>
-            <param name="firstRender"></param>
-        </member>
         <member name="M:BootstrapBlazor.Components.TooltipComponentBase.DisposeAsyncCore(System.Boolean)">
             <summary>
             DisposeAsyncCore 方法
@@ -1451,10 +1440,23 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Components.PopConfirmButton.OnAfterRenderAsync(System.Boolean)">
+            <summary>
+            OnAfterRenderAsync 方法
+            </summary>
+            <param name="firstRender"></param>
+            <returns></returns>
+        </member>
         <member name="M:BootstrapBlazor.Components.PopConfirmButton.Show">
             <summary>
             显示确认弹窗方法
             </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Components.PopConfirmButton.Confirm">
+            <summary>
+            确认回调方法
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.PopConfirmButtonBase">
             <summary>
