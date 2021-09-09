@@ -1602,6 +1602,11 @@
             
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.FullScreens">
+            <summary>
+            FullScreens 全屏示例代码
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.GlobalException">
             <summary>
             
@@ -1615,6 +1620,21 @@
         <member name="T:BootstrapBlazor.Shared.Pages.GroupBoxs">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.HandwrittenPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.HandwrittenPage.DrawBase64">
+            <summary>
+            签名Base64
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.HandwrittenPage.OnInitialized">
+            <summary>
+            OnInitialized 方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.InputNumbers">
@@ -1949,6 +1969,21 @@
             获得属性方法
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Prints">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.PrintView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.PrintView.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Progresss">
             <summary>
@@ -2845,16 +2880,6 @@
             OnInitializedAsync 方法
             </summary>
             <returns></returns>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.HandwrittenPage.ShowHandwritten">
-            <summary>
-            显示签名界面
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Shared.Pages.HandwrittenPage.DrawBase64">
-            <summary>
-            签名Base64
-            </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.LayoutDemo.OnInitialized">
              <summary>
