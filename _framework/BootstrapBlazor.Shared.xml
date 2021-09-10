@@ -3043,11 +3043,12 @@
             <param name="options"></param>
             <returns></returns>
         </member>
-        <member name="M:Microsoft.Extensions.DependencyInjection.TableDemoDataService`1.SaveAsync(`0)">
+        <member name="M:Microsoft.Extensions.DependencyInjection.TableDemoDataService`1.SaveAsync(`0,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             
             </summary>
             <param name="model"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.VesionManagerExtensions">

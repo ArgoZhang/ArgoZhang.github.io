@@ -9192,11 +9192,12 @@
             <param name="models"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.SaveAsync(`0)">
+        <member name="M:BootstrapBlazor.Components.DataServiceBase`1.SaveAsync(`0,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             保存数据操作方法
             </summary>
             <param name="model"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.DataServiceBase`1.QueryAsync(BootstrapBlazor.Components.QueryPageOptions)">
@@ -9267,11 +9268,12 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject)">
+        <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             保存方法
             </summary>
             <param name="item"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.DeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
@@ -9398,11 +9400,12 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.DynamicObjectContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject)">
+        <member name="M:BootstrapBlazor.Components.DynamicObjectContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             
             </summary>
             <param name="item"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.DynamicObjectContext.DeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
@@ -9485,11 +9488,12 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.IDynamicObjectContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject)">
+        <member name="M:BootstrapBlazor.Components.IDynamicObjectContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             保存方法
             </summary>
             <param name="item"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.IDynamicObjectContext.DeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
@@ -9940,11 +9944,12 @@
             <param name="model"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.IDataService`1.SaveAsync(`0)">
+        <member name="M:BootstrapBlazor.Components.IDataService`1.SaveAsync(`0,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             保存数据方法
             </summary>
             <param name="model">保存实体类实例</param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.IDataService`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0})">
@@ -9973,11 +9978,12 @@
             <param name="options"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.NullDataService`1.SaveAsync(`0)">
+        <member name="M:BootstrapBlazor.Components.NullDataService`1.SaveAsync(`0,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             
             </summary>
             <param name="model"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.NullDataService`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0})">
@@ -11665,20 +11671,22 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.SaveModelAsync(Microsoft.AspNetCore.Components.Forms.EditContext)">
+        <member name="M:BootstrapBlazor.Components.Table`1.SaveModelAsync(Microsoft.AspNetCore.Components.Forms.EditContext,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             保存数据方法
             </summary>
             <param name="context"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.SaveAsync(Microsoft.AspNetCore.Components.Forms.EditContext)">
+        <member name="M:BootstrapBlazor.Components.Table`1.SaveAsync(Microsoft.AspNetCore.Components.Forms.EditContext,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             保存数据
             </summary>
             <param name="context"></param>
+            <param name="changedType"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.ShowEditDialog">
+        <member name="M:BootstrapBlazor.Components.Table`1.ShowEditDialog(BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             
             </summary>
