@@ -252,6 +252,11 @@
             获得/设置 组件内容
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Components.Block.Name">
+            <summary>
+            获得/设置 友好链接锚点名称
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Components.Block.OnInitialized">
             <summary>
             OnInitialized 方法
@@ -850,6 +855,11 @@
             获得属性方法
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.AnchorLinks">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Anchors">
             <summary>
@@ -1712,6 +1722,11 @@
             获得/设置 是否显示页脚
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.IsFixedTab">
+            <summary>
+            获得/设置 是否固定 TabHeader
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Shared.Pages.LayoutPages.IsFixedHeader">
             <summary>
             获得/设置 是否固定 Header
@@ -1973,6 +1988,11 @@
         <member name="T:BootstrapBlazor.Shared.Pages.Prints">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Pages.Prints.DialogService">
+            <summary>
+            获得 弹窗注入服务
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Shared.Pages.PrintView">
@@ -2815,6 +2835,12 @@
             
             </summary>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Trees.CustomerTreeItem.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Trees.GetAttributes">
             <summary>
             获得属性方法
@@ -2944,6 +2970,11 @@
         <member name="T:BootstrapBlazor.Shared.Shared.PageLayout">
             <summary>
             
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Shared.Shared.PageLayout.IsFixedTab">
+            <summary>
+            获得/设置 是否固定 TabHeader
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Shared.Shared.PageLayout.IsFixedHeader">
