@@ -5057,6 +5057,11 @@
         </member>
         <member name="P:BootstrapBlazor.Components.EditorItem`1.Data">
             <summary>
+            获得/设置 额外数据源一般用于 Select 或者 CheckboxList 这种需要额外配置数据源组件使用
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorItem`1.Items">
+            <summary>
             获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
         </member>
@@ -5129,7 +5134,12 @@
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.Data">
             <summary>
-            获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
+            获得/设置 额外数据源一般用于 Select 或者 CheckboxList 这种需要额外配置数据源组件使用
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IEditorItem.Items">
+            <summary>
+            获得/设置 额外数据源一般用于 Select 或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.Step">
@@ -9381,6 +9391,21 @@
             获得/设置 相关联的 DataTable 实例
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.DataTableDynamicContext.Caches">
+            <summary>
+            负责将 DataRow 与 Items 关联起来方便查找提高效率
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DataTableDynamicContext.OnAddAsync">
+            <summary>
+            添加行回调委托
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.DataTableDynamicContext.OnDeleteAsync">
+            <summary>
+            删除行回调委托
+            </summary>
+        </member>
         <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.#ctor(System.Data.DataTable,System.Action{BootstrapBlazor.Components.DataTableDynamicContext,BootstrapBlazor.Components.ITableColumn},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">
             <summary>
             构造函数
@@ -9416,18 +9441,11 @@
             <param name="col"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.AddAsync">
+        <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.AddAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
             <summary>
             新建方法
             </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject,BootstrapBlazor.Components.ItemChangedType)">
-            <summary>
-            保存方法
-            </summary>
-            <param name="item"></param>
-            <param name="changedType"></param>
+            <param name="selectedItems">当前选中行</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.DeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
@@ -9435,6 +9453,15 @@
             删除方法
             </summary>
             <param name="items"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.DataTableDynamicContext.OnCellValueChanged(BootstrapBlazor.Components.IDynamicObject,BootstrapBlazor.Components.ITableColumn,System.Object)">
+            <summary>
+            动态类型变更回调方法
+            </summary>
+            <param name="item"></param>
+            <param name="column"></param>
+            <param name="val"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.DataTableDynamicObject">
@@ -9548,30 +9575,29 @@
             列创建回调方法 入口参数为 ITableColumn 实例 返回值为 CustomAttributeBuilder 集合
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.DynamicObjectContext.AddAsync">
+        <member name="M:BootstrapBlazor.Components.DynamicObjectContext.AddAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
             <summary>
-            
+            动态类型新建回调委托
             </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.DynamicObjectContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject,BootstrapBlazor.Components.ItemChangedType)">
-            <summary>
-            
-            </summary>
-            <param name="item"></param>
-            <param name="changedType"></param>
+            <param name="selectedItems">当前选中行</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.DynamicObjectContext.DeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
             <summary>
-            
+            动态类型删除回调委托
             </summary>
             <param name="items"></param>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.DynamicObjectContext.OnValueChanged">
+            <summary>
+            动态类型集合变化时回调方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="P:BootstrapBlazor.Components.DynamicObjectContext.OnChanged">
             <summary>
-            
+            动态类型属性值变化时回调方法
             </summary>
             <returns></returns>
         </member>
@@ -9636,18 +9662,11 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.IDynamicObjectContext.AddAsync">
+        <member name="M:BootstrapBlazor.Components.IDynamicObjectContext.AddAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
             <summary>
             新建方法
             </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Components.IDynamicObjectContext.SaveAsync(BootstrapBlazor.Components.IDynamicObject,BootstrapBlazor.Components.ItemChangedType)">
-            <summary>
-            保存方法
-            </summary>
-            <param name="item"></param>
-            <param name="changedType"></param>
+            <param name="selectedItems">当前选中行</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.IDynamicObjectContext.DeleteAsync(System.Collections.Generic.IEnumerable{BootstrapBlazor.Components.IDynamicObject})">
@@ -9657,9 +9676,15 @@
             <param name="items"></param>
             <returns></returns>
         </member>
+        <member name="P:BootstrapBlazor.Components.IDynamicObjectContext.OnValueChanged">
+            <summary>
+            动态类型属性值变化时回调方法
+            </summary>
+            <returns></returns>
+        </member>
         <member name="P:BootstrapBlazor.Components.IDynamicObjectContext.OnChanged">
             <summary>
-            
+            动态类型集合变化时回调方法
             </summary>
         </member>
         <member name="T:BootstrapBlazor.Components.EditMode">
@@ -10211,7 +10236,7 @@
             获得/设置 组件自定义类型参数集合 默认为 null
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.InternalTableColumn.Data">
+        <member name="P:BootstrapBlazor.Components.InternalTableColumn.Items">
             <summary>
             获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
@@ -10577,6 +10602,7 @@
             <summary>
             获得/设置 是否为多选模式 默认为 false
             </summary>
+            <remarks>此参数在 <see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下为 true</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ShowCheckboxText">
             <summary>
@@ -10686,6 +10712,11 @@
         <member name="P:BootstrapBlazor.Components.Table`1.IsTracking">
             <summary>
             获得/设置 组件是否采用 Tracking 模式对编辑项进行直接更新 默认 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.IsExcel">
+            <summary>
+            获得/设置 组件工作模式为 Excel 模式 默认 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.IndentSize">
@@ -10827,6 +10858,7 @@
             <summary>
             获得/设置 是否斑马线样式 默认为 false
             </summary>
+            <remarks>此参数在 <see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下不生效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.IsBordered">
             <summary>
@@ -10837,6 +10869,7 @@
             <summary>
             获得/设置 是否自动刷新表格 默认为 false
             </summary>
+            <remarks>此参数在 <see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下不生效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.AutoRefreshInterval">
             <summary>
@@ -10862,23 +10895,25 @@
             <summary>
             获得/设置 是否显示每行的明细行展开图标
             </summary>
+            <remarks>此参数在 <see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下不生效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.IsTree">
             <summary>
             获得/设置 是否为树形数据 默认为 false
             </summary>
-            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName"/> 参数设置树状数据关联列，是否有子项请使用 <seealso cref="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName"/> 树形进行设置</remarks>
+            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName"/> 参数设置树状数据关联列，是否有子项请使用 <seealso cref="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName"/> 树形进行设置，此参数在 <see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下不生效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ChildrenColumnName">
             <summary>
             获得/设置 树形数据模式子项字段 默认为 Children
             </summary>
-            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName"/> 参数判断是否有子项</remarks>
+            <remarks>通过 <see cref="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName"/> 参数判断是否有子项，此参数在 <see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下不生效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.HasChildrenColumnName">
             <summary>
             获得/设置 树形数据模式子项字段是否有子节点属性名称 默认为 HasChildren 无法提供时请设置 <see cref="P:BootstrapBlazor.Components.Table`1.HasChildrenCallback"/> 回调方法
             </summary>
+            <remarks>此参数在 <see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下不生效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.DynamicContext">
             <summary>
@@ -11753,11 +11788,13 @@
             <summary>
             获得/设置 是否显示刷新按钮 默认为 true
             </summary>
+            <remarks><see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下此设置无效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ShowCardView">
             <summary>
             获得/设置 是否显示视图按钮 默认为 false
             </summary>
+            <remarks><see cref="P:BootstrapBlazor.Components.Table`1.IsExcel"/> 模式下此设置无效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.ShowColumnList">
             <summary>
@@ -12090,6 +12127,11 @@
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TableColumn`1.Data">
+            <summary>
+            获得/设置 额外数据源一般用于 Select 或者 CheckboxList 这种需要额外配置数据源组件使用
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableColumn`1.Items">
             <summary>
             获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
@@ -15670,6 +15712,11 @@
             <summary>
             通过 ITableColumn 创建动态类
             </summary>
+            <param name="typeName">动态类名称</param>
+            <param name="cols">ITableColumn 集合</param>
+            <param name="parent">父类类型</param>
+            <param name="creatingCallback">回调委托</param>
+            <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.Offset">
             <summary>
@@ -15799,7 +15846,7 @@
             通过指定类型生成组件类型
             </summary>
             <param name="fieldType"></param>
-            <param name="hasRows"></param>
+            <param name="hasRows">是否为 Textarea 组件</param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Utility.IsCheckboxList(System.Type)">
@@ -15809,7 +15856,7 @@
             <param name="fieldType"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.Utility.CreateMultipleAttributes(System.Type,System.Object,System.String,BootstrapBlazor.Components.IEditorItem,System.Nullable{System.Boolean},System.String)">
+        <member name="M:BootstrapBlazor.Components.Utility.CreateMultipleAttributes(System.Type,System.Object,System.String,BootstrapBlazor.Components.IEditorItem,System.Nullable{System.Boolean})">
             <summary>
             通过模型与指定数据类型生成组件参数集合
             </summary>
@@ -15818,7 +15865,6 @@
             <param name="fieldName">字段名称</param>
             <param name="item">IEditorItem 实例</param>
             <param name="showLabel"></param>
-            <param name="placeholder"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Utility.CreateCallback``1(Microsoft.AspNetCore.Components.ComponentBase,System.Object,System.String)">
@@ -15829,6 +15875,13 @@
             <param name="component"></param>
             <param name="model"></param>
             <param name="fieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Components.Utility.CreateOnValueChanged``1(System.Type)">
+            <summary>
+            创建 OnValueChanged 回调委托
+            </summary>
+            <typeparam name="TModel"></typeparam>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Utility.Format(System.Object,System.String,System.IFormatProvider)">
@@ -16298,7 +16351,7 @@
             注入 Json 格式多语言服务
             </summary>
             <param name="services">IServiceCollection 实例</param>
-            <param name="setupAction">JsonLocalizationOptions 配置回调方法</param>
+            <param name="localizationAction">JsonLocalizationOptions 配置回调方法</param>
             <returns></returns>
         </member>
         <member name="T:Microsoft.Extensions.DependencyInjection.ConfigureOptions`1">

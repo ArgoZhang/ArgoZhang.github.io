@@ -474,13 +474,7 @@
             <param name="localizer"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GenerateFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GenerateWrapFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo})">
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GenerateFoo(Microsoft.Extensions.Localization.IStringLocalizer{BootstrapBlazor.Shared.Pages.Components.Foo},System.Int32)">
             <summary>
             
             </summary>
@@ -2391,12 +2385,32 @@
             OnInitialized 方法
             </summary>
         </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesDynamicExcel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesDynamicExcel.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesEdit">
             <summary>
             表单编辑功能示例
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesEdit.OnInitialized">
+            <summary>
+            OnInitialized 方法
+            </summary>
+        </member>
+        <member name="T:BootstrapBlazor.Shared.Pages.Table.TablesExcel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Table.TablesExcel.OnInitialized">
             <summary>
             OnInitialized 方法
             </summary>
@@ -2958,9 +2972,9 @@
             <param name="firstRender"></param>
         </member>
         <member name="T:BootstrapBlazor.Shared.Shared.NavMenu">
-             <summary>
+            <summary>
             
-             </summary>
+            </summary>
         </member>
         <member name="M:BootstrapBlazor.Shared.Shared.NavMenu.OnInitialized">
              <summary>
