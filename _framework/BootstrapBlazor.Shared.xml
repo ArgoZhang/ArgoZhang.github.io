@@ -486,6 +486,26 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GetAvatarUrl(System.Int32)">
+            <summary>
+            通过 Id 获取头像链接
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GetProgressColor(System.Int32)">
+            <summary>
+            通过 Count 获得颜色
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BootstrapBlazor.Shared.Pages.Components.Foo.GetTitle">
+            <summary>
+            通过 Id 获取 Title
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Shared.Pages.Components.EnumEducation">
              <summary>
             

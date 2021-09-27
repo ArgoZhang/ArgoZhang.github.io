@@ -3498,9 +3498,9 @@
             点击清空按钮回调委托方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.DateTimeRange.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.DateTimeRange.OnParametersSet">
             <summary>
-            OnInitialized
+            OnParametersSet 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.DateTimeRange.OnAfterRenderAsync(System.Boolean)">
@@ -5055,11 +5055,6 @@
             获得/设置 显示顺序
             </summary>
         </member>
-        <member name="P:BootstrapBlazor.Components.EditorItem`1.Data">
-            <summary>
-            获得/设置 额外数据源一般用于 Select 或者 CheckboxList 这种需要额外配置数据源组件使用
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.EditorItem`1.Items">
             <summary>
             获得/设置 额外数据源一般用于下拉框或者 CheckboxList 这种需要额外配置数据源组件使用
@@ -5114,7 +5109,7 @@
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.Readonly">
             <summary>
-            获得/设置 当前列编辑时是否只读 默认为 false
+            获得/设置 当前列编辑时是否只读 默认为 false 自动生成 UI 为不可编辑 div
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.SkipValidate">
@@ -5130,11 +5125,6 @@
         <member name="P:BootstrapBlazor.Components.IEditorItem.PlaceHolder">
             <summary>
             获得/设置 placeholder 文本 默认为 null
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.IEditorItem.Data">
-            <summary>
-            获得/设置 额外数据源一般用于 Select 或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.Items">
@@ -6914,12 +6904,12 @@
         </member>
         <member name="P:BootstrapBlazor.Components.ModalDialog.ShowCloseButton">
             <summary>
-            获得/设置 是否显示关闭按钮
+            获得/设置 是否显示关闭按钮 默认为 true 显示
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ModalDialog.ShowPrintButton">
             <summary>
-            获得/设置 是否显示打印按钮
+            获得/设置 是否显示打印按钮 默认为 false 不显示
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.ModalDialog.ShowHeaderCloseButton">
@@ -9232,6 +9222,12 @@
             </summary>
             <param name="index"></param>
         </member>
+        <member name="M:BootstrapBlazor.Components.Tab.GetActiveTab">
+            <summary>
+            获得当前活动 Tab
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.TabItem">
             <summary>
             TabItem 组件基类
@@ -11230,11 +11226,6 @@
             </summary>
             <param name="item"></param>
         </member>
-        <member name="P:BootstrapBlazor.Components.Table`1.FixedHeaderStyleName">
-            <summary>
-            获得 wrapper 样式表集合
-            </summary>
-        </member>
         <member name="P:BootstrapBlazor.Components.Table`1.TableElement">
             <summary>
             获得/设置 Table 组件引用
@@ -11243,8 +11234,15 @@
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.Height">
             <summary>
-            获得/设置 Table 高度
+            获得/设置 Table 高度 默认为 null
             </summary>
+            <remarks>开启固定表头功能时生效 <see cref="P:BootstrapBlazor.Components.Table`1.IsFixedHeader"/></remarks>
+        </member>
+        <member name="P:BootstrapBlazor.Components.Table`1.IsFixedHeader">
+            <summary>
+            获得/设置 固定表头 默认 false
+            </summary>
+            <remarks>固定表头时设置 <see cref="P:BootstrapBlazor.Components.Table`1.Height"/> 即可出现滚动条，未设置时尝试自适应</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.Table`1.MultiHeaderTemplate">
             <summary>
@@ -11647,11 +11645,12 @@
             点击列进行排序方法
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.Table`1.GetHeaderClassString(BootstrapBlazor.Components.ITableColumn)">
+        <member name="M:BootstrapBlazor.Components.Table`1.GetHeaderClassString(BootstrapBlazor.Components.ITableColumn,System.Boolean)">
             <summary>
             获取指定列头样式字符串
             </summary>
             <param name="col"></param>
+            <param name="isFilterHeader"></param>
             <returns></returns>
         </member>
         <member name="M:BootstrapBlazor.Components.Table`1.GetFixedCellClassString(BootstrapBlazor.Components.ITableColumn,System.String)">
@@ -12124,11 +12123,6 @@
         <member name="P:BootstrapBlazor.Components.TableColumn`1.Template">
             <summary>
             获得/设置 显示模板
-            </summary>
-        </member>
-        <member name="P:BootstrapBlazor.Components.TableColumn`1.Data">
-            <summary>
-            获得/设置 额外数据源一般用于 Select 或者 CheckboxList 这种需要额外配置数据源组件使用
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TableColumn`1.Items">
@@ -15507,6 +15501,13 @@
             <param name="fileSize"></param>
             <returns></returns>
         </member>
+        <member name="M:BootstrapBlazor.Components.ObjectExtensions.IsEditable(BootstrapBlazor.Components.IEditorItem)">
+            <summary>
+            判断当前 IEditorItem 实例是否可以编辑
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
         <member name="T:BootstrapBlazor.Components.StringExtensions">
             <summary>
             
@@ -15569,6 +15570,12 @@
             <summary>
             获得/设置 是否回落到 UI 父文化 默认为 true
             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.DefaultCultureInfo">
+            <summary>
+            获得/设置 默认文化信息
+            </summary>
+            <remarks>开启多文化时此参数无效</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.BootstrapBlazorOptions.Themes">
             <summary>
