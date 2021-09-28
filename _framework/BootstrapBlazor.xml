@@ -90,6 +90,16 @@
             获得/设置 是否不进行验证 默认为 false
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.IsReadonlyWhenAdd">
+            <summary>
+            获得/设置 新建时此列只读 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.IsReadonlyWhenEdit">
+            <summary>
+            获得/设置 编辑时此列只读 默认为 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.AutoGenerateColumnAttribute.DefaultSortOrder">
             <summary>
             获得/设置 是否为默认排序规则 默认为 SortOrder.Unset
@@ -3857,6 +3867,11 @@
             获得/设置 组件是否采用 Tracking 模式对编辑项进行直接更新 默认 false
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.EditDialog`1.ItemChangedType">
+            <summary>
+            获得/设置 实体类编辑模式 Add 还是 Update
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.EditDialog`1.SaveButtonText">
             <summary>
             获得/设置 查询按钮文本
@@ -3897,6 +3912,11 @@
         <member name="P:BootstrapBlazor.Components.EditDialogOption`1.ShowLabel">
             <summary>
             获得/设置 是否显示标签 默认为 true 显示标签
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditDialogOption`1.ItemChangedType">
+            <summary>
+            获得/设置 实体类编辑模式 Add 还是 Update
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.EditDialogOption`1.ItemsPerRow">
@@ -4887,6 +4907,11 @@
             获得/设置 每行显示组件数量 默认为 null
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.EditorForm`1.ItemChangedType">
+            <summary>
+            获得/设置 实体类编辑模式 Add 还是 Update
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.EditorForm`1.RowType">
             <summary>
             获得/设置 设置行格式 默认 Row 布局
@@ -4921,6 +4946,12 @@
             <summary>
             获得/设置 是否显示为 Display 组件 默认为 false
             </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorForm`1.IsSearch">
+            <summary>
+            获得/设置 是否使用 SearchTemplate 默认 false 使用 EditTemplate 模板
+            </summary>
+            <remarks>多用于表格组件传递 <see cref="T:BootstrapBlazor.Components.ITableColumn"/> 集合给参数 <see cref="P:BootstrapBlazor.Components.EditorForm`1.Items"/> 时</remarks>
         </member>
         <member name="P:BootstrapBlazor.Components.EditorForm`1.AutoGenerateAllItem">
             <summary>
@@ -5008,6 +5039,17 @@
         <member name="P:BootstrapBlazor.Components.EditorItem`1.Readonly">
             <summary>
             获得/设置 当前列编辑时是否为只读模式 默认为 false
+            </summary>
+            <remarks>此属性覆盖 <see cref="P:BootstrapBlazor.Components.EditorItem`1.IsReadonlyWhenAdd"/> 与 <see cref="P:BootstrapBlazor.Components.EditorItem`1.IsReadonlyWhenEdit"/> 即新建与编辑时均只读</remarks>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorItem`1.IsReadonlyWhenAdd">
+            <summary>
+            获得/设置 新建时此列只读 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.EditorItem`1.IsReadonlyWhenEdit">
+            <summary>
+            获得/设置 编辑时此列只读 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.EditorItem`1.SkipValidate">
@@ -5110,6 +5152,17 @@
         <member name="P:BootstrapBlazor.Components.IEditorItem.Readonly">
             <summary>
             获得/设置 当前列编辑时是否只读 默认为 false 自动生成 UI 为不可编辑 div
+            </summary>
+            <remarks>此属性覆盖 <see cref="P:BootstrapBlazor.Components.IEditorItem.IsReadonlyWhenAdd"/> 与 <see cref="P:BootstrapBlazor.Components.IEditorItem.IsReadonlyWhenEdit"/> 即新建与编辑时均只读</remarks>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IEditorItem.IsReadonlyWhenAdd">
+            <summary>
+            获得/设置 新建时此列只读 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.IEditorItem.IsReadonlyWhenEdit">
+            <summary>
+            获得/设置 编辑时此列只读 默认为 false
             </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.IEditorItem.SkipValidate">
@@ -10217,6 +10270,16 @@
             获得/设置 是否不进行验证 默认为 false
             </summary>
         </member>
+        <member name="P:BootstrapBlazor.Components.InternalTableColumn.IsReadonlyWhenAdd">
+            <summary>
+            获得/设置 新建时此列只读 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.InternalTableColumn.IsReadonlyWhenEdit">
+            <summary>
+            获得/设置 编辑时此列只读 默认为 false
+            </summary>
+        </member>
         <member name="P:BootstrapBlazor.Components.InternalTableColumn.PlaceHolder">
             <summary>
             获得/设置 placeholder 文本 默认为 null
@@ -12064,6 +12127,17 @@
             <summary>
             获得/设置 当前列编辑时是否为只读模式 默认为 false
             </summary>
+            <remarks>此属性覆盖 <see cref="P:BootstrapBlazor.Components.TableColumn`1.IsReadonlyWhenAdd"/> 与 <see cref="P:BootstrapBlazor.Components.TableColumn`1.IsReadonlyWhenEdit"/> 即新建与编辑时均只读</remarks>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableColumn`1.IsReadonlyWhenAdd">
+            <summary>
+            获得/设置 新建时此列只读 默认为 false
+            </summary>
+        </member>
+        <member name="P:BootstrapBlazor.Components.TableColumn`1.IsReadonlyWhenEdit">
+            <summary>
+            获得/设置 编辑时此列只读 默认为 false
+            </summary>
         </member>
         <member name="P:BootstrapBlazor.Components.TableColumn`1.SkipValidate">
             <summary>
@@ -13233,9 +13307,9 @@
             获得/设置 是否禁用 默认为 false
             </summary>
         </member>
-        <member name="M:BootstrapBlazor.Components.TransferPanel.OnInitialized">
+        <member name="M:BootstrapBlazor.Components.TransferPanel.OnParametersSet">
             <summary>
-            OnInitialized 方法
+            OnParametersSet 方法
             </summary>
         </member>
         <member name="M:BootstrapBlazor.Components.TransferPanel.HeaderCheckState">
@@ -15501,11 +15575,12 @@
             <param name="fileSize"></param>
             <returns></returns>
         </member>
-        <member name="M:BootstrapBlazor.Components.ObjectExtensions.IsEditable(BootstrapBlazor.Components.IEditorItem)">
+        <member name="M:BootstrapBlazor.Components.ObjectExtensions.IsEditable(BootstrapBlazor.Components.IEditorItem,BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             判断当前 IEditorItem 实例是否可以编辑
             </summary>
             <param name="item"></param>
+            <param name="changedType"></param>
             <returns></returns>
         </member>
         <member name="T:BootstrapBlazor.Components.StringExtensions">
@@ -15837,7 +15912,7 @@
             <param name="model"></param>
             <param name="showLabel"></param>
         </member>
-        <member name="M:BootstrapBlazor.Components.Utility.CreateComponentByFieldType(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,Microsoft.AspNetCore.Components.ComponentBase,BootstrapBlazor.Components.IEditorItem,System.Object,System.Nullable{System.Boolean},System.String)">
+        <member name="M:BootstrapBlazor.Components.Utility.CreateComponentByFieldType(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder,Microsoft.AspNetCore.Components.ComponentBase,BootstrapBlazor.Components.IEditorItem,System.Object,System.Nullable{System.Boolean},BootstrapBlazor.Components.ItemChangedType)">
             <summary>
             RenderTreeBuilder 扩展方法，通过指定模型与属性生成编辑组件
             </summary>
@@ -15846,7 +15921,7 @@
             <param name="component"></param>
             <param name="item"></param>
             <param name="showLabel"></param>
-            <param name="placeholder"></param>
+            <param name="changedType"></param>
         </member>
         <member name="M:BootstrapBlazor.Components.Utility.GenerateComponentType(System.Type,System.Boolean)">
             <summary>
